@@ -161,7 +161,7 @@ h3 {
 
 #header {
     margin-bottom: 0;
-    padding: 30px 0 60px 0;
+    padding: 30px 0 0 0;
 }
 
 #header .navbar-inverse .container {
@@ -577,8 +577,8 @@ ul.sub-menu {
 }
 
 .animate-in .slider-q3 {
-    -webkit-animation: bounceInUp 500ms ease-in-out 1200ms both;
-    animation: bounceInUp 500ms ease-in-out 1200ms both;
+    -webkit-animation: fadeInUp 500ms ease-in-out 1200ms both;
+    animation: fadeInUp 500ms ease-in-out 1200ms both;
 }
 
 #home-slider .slider-q4 {
@@ -589,8 +589,8 @@ ul.sub-menu {
 }
 
 .animate-in .slider-q4 {
-    -webkit-animation: fadeInRight 500ms ease-in-out 1200ms both;
-    animation: fadeInRight 500ms ease-in-out 1200ms both;
+    -webkit-animation: bounceInRight 500ms ease-in-out 1200ms both;
+    animation: bounceInRight 500ms ease-in-out 1200ms both;
 }
 
 #home-slider .slider-wheel {
@@ -792,6 +792,7 @@ ul.sub-menu {
 }
 
 .person-thumb img {
+    width: 200px;
 }
 
 .social-profile {
@@ -806,12 +807,12 @@ ul.sub-menu {
     -o-transition: all 0.9s ease;
     transition: all 0.9s ease;
     transition: all 0.9s ease 0s;
-    width: 100%;
+    width: 200px;
     height: 100%;
 }
 
 .team-single:hover .social-profile {
-    background: rgba(112, 35, 64, 0.9);
+    background: rgba(112, 35, 64, 0.5);
     display: block;
     -webkit-animation: fadeInUp 400ms;
     animation: fadeInUp 400ms;
