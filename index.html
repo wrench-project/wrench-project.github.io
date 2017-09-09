@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WRENCH: Workflow Management System Simulation Workbench"/>
-    <meta name="keywords" content="workflow, simulation"/>
+    <meta name="keywords" content="workflow, simulation, reproducibility, simgrid"/>
     <meta name="author" content="Rafael Ferreira da Silva"/>
     <meta name="author" content="Henri Casanova"/>
     <title>WRENCH | Workflow Management System Simulation Workbench</title>
@@ -56,9 +56,9 @@
                     <li class="active"><a href="index.html">Home</a></li>
                     <li class="dropdown"><a href="#">Documentation <i class="fa fa-angle-down"></i></a>
                         <ul role="menu" class="sub-menu">
-                            <li><a href="wrench/1.0.0-alpha/user">User</a></li>
-                            <li><a href="wrench/1.0.0-alpha/developer">Developer</a></li>
-                            <li><a href="wrench/1.0.0-alpha/internal">Internal</a></li>
+                            <li><a href="wrench/1.0-alpha/user">User</a></li>
+                            <li><a href="wrench/1.0-alpha/developer">Developer</a></li>
+                            <li><a href="wrench/1.0-alpha/internal">Internal</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -187,10 +187,10 @@
 
                         <div class="single-skill">
                             <h3>Next Release:</h3>
-                            <p>1.0.0-alpha (Estimated release date: October/2017)</p>
+                            <p>1.0-alpha (Estimated release date: October/2017)</p>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"
-                                     data-transition="70">70%
+                                     data-transition="75">75%
                                 </div>
                             </div>
                         </div>
@@ -213,133 +213,138 @@
             <div id="team-carousel" class="carousel slide wow fadeIn" data-ride="carousel" data-wow-duration="400ms"
                  data-wow-delay="400ms">
                 <!-- Indicators -->
-                <!--<ol class="carousel-indicators visible-xs">-->
-                <!--<li data-target="#team-carousel" data-slide-to="0" class="active"></li>-->
-                <!--<li data-target="#team-carousel" data-slide-to="1"></li>-->
-                <!--</ol>-->
-                <!-- Wrapper for slides -->
-                <!--<div class="carousel-inner">-->
-                <div class="item active">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="team-single-wrapper">
-                            <div class="team-single">
-                                <div class="person-thumb">
-                                    <img src="images/aboutus/casanova.jpg" class="img-responsive" alt="">
+                <ol class="carousel-indicators visible-xs">
+                    <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#team-carousel" data-slide-to="1"></li>
+                </ol>
+                <!--Wrapper for slides-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/aboutus/casanova.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="social-profile">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="mailto:henric@hawaii.edu"><i class="fa fa-envelope"></i></a>
+                                            </li>
+                                            <li><a href="https://www.linkedin.com/in/henricasanova/" target="_blank"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="http://henricasanova.github.io/" target="_blank"><i
+                                                    class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="social-profile">
-                                    <ul class="nav nav-pills">
-                                        <li><a href="mailto:henric@hawaii.edu"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/henricasanova/" target="_blank"><i
-                                                class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="http://henricasanova.github.io/" target="_blank"><i
-                                                class="fa fa-link"></i></a></li>
-                                    </ul>
+                                <div class="person-info">
+                                    <h2>Henri Casanova</h2>
+                                    <p>Professor in the Information and Computer Science Department at UHM, and PI of
+                                        WRENCH (NSF).</p>
                                 </div>
                             </div>
-                            <div class="person-info">
-                                <h2>Henri Casanova</h2>
-                                <p>Professor in the Information and Computer Science Department at UHM, and PI of
-                                    WRENCH (NSF).</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/aboutus/ferreiradasilva.png" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="social-profile">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="mailto:rafsilva@isi.edu"><i class="fa fa-envelope"></i></a>
+                                            </li>
+                                            <li><a href="https://www.linkedin.com/in/rafaelfsilva" target="_blank"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="http://www.rafaelsilva.com" target="_blank"><i
+                                                    class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="person-info">
+                                    <h2>Rafael Ferreira da Silva</h2>
+                                    <p>Research Assistant Professor in the Computer Science Department at USC, and Co-PI
+                                        of
+                                        WRENCH (NSF).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/aboutus/suter.png" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="social-profile">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="mailto:frederic.suter@cc.in2p3.fr"><i
+                                                    class="fa fa-envelope"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/frederic-suter-1656455/"
+                                                   target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="http://graal.ens-lyon.fr/~fsuter/" target="_blank"><i
+                                                    class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="person-info">
+                                    <h2>Frédéric Suter</h2>
+                                    <p>Junior Researcher (CNRS) at the IN2P3 Computing Center, member of the SimGrid
+                                        team, and PI of WRENCH (CNRS).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/aboutus/pandey.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="social-profile">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="mailto:surajp@hawaii.edu"><i
+                                                    class="fa fa-envelope"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/suraj-pandey-256a7a87/"
+                                                   target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="person-info">
+                                    <h2>Suraj Pandey</h2>
+                                    <p>Computer Science Masters Student at University of Hawaii at Manoa, and Graduate
+                                        Research Assistant for WRENCH.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="team-single-wrapper">
-                            <div class="team-single">
-                                <div class="person-thumb">
-                                    <img src="images/aboutus/ferreiradasilva.png" class="img-responsive" alt="">
+                    <div class="item">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/aboutus/gen-user-300x300.png" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="social-profile">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="mailto:oeth@usc.edu"><i
+                                                    class="fa fa-envelope"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/james-oeth-8942b4133/"
+                                                   target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="social-profile">
-                                    <ul class="nav nav-pills">
-                                        <li><a href="mailto:rafsilva@isi.edu"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/rafaelfsilva" target="_blank"><i
-                                                class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="http://www.rafaelsilva.com" target="_blank"><i
-                                                class="fa fa-link"></i></a></li>
-                                    </ul>
+                                <div class="person-info">
+                                    <h2>James Oeth</h2>
+                                    <p>Computer Science undergraduate Student at University of Southern California, and
+                                        developer for WRENCH.</p>
                                 </div>
-                            </div>
-                            <div class="person-info">
-                                <h2>Rafael Ferreira da Silva</h2>
-                                <p>Research Assistant Professor in the Computer Science Department at USC, and Co-PI of
-                                    WRENCH (NSF).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="team-single-wrapper">
-                            <div class="team-single">
-                                <div class="person-thumb">
-                                    <img src="images/aboutus/suter.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="social-profile">
-                                    <ul class="nav nav-pills">
-                                        <li><a href="mailto:frederic.suter@cc.in2p3.fr"><i
-                                                class="fa fa-envelope"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/frederic-suter-1656455/"
-                                               target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="http://graal.ens-lyon.fr/~fsuter/" target="_blank"><i
-                                                class="fa fa-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="person-info">
-                                <h2>Frédéric Suter</h2>
-                                <p>Junior Researcher (CNRS) at the IN2P3 Computing Center, member of the SimGrid
-                                    team, and PI of WRENCH (CNRS).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="team-single-wrapper">
-                            <div class="team-single">
-                                <div class="person-thumb">
-                                    <img src="images/aboutus/pandey.jpg" class="img-responsive" alt="">
-                                </div>
-                                <div class="social-profile">
-                                    <ul class="nav nav-pills">
-                                        <li><a href="mailto:surajp@hawaii.edu"><i
-                                                class="fa fa-envelope"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/suraj-pandey-256a7a87/"
-                                               target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="person-info">
-                                <h2>Suraj Pandey</h2>
-                                <p>Computer Science Masters Student at University of Hawaii at Manoa, and Research
-                                    Assistant for WRENCH.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="item">-->
-                <!--<div class="col-sm-3 col-xs-6">-->
-                <!--<div class="team-single-wrapper">-->
-                <!--<div class="team-single">-->
-                <!--<div class="person-thumb">-->
-                <!--<img src="images/aboutus/4.jpg" class="img-responsive" alt="">-->
-                <!--</div>-->
-                <!--<div class="social-profile">-->
-                <!--<ul class="nav nav-pills">-->
-                <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-                <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-                <!--</ul>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--<div class="person-info">-->
-                <!--<h2>John Doe</h2>-->
-                <!--<p>CEO &amp; Developer</p>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
 
-                <!-- Controls -->
-                <!--<a class="left team-carousel-control hidden-xs" href="#team-carousel" data-slide="prev">left</a>-->
-                <!--<a class="right team-carousel-control hidden-xs" href="#team-carousel" data-slide="next">right</a>-->
+                <!--Controls -->
+                <a class="left team-carousel-control hidden-xs" href="#team-carousel" data-slide="prev">left</a>
+                <a class="right team-carousel-control hidden-xs" href="#team-carousel" data-slide="next">right</a>
             </div>
         </div>
     </div>
