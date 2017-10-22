@@ -816,6 +816,7 @@ ul.sub-menu {
 .team-single:hover .social-profile {
     background: rgba(112, 35, 64, 0.5);
     display: block;
+    width: 165px;
     -webkit-animation: fadeInUp 400ms;
     animation: fadeInUp 400ms;
     -webkit-transition: all 0.9s ease;
