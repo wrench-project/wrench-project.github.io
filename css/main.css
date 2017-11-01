@@ -378,19 +378,20 @@ ul.sub-menu {
 
 #footer {
     padding-bottom: 10px;
-    background-image: url(../images/home/footer.png);
+    background-image: url(../images/back-smoke.png);
     background-repeat: repeat-x;
     background-position: bottom;
-    background-size: contain;
+    /*background-size: contain;*/
+    min-height: 250px;
 }
 
 #footer h1 {
     margin-bottom: 65px;
-    margin-top: 36px;
+    /*margin-top: 36px;*/
 }
 
 #footer .bottom-separator {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 
 #message {
@@ -506,15 +507,15 @@ ul.sub-menu {
 }
 
 .copyright-text {
-    margin-top: 70px;
-    /*color: #fff;*/
+    margin-top: 90px;
     font-size: 13px;
     font-weight: bold;
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    line-height: 1.3em;
 }
 
 .copyright-text a {
-    color: #000;
+    color: #761c19;
     text-decoration: underline;
 }
 
@@ -744,7 +745,7 @@ ul.sub-menu {
 }
 
 #page-breadcrumb {
-    background-image: url(../images/home/tour-bg.png);
+    background-image: url(../images/back-triangles.png);
     background-color: #fbfafa;
     background-repeat: repeat-x;
     height: 130px;
