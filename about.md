@@ -181,6 +181,30 @@ layout: default
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-2 col-xs-6">
+                <div class="team-single-wrapper">
+                    <div class="team-single">
+                        <div class="person-thumb">
+                            <img src="images/aboutus/hataishi.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="social-profile">
+                            <ul class="nav nav-pills">
+                                <li><a href="mailto:evanhata@hawaii.edu"><i
+                                        class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/evan-hataishi/"
+                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="person-info">
+                        <h3>Evan Hataishi</h3>
+                        <div class="role">Developer</div>
+                        <p>Computer Science Masters student at University of Hawaii at Manoa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
