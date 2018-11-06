@@ -34,7 +34,7 @@ layout: default
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="testimonial-block">
                     <div>
-                        <div class="pull-left" style="margin-right: 1em">
+                        <div class="pull-left" style="margin-right: 1em; margin-top: -0.2em">
                             <span class="fa-stack fa-2x" style="font-size: 1.5em">
                                 <i class="fa fa-square fa-stack-2x" style="color: goldenrod"></i>
                                 <i class="fa fa-th-large fa-stack-1x fa-inverse"></i>
@@ -51,7 +51,7 @@ layout: default
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="testimonial-block">
                     <div>
-                        <div class="pull-left" style="margin-right: 1em">
+                        <div class="pull-left" style="margin-right: 1em; margin-top: -0.2em">
                             <span class="fa-stack fa-2x" style="font-size: 1.5em">
                                 <i class="fa fa-square fa-stack-2x" style="color: orangered"></i>
                                 <i class="fa fa-bullseye fa-stack-1x fa-inverse"></i>
@@ -68,7 +68,7 @@ layout: default
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="testimonial-block">
                     <div>
-                        <div class="pull-left" style="margin-right: 1em">
+                        <div class="pull-left" style="margin-right: 1em; margin-top: -0.2em">
                             <span class="fa-stack fa-2x" style="font-size: 1.5em">
                                 <i class="fa fa-square fa-stack-2x" style="color: dodgerblue"></i>
                                 <i class="fa fa-expand fa-stack-1x fa-inverse"></i>
@@ -85,7 +85,7 @@ layout: default
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="testimonial-block">
                     <div>
-                        <div class="pull-left" style="margin-right: 1em">
+                        <div class="pull-left" style="margin-right: 1em; margin-top: -0.2em">
                             <span class="fa-stack fa-2x" style="font-size: 1.5em">
                                 <i class="fa fa-square fa-stack-2x" style="color: mediumseagreen"></i>
                                 <i class="fa fa-check fa-stack-1x fa-inverse"></i>
@@ -134,6 +134,34 @@ layout: default
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right">
                 <img src="./images/wrench-architecture.png" style="width: 25em !important" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="space-small">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="section-title">
+                    <h1>Publications</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="testimonial-block">
+                <div>
+                    <strong><i class="fa fa-file-pdf"></i> 
+                    <a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/casanova-works-2018.pdf">
+                        WRENCH: A Framework for Simulating Workflow Management Systems
+                    </a></strong>
+                    <p class="testimonial-text" style="font-size: 0.9em">
+                        <i>H. Casanova, S. Pandey, J. Oeth, R. Tanaka, F. Suter, and R. Ferreira da Silva</i><br />
+                        13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018. 
+                        DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
