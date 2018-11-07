@@ -55,7 +55,7 @@ layout: default
                                 <li>Command-line options</li>
                             </ul>
                             <p style="color: #888; float: right">
-                                **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.20</a> or higher
+                                **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.20</a>
                             </p>
                             <a href="/wrench/1.1/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
                             <a href="/wrench/1.1/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a>
