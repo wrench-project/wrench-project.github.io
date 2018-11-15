@@ -57,7 +57,7 @@ layout: default
                             </p>
                             <a href="/wrench/1.2/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
                             <a href="/wrench/1.2/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a>
-                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-docker"></i> Docker Containers</a>
+                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
                             <a href="/wrench/1.2/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a>
                         </p>
                     </div>
@@ -90,7 +90,7 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="feature-block">
                     <a href="https://github.com/wrench-project/wrench" target="_blank" class=" feature-icon">
-                        <i class="fa fa-github"></i>
+                        <i class="fab fa-github"></i>
                     </a>
                     <div class="feature-content">
                         <p style="margin-bottom: 1em">Cloning from WRENCH's GitHub repository:</p>
