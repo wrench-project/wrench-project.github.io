@@ -13,8 +13,9 @@ layout: default
                             <h1 class="slider-title">Workflow Management System<br />Simulation Workbench</h1>
                             <p class="slider-text hidden-xs">Accurate, scalable, and reproducible simulations</p>
                             <a href="downloads.html" class="btn btn-default btn-sm hidden-sm hidden-xs">
-                                <i class="fa fa-download"></i>&nbsp;&nbsp;Download WRENCH-1.2
+                                <i class="fa fa-download"></i>&nbsp;&nbsp;Download WRENCH-1.3
                             </a>
+                            <span class="slider-text hidden-xs" style="font-size: 0.8em; margin-top: 10em">&nbsp;Released on Jan 3, 2019</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12">

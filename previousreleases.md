@@ -39,6 +39,37 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="plan-block">
                     <div class="plan-header">
+                        <h3>WRENCH 1.2 <span style="color: #999; font-size: 0.7em">(Nov 6, 2018)</span></h3>
+                        <p class="plan-price">
+                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.2" class="btn btn-default">
+                                <i class="fa fa-download"></i> Download
+                            </a>
+                        </p>
+                    </div>
+                    <div class="plan-content">
+                        <p>This release includes a series of new features and bug fixes, including:
+                            <ul class="angle angle-right">
+                                <li>New HTCondor compute service</li>
+                                <li>Improved standard job submission to specific VM (Cloud Service)</li>
+                                <li>Allow a WMS to start a new service dynamically</li>
+                                <li>New function for dumping the workflow execution data in a JSON format</li>
+                            </ul>
+                            <p style="color: #888; float: right">
+                                **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.21</a>
+                            </p>
+                            <!--a href="/wrench/1.2/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
+                            <a href="/wrench/1.2/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a-->
+                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
+                            <!--a href="/wrench/1.2/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="plan-block">
+                    <div class="plan-header">
                         <h3>WRENCH 1.1 <span style="color: #999; font-size: 0.7em">(Aug 26, 2018)</span></h3>
                         <p class="plan-price">
                             <a href="https://github.com/wrench-project/wrench/releases/tag/1.1" class="btn btn-default ">
@@ -57,10 +88,10 @@ layout: default
                             <p style="color: #888; float: right">
                                 **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.20</a>
                             </p>
-                            <a href="/wrench/1.1/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
-                            <a href="/wrench/1.1/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a>
-                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-docker"></i> Docker Containers</a>
-                            <a href="/wrench/1.1/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a>
+                            <!--a href="/wrench/1.1/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
+                            <a href="/wrench/1.1/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a-->
+                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
+                            <!--a href="/wrench/1.1/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a-->
                         </p>
                     </div>
                 </div>

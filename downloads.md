@@ -37,9 +37,9 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="plan-block">
                     <div class="plan-header">
-                        <h3>WRENCH 1.2 <span style="color: #999; font-size: 0.7em">(Nov 6, 2018)</span></h3>
+                        <h3>WRENCH 1.3 <span style="color: #999; font-size: 0.7em">(Jan 3, 2019)</span></h3>
                         <p class="plan-price">
-                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.2" class="btn btn-success">
+                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.3" class="btn btn-success">
                                 <i class="fa fa-download"></i> Download
                             </a>
                         </p>
@@ -47,18 +47,18 @@ layout: default
                     <div class="plan-content">
                         <p>This release includes a series of new features and bug fixes, including:
                             <ul class="angle angle-right">
-                                <li>New HTCondor compute service</li>
-                                <li>Improved standard job submission to specific VM (Cloud Service)</li>
-                                <li>Allow a WMS to start a new service dynamically</li>
-                                <li>New function for dumping the workflow execution data in a JSON format</li>
+                                <li>Development of a wrench-init tool</li>
+                                <li>MultiHostMultiCoreComputeService re-implemented as BareMetalComputeService</li>
+                                <li>Documentation of the JSON schema for workflows</li>
+                                <li>Documentation Guide containing detailed descriptions of WRENCH core services</li>
                             </ul>
                             <p style="color: #888; float: right">
                                 **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.21</a>
                             </p>
-                            <a href="/wrench/1.2/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
-                            <a href="/wrench/1.2/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a>
+                            <a href="/wrench/1.3/user/install.html" class="btn btn-default btn-xs"><i class="fa fa-cog"></i> Installation</a>
+                            <a href="/wrench/1.3/user/index.html" class="btn btn-default btn-xs"><i class="fa fa-book"></i> Documentation</a>
                             <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
-                            <a href="/wrench/1.2/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a>
+                            <a href="/wrench/1.3/user/wrench-101.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> WRENCH 101</a>
                         </p>
                     </div>
                 </div>
