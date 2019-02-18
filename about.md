@@ -48,7 +48,7 @@ layout: default
                                 <li><a href="mailto:henric@hawaii.edu"><i class="fa fa-envelope"></i></a>
                                 </li>
                                 <li><a href="https://www.linkedin.com/in/henricasanova/" target="_blank"><i
-                                        class="fa fa-linkedin"></i></a></li>
+                                        class="fab fa-linkedin"></i></a></li>
                                 <li><a href="http://henricasanova.github.io/" target="_blank"><i
                                         class="fa fa-link"></i></a></li>
                             </ul>
@@ -73,7 +73,7 @@ layout: default
                                 <li><a href="mailto:rafsilva@isi.edu"><i class="fa fa-envelope"></i></a>
                                 </li>
                                 <li><a href="https://www.linkedin.com/in/rafaelfsilva" target="_blank"><i
-                                        class="fa fa-linkedin"></i></a></li>
+                                        class="fab fa-linkedin"></i></a></li>
                                 <li><a href="http://www.rafaelsilva.com" target="_blank"><i
                                         class="fa fa-link"></i></a></li>
                             </ul>
@@ -98,7 +98,7 @@ layout: default
                                 <li><a href="mailto:frederic.suter@cc.in2p3.fr"><i
                                         class="fa fa-envelope"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/frederic-suter-1656455/"
-                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                       target="_blank"><i class="fab fa-linkedin"></i></a></li>
                                 <li><a href="http://graal.ens-lyon.fr/~fsuter/" target="_blank"><i
                                         class="fa fa-link"></i></a></li>
                             </ul>
@@ -116,28 +116,6 @@ layout: default
                 <div class="team-single-wrapper">
                     <div class="team-single">
                         <div class="person-thumb">
-                            <img src="images/aboutus/oeth.jpg" class="img-responsive" alt="">
-                        </div>
-                        <div class="social-profile">
-                            <ul class="nav nav-pills">
-                                <li><a href="mailto:oeth@usc.edu"><i
-                                        class="fa fa-envelope"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/james-oeth-8942b4133/"
-                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="person-info">
-                        <h3>James Oeth</h3>
-                        <div class="role">Developer</div>
-                        <p>Computer Science undergraduate student at University of Southern California</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <div class="team-single-wrapper">
-                    <div class="team-single">
-                        <div class="person-thumb">
                             <img src="images/aboutus/tanaka.png" class="img-responsive" alt="">
                         </div>
                         <div class="social-profile">
@@ -145,7 +123,7 @@ layout: default
                                 <li><a href="mailto:ryanyt@hawaii.edu"><i
                                         class="fa fa-envelope"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/ryan-tanaka/"
-                                        target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
                                 <li><a href="https://ryantanaka.github.io" target="_blank"><i
                                         class="fa fa-link"></i></a></li>
                             </ul>
@@ -169,7 +147,7 @@ layout: default
                                 <li><a href="mailto:gautam.jethwani@usc.edu"><i
                                         class="fa fa-envelope"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/gautamjethwani/"
-                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                       target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -180,8 +158,6 @@ layout: default
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-2 col-xs-6">
                 <div class="team-single-wrapper">
                     <div class="team-single">
@@ -193,7 +169,7 @@ layout: default
                                 <li><a href="mailto:evanhata@hawaii.edu"><i
                                         class="fa fa-envelope"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/evan-hataishi/"
-                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                       target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -201,6 +177,30 @@ layout: default
                         <h3>Evan Hataishi</h3>
                         <div class="role">Developer</div>
                         <p>Computer Science Masters student at University of Hawaii at Manoa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-xs-6">
+                <div class="team-single-wrapper">
+                    <div class="team-single">
+                        <div class="person-thumb">
+                            <img src="images/aboutus/albrecht.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="social-profile">
+                            <ul class="nav nav-pills">
+                                <li><a href="mailto:spencera@usc.edu"><i
+                                        class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/spenceralbrecht/"
+                                       target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="person-info">
+                        <h3>Spencer Albrecht</h3>
+                        <div class="role">Developer</div>
+                        <p>Computer Science undergraduate student at University of Southern California</p>
                     </div>
                 </div>
             </div>
@@ -217,6 +217,26 @@ layout: default
                 </div>
             </div>
         </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="team-single-wrapper">
+                <div class="team-single">
+                    <div class="person-thumb">
+                        <img src="images/aboutus/oeth.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="social-profile">
+                        <ul class="nav nav-pills">
+                            <li><a href="https://www.linkedin.com/in/james-oeth-8942b4133/"
+                                   target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="person-info">
+                    <h3>James Oeth</h3>
+                    <div class="role">Developer</div>
+                    <p>Computer Science undergraduate student at University of Southern California</p>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-2 col-xs-6">
                 <div class="team-single-wrapper">
@@ -227,7 +247,7 @@ layout: default
                         <div class="social-profile">
                             <ul class="nav nav-pills">
                                 <li><a href="https://www.linkedin.com/in/suraj-pandey-256a7a87/"
-                                       target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                       target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
