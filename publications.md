@@ -33,7 +33,7 @@ layout: default
                         <h3>Citing WRENCH</h3>
                     </div>
                     <div class="plan-content">
-                        <p>When citing SimGrid, please use the following paper. You should also actually read 
+                        <p>When citing WRENCH, please use the following paper. You should also actually read 
                         that paper, as it provides a recent and general overview on the framework.</p>
                         <ul class="angle angle-right">
                           <li>
