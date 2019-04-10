@@ -150,18 +150,34 @@ layout: default
             </div>
         </div>
         <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="testimonial-block">
-                <div>
-                    <strong><i class="fa fa-file-pdf"></i> 
-                    <a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/casanova-works-2018.pdf">
-                        WRENCH: A Framework for Simulating Workflow Management Systems
-                    </a></strong>
-                    <p class="testimonial-text" style="font-size: 0.9em">
-                        <i>H. Casanova, S. Pandey, J. Oeth, R. Tanaka, F. Suter, and R. Ferreira da Silva</i><br />
-                        13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018. 
-                        DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>.
-                    </p>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="testimonial-block">
+                    <div>
+                        <strong><!--i class="fa fa-file-pdf"></i--> 
+                        <!--a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/casanova-works-2018.pdf"-->
+                            Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows
+                        <!--/a--></strong>
+                        <p class="testimonial-text" style="font-size: 0.9em">
+                            <i>R. Ferreira da Silva, A. Orgerie, H. Casanova, R. Tanaka, E. Deelman, and F. Suter</i><br />
+                            2019 International Conference on Computational Science (ICCS), 2019. 
+                            <!--DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="testimonial-block">
+                    <div>
+                        <strong><i class="fa fa-file-pdf"></i> 
+                        <a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/casanova-works-2018.pdf">
+                            WRENCH: A Framework for Simulating Workflow Management Systems
+                        </a></strong>
+                        <p class="testimonial-text" style="font-size: 0.9em">
+                            <i>H. Casanova, S. Pandey, J. Oeth, R. Tanaka, F. Suter, and R. Ferreira da Silva</i><br />
+                            13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018. 
+                            DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
