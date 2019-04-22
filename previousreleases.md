@@ -39,6 +39,34 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="plan-block">
                     <div class="plan-header">
+                        <h3>WRENCH 1.3 <span style="color: #999; font-size: 0.7em">(Jan 3, 2019)</span></h3>
+                        <p class="plan-price">
+                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.3" class="btn btn-default">
+                                <i class="fa fa-download"></i> Download
+                            </a>
+                        </p>
+                    </div>
+                    <div class="plan-content">
+                        <p>This release includes a series of new features and bug fixes, including:
+                            <ul class="angle angle-right">
+                                <li>Development of a wrench-init tool</li>
+                                <li>MultiHostMultiCoreComputeService re-implemented as BareMetalComputeService</li>
+                                <li>Documentation of the JSON schema for workflows</li>
+                                <li>Documentation Guide containing detailed descriptions of WRENCH core services</li>
+                            </ul>
+                            <p style="color: #888; float: right">
+                                **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.21</a>
+                            </p>
+                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="plan-block">
+                    <div class="plan-header">
                         <h3>WRENCH 1.2 <span style="color: #999; font-size: 0.7em">(Nov 6, 2018)</span></h3>
                         <p class="plan-price">
                             <a href="https://github.com/wrench-project/wrench/releases/tag/v1.2" class="btn btn-default">

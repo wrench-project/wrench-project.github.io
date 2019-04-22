@@ -13,9 +13,9 @@ layout: default
                             <h1 class="slider-title">Workflow Management System<br />Simulation Workbench</h1>
                             <p class="slider-text hidden-xs">Accurate, scalable, and reproducible simulations</p>
                             <a href="downloads.html" class="btn btn-default btn-sm hidden-sm hidden-xs">
-                                <i class="fa fa-download"></i>&nbsp;&nbsp;Download WRENCH-1.3
+                                <i class="fa fa-download"></i>&nbsp;&nbsp;Download WRENCH-1.4
                             </a>
-                            <span class="slider-text hidden-xs" style="font-size: 0.8em; margin-top: 10em">&nbsp;Released on Jan 3, 2019</span>
+                            <span class="slider-text hidden-xs" style="font-size: 0.8em; margin-top: 10em">&nbsp;Released on Apr 22, 2019</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12">
@@ -153,10 +153,10 @@ layout: default
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="testimonial-block">
                     <div>
-                        <strong><!--i class="fa fa-file-pdf"></i--> 
-                        <!--a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/casanova-works-2018.pdf"-->
+                        <strong><i class="fa fa-file-pdf"></i> 
+                        <a href="http://rafaelsilva.com/wp-content/papercite-data/pdf/ferreiradasilva-iccs-2019.pdf">
                             Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows
-                        <!--/a--></strong>
+                        </a></strong>
                         <p class="testimonial-text" style="font-size: 0.9em">
                             <i>R. Ferreira da Silva, A. Orgerie, H. Casanova, R. Tanaka, E. Deelman, and F. Suter</i><br />
                             2019 International Conference on Computational Science (ICCS), 2019. 
