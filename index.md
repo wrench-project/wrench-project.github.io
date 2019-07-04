@@ -160,7 +160,7 @@ layout: default
                         <p class="testimonial-text" style="font-size: 0.9em">
                             <i>R. Ferreira da Silva, A. Orgerie, H. Casanova, R. Tanaka, E. Deelman, and F. Suter</i><br />
                             2019 International Conference on Computational Science (ICCS), 2019. 
-                            <!--DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a-->
+                            DOI: <a href="http://dx.doi.org/10.1007/978-3-030-22734-0_11" target="_blank">10.1007/978-3-030-22734-0_11</a>
                         </p>
                     </div>
                 </div>

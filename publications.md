@@ -69,7 +69,8 @@ layout: default
                 <li>
                   Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F., 
                   Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows. 
-                  2019 International Conference on Computational Science (ICCS), 2019. 
+                  2019 International Conference on Computational Science (ICCS), 2019, p. 138-152. 
+                  doi: <a href="http://dx.doi.org/10.1007/978-3-030-22734-0_11" target="_blank">10.1007/978-3-030-22734-0_11</a>  
                 </li>
                 <li>
                   Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R., 
