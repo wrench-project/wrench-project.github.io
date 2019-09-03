@@ -66,18 +66,16 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <h2>All Publications</h2>
               <ol reversed>
+                {% if site.data.publications.size > 0 %}
+                {% for n in site.data.publications %}
                 <li>
-                  Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F., 
-                  Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows. 
-                  2019 International Conference on Computational Science (ICCS), 2019, p. 138-152. 
-                  doi: <a href="http://dx.doi.org/10.1007/978-3-030-22734-0_11" target="_blank">10.1007/978-3-030-22734-0_11</a>  
+                  {{ n.authors }}, 
+                  {{ n.title }}. 
+                  {{ n.description }}. 
+                  doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>  
                 </li>
-                <li>
-                  Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R., 
-                  WRENCH: A Framework for Simulating Workflow Management Systems. 13th Workshop on Workflows 
-                  in Support of Large-Scale Science (WORKS’18), 2018, p. 74–85.
-                  doi: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>
-                </li>
+                {% endfor %}
+                {% endif %}
               </ol>
             </div>
         </div>

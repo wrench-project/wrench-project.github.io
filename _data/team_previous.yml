@@ -1,0 +1,23 @@
+- name: "Ryan Tanaka"
+  role: "Graduate Research Assistant"
+  description: "Computer Science Masters student at University of Hawaii at Manoa"
+  linkedin: "https://www.linkedin.com/in/ryan-tanaka/"
+  photo: "tanaka.png"
+
+- name: "Spencer Albrecht"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  linkedin: "https://www.linkedin.com/in/spenceralbrecht/"
+  photo: "albrecht.jpg"
+
+- name: "James Oeth"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  linkedin: "https://www.linkedin.com/in/james-oeth-8942b4133/"
+  photo: "oeth.jpg"
+
+- name: "Suraj Pandey"
+  role: "Graduate Research Assistant"
+  description: "Computer Science Masters student at University of Hawaii at Manoa"
+  linkedin: "https://www.linkedin.com/in/suraj-pandey-256a7a87/"
+  photo: "pandey.jpg"
