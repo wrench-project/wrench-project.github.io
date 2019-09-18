@@ -40,7 +40,7 @@ layout: default
         {% if site.data.team_current.size > 0 %}
         {% for n in site.data.team_current %}
             <div class="col-sm-2 col-xs-6">
-                <div class="team-single-wrapper">
+                <div class="team-single-wrapper" style="margin-bottom: 2em">
                     <div class="team-single">
                         <div class="person-thumb">
                             <img src="images/aboutus/{{ n.photo }}" class="img-responsive" alt="">
