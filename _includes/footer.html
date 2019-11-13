@@ -1,13 +1,34 @@
-<div class="space-medium footer">
+<div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <p>&copy; 2017-2019 WRENCH. All Rights Reserved.</p>
+            <button onclick="topFunction()" id="goToTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+            <div class="col-sm-4">
+                <p>
+                    <strong>&copy;2017-2019 WRENCH. All Rights Reserved.</strong><br />
+
+                </p>
+                <p style="padding-top: 1em">
+                    <a href="mailto:support@wrench-project.org" class="fa-stack fa-2x" style="font-size: 1.5em">
+                        <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                        <i class="fa fa-envelope fa-stack-1x"></i>
+                    </a>
+                    <a href="http://twitter.com/wrenchproject" target="_blank" class="fa-stack fa-2x"
+                       style="font-size: 1.5em">
+                        <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-sm-4 text-center">
+            </div>
+
+            <div class="col-sm-4">
                 <p>WRENCH is funded by the National Science Foundation (NSF) under grants number <a
-                        href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642369" target="_blank">1642369</a>
-                    and
+                        href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642369" target="_blank">1642369</a>,
                     <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642335" target="_blank">1642335</a>,
-                    <br/>
+                    <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923539" target="_blank">1923539</a>, and
+                    <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923621" target="_blank">1923621</a>;
                     and the National Center for Scientific Research (CNRS) under grant number PICS07239.
                 </p>
                 <p style="font-weight: normal; font-size: 0.8em">
@@ -43,4 +64,26 @@
     ga('create', 'UA-18066333-6', 'auto');
     ga('send', 'pageview');
 
+</script>
+
+<script>
+    //Get the button:
+    mybutton = document.getElementById("goToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 </script>
