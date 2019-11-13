@@ -1,7 +1,12 @@
+- title: "Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH"
+  authors: "R. Tanaka, R. Ferreira da Silva, and H. Casanova"
+  description: "Workshop on Education for High-Performance Computing (EduHPC), 2019"
+  doi: ""
+
 - title: "Bridging Concepts and Practice in eScience via Simulation-driven Engineering"
   authors: "R. Ferreira da Silva, H. Casanova, R. Tanaka, and F. Suter"
-  description: "Workshop on Bridging from Concepts to Data and Computation for eScience (BC2DC’19), 2019"
-  doi: ""
+  description: "Workshop on Bridging from Concepts to Data and Computation for eScience (BC2DC’19), 15th International Conference on eScience (eScience), 2019, p. 609-614"
+  doi: "10.1109/eScience.2019.00084"
 
 - title: "Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows"
   authors: "Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F."

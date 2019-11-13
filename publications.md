@@ -68,9 +68,9 @@ layout: default
               <ol reversed>
                 {% if site.data.publications.size > 0 %}
                 {% for n in site.data.publications %}
-                <li>
+                <li style="padding-bottom: 1em">
                   {{ n.authors }}, 
-                  {{ n.title }}. 
+                  <strong>{{ n.title }}</strong>. 
                   {{ n.description }}. 
                   doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>  
                 </li>
