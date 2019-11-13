@@ -1987,6 +1987,10 @@ img {
     position: relative;
 }
 
+.plan-header h3 {
+    letter-spacing: 1px;
+}
+
 .plan-price {
     padding-right: 0px;
     position: absolute;
