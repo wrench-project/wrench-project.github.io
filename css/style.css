@@ -3212,3 +3212,24 @@ img {
         left: 10px;
     }
 }
+
+.person-thumb {
+    position: relative;
+    float: left;
+}
+
+.person-thumb img {
+    max-width: 150px !important;
+}
+
+.social-profile {
+    float: left;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    height: 150px;
+    max-height: 150px;
+}
+
+.person-info {
+    padding-top: 0.3em;
+}

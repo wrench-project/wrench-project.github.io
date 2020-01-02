@@ -790,18 +790,11 @@ ul.sub-menu {
     position: relative;
 }
 
-.person-thumb {
-    position: relative;
-}
-
-.person-thumb img {
-    width: 200px;
-}
-
 .social-profile {
     background: none repeat scroll 0 0 rgba(137, 97, 46, 0.8);
     display: none;
     position: absolute;
+    float: right;
     text-align: center;
     top: 0;
     -webkit-transition: all 0.9s ease;
@@ -810,8 +803,8 @@ ul.sub-menu {
     -o-transition: all 0.9s ease;
     transition: all 0.9s ease;
     transition: all 0.9s ease 0s;
-    width: 200px;
-    height: 100%;
+    width: 20px;
+    /*height: 100%;*/
 }
 
 .team-single:hover .social-profile {
@@ -856,6 +849,11 @@ ul.sub-menu {
 .social-profile .nav-pills li a:hover {
     color: #702340;
     border-color: #702340;
+}
+
+.person-info {
+    float: right;
+    width: 300px;
 }
 
 .person-info h2 {
