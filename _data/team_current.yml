@@ -53,3 +53,11 @@
   linkedin: "https://www.linkedin.com/in/kochwilliam/"
   website: ""
   photo: "koch.jpg"
+
+- name: "Samuel He"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  email: "hes@usc.edu"
+  linkedin: "https://www.linkedin.com/in/samuel-he-001a2b16a"
+  website: ""
+  photo: "he.jpg"
