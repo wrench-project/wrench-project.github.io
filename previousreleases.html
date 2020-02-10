@@ -16,7 +16,7 @@ layout: default
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
                 <div class="page-section">
                     <p>
-                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS --> 
+                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS -->
                     </p>
                 </div>
             </div>
@@ -33,6 +33,36 @@ layout: default
                         <i class="fa fa-bullhorn"></i> Get the Latest Release
                     </a>
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="plan-block">
+                    <div class="plan-header">
+                        <h3>WRENCH 1.4 <span style="color: #999; font-size: 0.7em">(Apr 22, 2019)</span></h3>
+                        <p class="plan-price">
+                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.4" class="btn btn-success">
+                                <i class="fa fa-download"></i> Download
+                            </a>
+                        </p>
+                    </div>
+                    <div class="plan-content">
+                        <p>This release includes a series of new features and bug fixes, including:
+                        <ul class="angle angle-right">
+                            <li>Updated Batsched support (support to new JSON-based protocol)</li>
+                            <li>Dump pstate and energy consumption data as JSON</li>
+                            <li>Adding support for bytesRead, bytesWritten, and avgCPU for workflows defined as JSON</li>
+                            <li>Adding ComputeService::getTotalNumCores() and ComputeService::getTotalNumIdleCores()</li>
+                            <li>wrench::BatchService should handle requested vs. real job run times when replaying traces</li>
+                            <li>Bug Fixes</li>
+                        </ul>
+                        <p style="color: #888; float: right">
+                            **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.21</a>
+                        </p>
+                        <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
