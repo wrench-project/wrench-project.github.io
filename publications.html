@@ -70,7 +70,7 @@ layout: default
                 {% for n in site.data.publications %}
                 <li style="padding-bottom: 1em">
                   {{ n.authors }}, 
-                  <strong>{{ n.title }}</strong>. 
+                  <a href="{{ n.url }}" target="_blank"><strong>{{ n.title }}</strong></a>.
                   {{ n.description }}. 
                   doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>  
                 </li>

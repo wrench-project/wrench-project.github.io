@@ -2020,9 +2020,11 @@ img {
 }
 
 .testimonial-block {
-    border: 1px solid #ededed;
-    padding: 1em;
+    /*border: 1px solid #ededed;*/
+    padding: 1.5em;
     margin-bottom: 20px;
+    box-shadow: 4px 4px 4px #ddd;
+    background-color: #fcfcfc;
 }
 
 .testimonial-block h3 {
@@ -2070,7 +2072,7 @@ img {
     /*font-style: italic;*/
     color: #666;
     font-weight: 500;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 .testimonial-meta {

@@ -2,18 +2,22 @@
   authors: "R. Tanaka, R. Ferreira da Silva, and H. Casanova"
   description: "Workshop on Education for High-Performance Computing (EduHPC), 2019"
   doi: "10.1109/EduHPC49559.2019.00006"
+  url: "https://rafaelsilva.com/files/publications/tanaka2019eduhpc.pdf"
 
 - title: "Bridging Concepts and Practice in eScience via Simulation-driven Engineering"
   authors: "R. Ferreira da Silva, H. Casanova, R. Tanaka, and F. Suter"
   description: "Workshop on Bridging from Concepts to Data and Computation for eScience (BC2DC’19), 15th International Conference on eScience (eScience), 2019, p. 609-614"
   doi: "10.1109/eScience.2019.00084"
+  url: "https://rafaelsilva.com/files/publications/ferreiradasilva2019escience.pdf"
 
 - title: "Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows"
   authors: "Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F."
   description: "2019 International Conference on Computational Science (ICCS), 2019, p. 138-152"
   doi: "10.1007/978-3-030-22734-0_11"
+  url: "https://rafaelsilva.com/files/publications/ferreiradasilva-iccs-2019.pdf"
 
 - title: "WRENCH: A Framework for Simulating Workflow Management Systems"
   authors: "Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R."
   description: "13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018, p. 74–85"
   doi: "10.1109/WORKS.2018.00013"
+  url: "https://rafaelsilva.com/files/publications/casanova-works-2018.pdf"
