@@ -37,9 +37,9 @@ layout: default
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="plan-block">
                         <div class="plan-header">
-                            <h3>WRENCH 1.5 <span style="color: #999; font-size: 0.7em">(Feb 9, 2020)</span></h3>
+                            <h3>WRENCH 1.6 <span style="color: #999; font-size: 0.7em">(May 7, 2020)</span></h3>
                             <p class="plan-price">
-                                <a href="https://github.com/wrench-project/wrench/releases/tag/v1.5"
+                                <a href="https://github.com/wrench-project/wrench/releases/tag/v1.6"
                                    class="btn btn-success">
                                     <i class="fa fa-download"></i> Download
                                 </a>
@@ -48,31 +48,64 @@ layout: default
                         <div class="plan-content">
                             <p>This release includes a series of new features and bug fixes, including:
                             <ul class="angle angle-right">
-                                <li>Simulation of failures</li>
-                                <li>WRENCH Dashboard</li>
-                                <li>Enabled Pilot Job Submission for HTCondor compute service</li>
-                                <li>Improved exception handling</li>
-                                <li>Added a BatchComputeServiceProperty to make it possible to ignore bogus job
-                                    specifications in workload trace files
+                                <li>Refactored the WRENCH documentation:
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li><a href="/wrench/1.6/wrench-101.html">WRENCH 101</a> for users</li>
+                                        <li><a href="/wrench/1.6/wrench-102.html">WRENCH 102</a> for developers</li>
+                                    </ul>
                                 </li>
-                                <li>Allow users to define SIMGRID_INSTALL_PATH for non-standard SimGrid installations
+                                <li>New collection of examples provided with WRENCH distribution
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li>Over 10 examples of simulators including cloud and batch computing, and a
+                                            simulator for workflow processing
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>Code performance improvements</li>
-                                <li>Bug Fixes</li>
+                                <li>Removed dependency to Lemon library
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li>We now use Boost, which is already used by SimGrid</li>
+                                    </ul>
+                                </li>
+                                <li>Simulation logging in now disabled by default
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li>In an attempt to reduce the verbosity of simulation outputs, detailed
+                                            simulation output (i.e., services and components) have been disabled. Full
+                                            logging can be enabled using the --wrench-full-log command line argument, or
+                                            via fine-grained logging capabilities (see
+                                            <a href="/wrench/1.6/">documentation</a>).
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Refactored the BatchComputeService class
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li>Includes a conservative backfilling algorithm for validation purposes</li>
+                                    </ul>
+                                </li>
+                                <li>Improvements to simulation output processing and JSON output
+                                    <ul class="angle" style="margin-bottom: 0">
+                                        <li>Now, WRENCH provides an option to generate simulation output into a single
+                                            JSON file (includes: task, host, disk I/O, and energy information)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Series of improvements to the WRENCH Dashboard</li>
+                                <li>A number of bug fixes and small enhancements</li>
                             </ul>
-                            <p style="color: #888">
+                            <p style="color: #888; font-weight: bold">
                                 **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.25</a>
                             </p>
                             <br/>
-                            <a href="/wrench/1.5/user/install.html" class="btn btn-default btn-xs"><i
-                                    class="fa fa-cog"></i> Installation</a>
-                            <a href="/wrench/1.5/user/index.html" class="btn btn-default btn-xs"><i
-                                    class="fa fa-book"></i> Documentation</a>
+                            <a href="/wrench/1.6/install.html" class="btn btn-default btn-xs">
+                                <i class="fa fa-cog"></i> Installation</a>
+                            <a href="/wrench/1.6/index.html" class="btn btn-default btn-xs">
+                                <i class="fa fa-book"></i> Documentation</a>
                             <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank"
                                class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
-                            <a href="/wrench/1.5/user/wrench-101.html" class="btn btn-default btn-xs"><i
-                                    class="fa fa-graduation-cap"></i> WRENCH 101</a>
-                            </p>
+                            <br/>
+                            <a href="/wrench/1.6/wrench-101.html" class="btn btn-linkedin btn-xs">
+                                <i class="fa fa-graduation-cap"></i> WRENCH 101</a>
+                            <a href="/wrench/1.6/wrench-102.html" class="btn btn-linkedin btn-xs">
+                                <i class="fa fa-graduation-cap"></i> WRENCH 102</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +121,7 @@ layout: default
                         <a href="https://github.com/wrench-project/wrench" target="_blank">GitHub</a>.
                         Our preferred channel to report a bug or request a feature is via WRENCH's Github
                         <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues Track</a>.
-                        <br/><br />
+                        <br/><br/>
                         You can also reach the WRENCH team via our support email:
                         <a href="mailto:support@wrench-project.org?subject=WRENCH Support Contact: Your Topic">support@wrench-project.org</a>.
                     </div>
