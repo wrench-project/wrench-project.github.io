@@ -16,7 +16,7 @@ layout: default
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
                 <div class="page-section">
                     <p>
-                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS --> 
+                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS -->
                     </p>
                 </div>
             </div>
@@ -33,24 +33,27 @@ layout: default
                         <h3>Citing WRENCH</h3>
                     </div>
                     <div class="plan-content">
-                        <p>When citing WRENCH, please use the following paper. You should also actually read 
-                        that paper, as it provides a recent and general overview on the framework.</p>
+                        <p>When citing WRENCH, please use the following paper. You should also actually read
+                            that paper, as it provides a recent and general overview on the framework.</p>
                         <ul class="angle angle-right">
-                          <li>
-                            Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R., 
-                            WRENCH: A Framework for Simulating Workflow Management Systems. 13th Workshop on Workflows 
-                            in Support of Large-Scale Science (WORKS’18), 2018, p. 74–85.
-                            doi: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>
-                          </li> 
+                            <li>
+                                H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S.
+                                Albrecht, J. Oeth, and F. Suter, Developing Accurate and Scalable Simulators of
+                                Production Workflow Management Systems with WRENCH, Future Generation Computer Systems,
+                                2020.
+<!--                                doi: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">10.1109/WORKS.2018.00013</a>-->
+                            </li>
                         </ul>
                         <pre>
-@inproceedings{wrench,
-  title = {WRENCH: A Framework for Simulating Workflow Management Systems},
-  author = {Casanova, Henri and Pandey, Suraj and Oeth, James and Tanaka, Ryan and Suter, Frederic and Ferreira da Silva, Rafael},
-  booktitle = {13th Workshop on Workflows in Support of Large-Scale Science (WORKS'18)},
-  year = {2018},
-  pages = {74--85},
-  doi = {10.1109/WORKS.2018.00013}
+@article{wrench,
+  title = {Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH},
+  author = {Casanova, Henri and Ferreira da Silva, Rafael and Tanaka, Ryan and Pandey, Suraj and Jethwani, Gautam and Koch, William and Albrecht, Spencer and Oeth, James and Suter, Fr\'{e}d\'{e}ric},
+  journal = {Future Generation Computer Systems},
+  volume = {in press},
+  number = {},
+  pages = {},
+  year = {2020},
+  doi = {}
 }</pre>
                     </div>
                 </div>
@@ -64,19 +67,19 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h2>All Publications</h2>
-              <ol reversed>
-                {% if site.data.publications.size > 0 %}
-                {% for n in site.data.publications %}
-                <li style="padding-bottom: 1em">
-                  {{ n.authors }}, 
-                  <a href="{{ n.url }}" target="_blank"><strong>{{ n.title }}</strong></a>.
-                  {{ n.description }}. 
-                  doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>  
-                </li>
-                {% endfor %}
-                {% endif %}
-              </ol>
+                <h2>All Publications</h2>
+                <ol reversed>
+                    {% if site.data.publications.size > 0 %}
+                    {% for n in site.data.publications %}
+                    <li style="padding-bottom: 1em">
+                        {{ n.authors }},
+                        <a href="{{ n.url }}" target="_blank"><strong>{{ n.title }}</strong></a>.
+                        {{ n.description }}.
+                        doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>
+                    </li>
+                    {% endfor %}
+                    {% endif %}
+                </ol>
             </div>
         </div>
     </div>
