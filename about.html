@@ -45,7 +45,8 @@ layout: default
                 <div class="team-single-wrapper" style="margin-top: 2em">
                     <div class="team-single">
                         <div class="person-thumb">
-                            <img src="images/aboutus/{{ n.photo }}" alt="">
+                            <img src="images/aboutus/{{ n.photo }}" alt=""
+                                 style="border-radius: 5%; box-shadow: 3px 3px 3px #ccc">
                         </div>
                         <div class="social-profile">
                             <a href="mailto:{{ n.email }}"><i class="fa fa-envelope"></i></a>
@@ -81,22 +82,23 @@ layout: default
             {% if site.data.team_previous.size > 0 %}
             {% for n in site.data.team_previous %}
             <div class="col-sm-4 col-xs-6">
-                <div class="team-single-wrapper" style="margin-top: 1em">
+                <div class="team-single-wrapper" style="margin-bottom: 2em">
                     <div class="team-single">
                         <div class="person-thumb">
                             <img src="images/aboutus/{{ n.photo }}" class="img-responsive" alt=""
-                                 style="max-width: 110px !important">
+                                 style="max-width: 80px !important; -webkit-filter: grayscale(100%); filter: grayscale(100%); border-radius: 10%; z-index: -1; display: block; position: relative">
                         </div>
                     </div>
-                    <div class="person-info" style="position: relative; padding-left: 9em">
+                    <div class="person-info" style="position: relative; padding-left: 7em">
                         <h3>
                             <span style="font-size: 0.9em">
                                 <a href="{{ n.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                {{ n.name }}
                             </span>
-                            {{ n.name }}
+
                         </h3>
-                        <div class="role">{{ n.role }}</div>
-                        <p>{{ n.description }}</p>
+                        <div class="role" style="line-height: 1em !important">{{ n.role }}</div>
+                        <p style="line-height: 1.3em !important">{{ n.description }}</p>
                     </div>
                 </div>
             </div>
