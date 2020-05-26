@@ -1,6 +1,7 @@
 - title: "Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH"
   authors: "H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter"
   description: "Future Generation Computer Systems, 2020"
+  doi: "10.1016/j.future.2020.05.030"
   url: "https://rafaelsilva.com/files/publications/casanova2020fgcs.pdf"
 
 - title: "Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of I/O-intensive Scientific Workflows"
