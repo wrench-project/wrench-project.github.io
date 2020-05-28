@@ -61,3 +61,11 @@
   linkedin: "https://www.linkedin.com/in/tabitha-sy-lee/"
   website: ""
   photo: "lee.jpg"
+
+- name: "Ty Gwartney"
+  role: "Developer"
+  description: "Computer Science and Maths Undergraduate Student at the University of Hawai`i at Manoa"
+  email: "tyg@hawaii.edu"
+  linkedin: "https://www.linkedin.com/in/ty-gwartney-a4808216a/"
+  website: "https://ty-gwartney.github.io"
+  photo: "gwartney.png"
