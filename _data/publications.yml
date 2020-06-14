@@ -7,6 +7,7 @@
 - title: "Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of I/O-intensive Scientific Workflows"
   authors: "R. Ferreira da Silva, H. Casanova, A. Orgerie, R. Tanaka, E. Deelman, and F. Suter"
   description: "Journal of Computational Science, 2020"
+  doi: "10.1016/j.jocs.2020.101157"
   url: "https://rafaelsilva.com/files/publications/ferreiradasilva2020jocs.pdf"
 
 - title: "Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH"
