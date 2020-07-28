@@ -3236,3 +3236,34 @@ img {
 .person-info {
     padding-top: 0.3em;
 }
+
+.numbers {
+    min-height: 8.5em;
+}
+
+.numbers-b-r {
+    border-right: 5px dotted #F9DE4B;
+}
+
+.numbers-b-l {
+    border-left: 5px dotted #F9DE4B;
+}
+
+.numbers-b-b {
+    border-bottom: 5px dotted #F9DE4B;
+}
+
+.numbers-red {
+    background-color: #DD5B5E;
+    color: #fff !important;
+}
+
+.numbers-yellow {
+    background-color: #ECA442;
+    color: #fff !important;
+}
+
+.numbers-orange {
+    background-color: #E06F38;
+    color: #fff !important;
+}

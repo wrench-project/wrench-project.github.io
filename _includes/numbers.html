@@ -1,0 +1,92 @@
+{% assign entries = site.data.numbers %}
+<div class="row">
+    <!-- RELEASES -->
+    <div class="col-md-3 numbers numbers-red" style="padding: 1em">
+        <div style="float: left; min-width: 7em; line-height: 5em">
+            <span style="font-size: 5em" class="timer" data-from="1" data-to="{{ entries.releases }}"></span>
+        </div>
+        <div style="float: left; max-width: 8em; min-width: 8em; padding-top: 1em">
+            <h3 style="color: #fff">stable software releases</h3>
+        </div>
+        <div style="float: left; max-width: 3em; min-width: 3em; padding-top: 1.5em">
+            <i class="fab fa-github" style="font-size: 3em"></i>
+        </div>
+    </div>
+    <!-- LINES OF CODE -->
+    <div class="col-md-3 numbers numbers-b-r"
+         style="padding-top: 2em; text-align: center">
+        <div style="font-size: 4em">
+            <strong style="color: #5E5F5E"><span class="timer" data-from="1"
+                                                 data-to="{{ entries.loc }}"></span>K</strong>
+        </div>
+        <div style="padding-top: 1em; font-size: 0.8em">
+            <h3 style="color: #5E5F5E">lines of code of WRENCH core software </h3>
+        </div>
+    </div>
+    <!-- PEDAGOGIC MODULES -->
+    <div class="col-md-3 numbers numbers-b-b" style="padding: 1.5em">
+        <div style="float: left; max-width: 3.5em; min-width: 3.5em; padding-top: 0.5em">
+            <i class="fas fa-graduation-cap" style="font-size: 3em; color: #DF6F38"></i>
+        </div>
+        <div style="color: #DF6F38; float: left; min-width: 5.5em; line-height: 4em">
+            <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ entries.modules }}"></span>
+        </div>
+        <div style="float: left; max-width: 8em; min-width: 8em; padding-top: 1em">
+            <h3 style="color: #DF6F38">pedagogic modules</h3>
+        </div>
+    </div>
+    <!-- PAPERS -->
+    <div class="col-md-3 numbers numbers-yellow" style="padding: 1em">
+        <div style="float: left; min-width: 5em; line-height: 5em; margin-left: 2em">
+            <span style="font-size: 5em" class="timer" data-from="1" data-to="{{ entries.papers }}"></span>
+        </div>
+        <div style="float: left; max-width: 10em; min-width: 8em; padding-top: 1em">
+            <h3 style="color: #fff">peer-reviewed research papers</h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <!-- SIMULATORS -->
+    <div class="col-md-3 numbers" style="padding-top: 3em">
+        <div style="color: #5E5F5E; float: left; min-width: 4em; line-height: 4em">
+            <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ entries.simulators }}"></span>
+        </div>
+        <div style="float: left; max-width: 13.5em; min-width: 9.5em; padding-top: 0em">
+            <h3 style="color: #5E5F5E">WRENCH-enabled simulators for research</h3>
+        </div>
+    </div>
+    <!-- CONTRIBUTORS -->
+    <div class="col-md-3 numbers numbers-orange" style="padding: 1em">
+        <div style="float: left; min-width: 7em; line-height: 5em">
+            <span style="font-size: 4.5em" class="timer" data-from="1" data-to="{{ entries.contributors }}"></span>
+        </div>
+        <div style="float: left; max-width: 7em; min-width: 7em; padding-top: 1em">
+            <h3 style="color: #fff; font-size: 0.9em">contributors for WRENCH core software</h3>
+        </div>
+        <div style="float: left; max-width: 3em; min-width: 3em; padding-top: 1.5em; padding-left: 1em">
+            <i class="fas fa-users" style="font-size: 2em"></i>
+        </div>
+    </div>
+    <!-- CITATIONS -->
+    <div class="col-md-3 numbers numbers-b-r"
+         style="padding-top: 2em; text-align: center">
+        <div style="font-size: 4em">
+            <strong style="color: #5E5F5E"><span class="timer" data-from="1" data-to="{{ entries.citations }}"></span>
+                <i class="fas fa-file-alt" style="font-size: 0.7em"></i></strong>
+        </div>
+        <div style="padding-top: 1em; font-size: 0.8em">
+            <h3 style="color: #5E5F5E">peer-reviewed papers and thesis citing WRENCH</h3>
+        </div>
+    </div>
+    <!-- PEDAGOGIC SIMULATORS -->
+    <div class="col-md-3 numbers"
+         style="padding-top: 2em; text-align: center">
+        <div style="font-size: 4em">
+            <strong style="color: #5E5F5E"><span class="timer" data-from="1"
+                                                 data-to="{{ entries.pedagogic_simulators }}"></span></strong>
+        </div>
+        <div style="padding-top: 1em; font-size: 0.8em">
+            <h3 style="color: #5E5F5E">simulators for pedagogic modules</h3>
+        </div>
+    </div>
+</div>
