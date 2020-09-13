@@ -4,11 +4,23 @@
   linkedin: "https://www.linkedin.com/in/ryan-tanaka/"
   photo: "tanaka.png"
 
+- name: "Vivian (Tongyu) Zhu"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  linkedin: "https://www.​linkedin.com/in/tongyu-zhu-00091/"
+  photo: "zhu.jpg"
+
 - name: "Suraj Pandey"
   role: "Graduate Research Assistant"
   description: "Computer Science Masters student at University of Hawaii at Manoa"
   linkedin: "https://www.linkedin.com/in/suraj-pandey-256a7a87/"
   photo: "pandey.jpg"
+
+- name: "Tabitha See Ya Lee"
+  role: "Developer"
+  description: "Computer Science undegraduate student at Vanderbilt University"
+  linkedin: "https://www.linkedin.com/in/tabitha-sy-lee/"
+  photo: "lee.jpg"
 
 - name: "Samuel He"
   role: "Developer"
