@@ -61,3 +61,11 @@
   linkedin: "https://www.linkedin.com/in/ty-gwartney-a4808216a/"
   website: "https://ty-gwartney.github.io"
   photo: "gwartney.png"
+
+- name: "Jason Feuerstein"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  email: "jwfeuers@usc.edu"
+  linkedin: "https://www.linkedin.com/in/jasonfeuerstein"
+  website: ""
+  photo: "feuerstein.png"
