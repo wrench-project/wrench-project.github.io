@@ -1,3 +1,9 @@
+- title: "WorkflowHub: Community Framework for Enabling Scientific Workflow Research and Development"
+  authors: "R. Ferreira da Silva, L. Pottier, T. Coleman, E. Deelman, and H. Casanova"
+  description: "15th Workshop on Workflows in Support of Large-Scale Science (WORKS’20), 2020"
+  doi: ""
+  url: ""
+
 - title: "Modeling the Performance of Scientific Workflow Executions on HPC Platforms with Burst Buffers"
   authors: "L. Pottier, R. Ferreira da Silva, H. Casanova, and E. Deelman"
   description: "IEEE Cluster, 2020"
