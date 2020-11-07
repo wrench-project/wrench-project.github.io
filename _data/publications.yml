@@ -7,8 +7,8 @@
 - title: "Modeling the Performance of Scientific Workflow Executions on HPC Platforms with Burst Buffers"
   authors: "L. Pottier, R. Ferreira da Silva, H. Casanova, and E. Deelman"
   description: "IEEE Cluster, 2020"
-  doi: ""
-  url: ""
+  doi: "10.1109/CLUSTER49012.2020.00019"
+  url: "https://rafaelsilva.com/files/publications/pottier2020cluster.pdf"
 
 - title: "Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH"
   authors: "H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter"
