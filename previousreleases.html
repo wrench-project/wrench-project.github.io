@@ -40,6 +40,64 @@ layout: default
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="plan-block">
                     <div class="plan-header">
+                        <h3>WRENCH 1.7 <span style="color: #999; font-size: 0.7em">(September 17, 2020)</span></h3>
+                        <p class="plan-price">
+                            <a href="https://github.com/wrench-project/wrench/releases/tag/v1.7"
+                               class="btn btn-success">
+                                <i class="fa fa-download"></i> Download
+                            </a>
+                        </p>
+                    </div>
+                    <div class="plan-content">
+                        <p>This release includes a series of new features and bug fixes, including:
+                        <ul class="angle angle-right">
+                            <li>Redesign of the <strong>WRENCH Dashboard</strong>: includes a number of graphs for
+                                visualizing the Gantt chart of the workflow execution, host utilization, network
+                                bandwidth usage, and energy consumption.
+                            </li>
+                            <li>Improvements to <strong>BareMetalComputeService</strong>: load is now equally
+                                distributed among hosts, and the service provides an API equivalent to the
+                                <i>squeue</i> Slurm command.
+                            </li>
+                            <li>Improvements to <strong>CloudComputeService</strong>: added a function to get the
+                                <i>ComputeService</i> for a VM based on its name.
+                            </li>
+                            <li>Improvements to <strong>VirtualizedClusterComputeService</strong>: added a function
+                                to get the physical host.
+                            </li>
+                            <li>Enabled support for capturing <strong>network link's usage</strong> during the
+                                simulation.
+                            </li>
+                            <li>Improvements to <strong>Simulation JSON output</strong>: added disk read/write
+                                failures, and network link usage.
+                            </li>
+                            <li>Added an exception handling for ensuring a link bandwidth in the platform file is
+                                not set to zero.
+                            </li>
+                            <li>A number of bug fixes and small enhancements</li>
+                        </ul>
+                        <p style="color: #888; font-weight: bold">
+                            **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.25</a>
+                        </p>
+                        <br/>
+                        <a href="/wrench/1.7/install.html" class="btn btn-default btn-xs">
+                            <i class="fa fa-cog"></i> Installation</a>
+                        <a href="/wrench/1.7/index.html" class="btn btn-default btn-xs">
+                            <i class="fa fa-book"></i> Documentation</a>
+                        <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank"
+                           class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
+                        <br/>
+                        <a href="/wrench/1.7/wrench-101.html" class="btn btn-default btn-xs">
+                            <i class="fa fa-graduation-cap"></i> WRENCH 101</a>
+                        <a href="/wrench/1.7/wrench-102.html" class="btn btn-default btn-xs">
+                            <i class="fa fa-graduation-cap"></i> WRENCH 102</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="plan-block">
+                    <div class="plan-header">
                         <h3>WRENCH 1.6 <span style="color: #999; font-size: 0.7em">(May 7, 2020)</span></h3>
                         <p class="plan-price">
                             <a href="https://github.com/wrench-project/wrench/releases/tag/v1.6"
