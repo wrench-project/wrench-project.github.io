@@ -1,3 +1,9 @@
+- title: "Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows"
+  authors: "T. Coleman, H. Casanova, T. Gwartney, R. Ferreira da Silva"
+  description: "2021 International Conference on Computational Science (ICCS)"
+  doi: ""
+  url: "https://rafaelsilva.com/files/publications/coleman2021iccs.pdf"
+
 - title: "Peachy Parallel Assignments (EduHPC 2020)"
   authors: "H. Casanova, R. Ferreira da Silva, A. Gonzalez-Escribano, W. Koch, Y. Torres, and D. P. Bunde"
   description: "2020 IEEE/ACM Workshop on Education for High-Performance Computing (EduHPC)"
