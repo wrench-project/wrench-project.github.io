@@ -1,3 +1,9 @@
+- title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
+  authors: H. Casanova, R. Tanaka, W. Koch, R. Ferreira da Silva
+  description: Journal of Parallel and Distributed Computing
+  doi: 
+  url:
+
 - title: "GLUME: A Strategy for Reducing Workflow Execution Times on Batch-Scheduled Platforms"
   authors: "E. Hataishi, P.-F. Dutot, R. Ferreira da Silva, H. Casanova"
   description: "2021 Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP)"
