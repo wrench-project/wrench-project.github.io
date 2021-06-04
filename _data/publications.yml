@@ -1,8 +1,8 @@
 - title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
   authors: H. Casanova, R. Tanaka, W. Koch, R. Ferreira da Silva
   description: Journal of Parallel and Distributed Computing, 2021
-  doi: 
-  url:
+  doi: 10.1016/j.jpdc.2021.05.009
+  url: https://rafaelsilva.com/files/publications/casanova2021jpdc.pdf
 
 - title: "GLUME: A Strategy for Reducing Workflow Execution Times on Batch-Scheduled Platforms"
   authors: "E. Hataishi, P.-F. Dutot, R. Ferreira da Silva, H. Casanova"
@@ -13,7 +13,7 @@
 - title: "Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows"
   authors: "T. Coleman, H. Casanova, T. Gwartney, R. Ferreira da Silva"
   description: "International Conference on Computational Science (ICCS), 2021"
-  doi: ""
+  doi: 10.1007/978-3-030-77961-0_16
   url: "https://rafaelsilva.com/files/publications/coleman2021iccs.pdf"
 
 - title: "Peachy Parallel Assignments (EduHPC 2020)"
