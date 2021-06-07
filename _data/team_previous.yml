@@ -1,3 +1,23 @@
+- name: "Evan Hataishi"
+  role: "Developer"
+  description: "Computer Science Masters student at University of Hawaii at Manoa"
+  linkedin: "https://www.linkedin.com/in/evan-hataishi/"
+  photo: "hataishi.jpg"
+
+- name: "Ty Gwartney"
+  role: "Developer"
+  description: "Computer Science and Maths Undergraduate Student at the University of Hawai`i at Manoa"
+  email: "tyg@hawaii.edu"
+  linkedin: "https://www.linkedin.com/in/ty-gwartney-a4808216a/"
+  website: "https://ty-gwartney.github.io"
+  photo: "gwartney.png"
+
+- name: "William Koch"
+  role: "Graduate Research Assistant"
+  description: "Computer Science Masters student at University of Hawaii at Manoa"
+  linkedin: "https://www.linkedin.com/in/kochwilliam/"
+  photo: "koch.jpg"
+
 - name: "Ryan Tanaka"
   role: "Graduate Research Assistant"
   description: "Computer Science Masters student at University of Hawaii at Manoa"
