@@ -1,3 +1,10 @@
+- name: "Gautam Jethwani"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  email: "gautam.jethwani@usc.edu"
+  linkedin: "https://www.linkedin.com/in/gautamjethwani/"
+  photo: "jethwani.jpg"
+
 - name: "Evan Hataishi"
   role: "Developer"
   description: "Computer Science Masters student at University of Hawaii at Manoa"
