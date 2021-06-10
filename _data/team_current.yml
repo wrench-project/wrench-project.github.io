@@ -38,14 +38,6 @@
   website: "http://tainacoleman.com/"
   photo: "coleman.jpg"
 
-- name: "Gautam Jethwani"
-  role: "Developer"
-  description: "Computer Science undergraduate student at University of Southern California"
-  email: "gautam.jethwani@usc.edu"
-  linkedin: "https://www.linkedin.com/in/gautamjethwani/"
-  website: ""
-  photo: "jethwani.jpg"
-
 - name: "Jason Feuerstein"
   role: "Developer"
   description: "Computer Science undergraduate student at University of Southern California"
