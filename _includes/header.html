@@ -1,30 +1,21 @@
-<div class="header-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-top: 0.8em">
-                <a href="index.html"><img src="./images/logo-horizontal.png" alt=""></a>
-            </div>
-            <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-                <div class="navigation">
-                    <div id="navigation">
-                        <ul>
-                            <li><a href="/wrench/1.9/" title="User Guide">Documentation</a></li>
-                            <li><a href="downloads.html" title="Current and Past Releases">Install</a> </li>
-                            <li class="has-sub"><a href="publications.html" title="Publications">Publications</a>
-                                <ul>
-                                    <li><a href="publications.html" title="Publications">WRENCH Publications</a> </li>
-                                    <li><a href="usages.html" title="They use WRENCH">They use WRENCH</a> </li>
-                                    <li><a href="presentations.html" title="Presentations">Presentations</a> </li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html" title="Who are we?">About</a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
-                <div class="header-btn"><a href="/wrench/1.9/getting-started.html" class="btn btn-default btn-sm">get started</a></div>
-            </div>
-        </div>
-    </div>
-</div>
+{% assign releases = site.data.releases %}
+<header id="header">
+    <h1><a href="/"><img src="/images/logo-horizontal.png" style="width: 10em" alt=""/></a></h1>
+    <nav class="links">
+        <ul>
+            <li><a href="/wrench/{{releases[0].version}}/" title="User Guide">Documentation</a></li>
+            <li><a href="/install" title="Current and Past Releases">Install</a></li>
+            <li><a href="/publications" title="Publications">Publications</a></li>
+            <li><a href="/usages">They Use WRENCH</a></li>
+            <li><a href="/about" title="Who are we?">About</a></li>
+            <li><a href="https://eduwrench.org" target="_blank" title="eduWRENCH.org">Education</a></li>
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            <li>
+                <a href="/wrench/{{releases[0].version}}/getting-started.html">Get Started!</a>
+            </li>
+        </ul>
+    </nav>
+</header>

@@ -1,45 +1,26 @@
 ---
 layout: default
+title: Publications
+permalink: /publications
 ---
 
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="page-section">
-                    <h1 class="page-title ">Publications</h1>
-                    <div class="page-breadcrumb">
-                        Research papers produced by the WRENCH team.
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                <div class="page-section">
-                    <p>
-                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS -->
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div id="main">
 
-<div class="space-small">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="plan-block">
-                    <div class="plan-header">
-                        <h3>Citing WRENCH</h3>
-                    </div>
-                    <div class="plan-content">
-                        <p>When citing WRENCH, please use the following paper. You should also actually read
-                            that paper, as it provides a recent and general overview on the framework.</p>
-                        <pre>
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Publications</h2>
+                <p>Research Papers, Journal Articles, and Technical Reports</p>
+            </div>
+        </header>
+        <h2>Citing WRENCH</h2>
+        <p>When citing WRENCH, please use the following paper. You should also actually read
+            that paper, as it provides a recent and general overview on the framework.</p>
+        <pre class="wrap">
 H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter,
 "Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH",
 Future Generation Computer Systems, vol. 112, p. 162-175, 2020.</pre>
-                        <pre>
+        <pre class="wrap">
 @article{wrench,
   title = {{ "{{Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH"}}}},
   author = {Casanova, Henri and Ferreira da Silva, Rafael and Tanaka, Ryan and Pandey, Suraj and Jethwani, Gautam and Koch, William and Albrecht, Spencer and Oeth, James and Suter, Fr\'{e}d\'{e}ric},
@@ -50,35 +31,26 @@ Future Generation Computer Systems, vol. 112, p. 162-175, 2020.</pre>
   year = {2020},
   doi = {10.1016/j.future.2020.05.030}
 }</pre>
-                        <p style="border-top: 1px solid #eee; margin-top: 2em; padding-top: 1em">
-                            A list of publications citing WRENCH is available <a href="/wrench-citations" style="color: #bd7014">here</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    </article>
 
-
-<div class="space-large" style="padding-top: 0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2>All Publications</h2>
-                <ol reversed>
-                    {% if site.data.publications.size > 0 %}
-                    {% for n in site.data.publications %}
-                    <li style="padding-bottom: 1em">
-                        {{ n.authors }},
-                        <a href="{{ n.url }}" target="_blank"><strong>{{ n.title }}</strong></a>.
-                        {{ n.description }}.
-                        doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>
-                    </li>
-                    {% endfor %}
-                    {% endif %}
-                </ol>
+    <article class="post">
+        <header>
+            <div class="title">
+                <h3>All Publications</h3>
             </div>
-        </div>
-    </div>
+        </header>
+        <ol reversed>
+            {% if site.data.publications.size > 0 %}
+            {% for n in site.data.publications %}
+            <li style="padding-bottom: 1em">
+                {{ n.authors }},
+                <a href="{{ n.url }}" target="_blank"><strong>{{ n.title }}</strong></a>.
+                {{ n.description }}.
+                doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>
+            </li>
+            {% endfor %}
+            {% endif %}
+        </ol>
+    </article>
+
 </div>

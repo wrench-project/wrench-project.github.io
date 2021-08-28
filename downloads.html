@@ -1,149 +1,122 @@
 ---
 layout: default
+title: Install
+permalink: /install
 ---
 
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="page-section">
-                    <h1 class="page-title ">Downloads</h1>
-                    <div class="page-breadcrumb">
-                        WRENCH is open-source software distributed under the <strong style="color: #999">LGPLv3
-                        license</strong>.
-                    </div>
-                </div>
+<div id="main">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Downloads</h2>
+                <p>WRENCH is open-source software distributed under the <strong style="color: #999">LGPLv3
+                    license</strong>.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                <div class="page-section">
-                    <p>
-                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS -->
-                    </p>
-                </div>
+        </header>
+        <h3>Downloading the latest stable version</h3>
+
+        {% assign releases = site.data.releases %}
+        {% for release in releases limit: 1 %}
+        <div class="release-box">
+            <strong style="font-size: 1.3em">WRENCH-{{release.version}}</strong>
+            <span style="color: #aaa">({{release.date}})</span><br/><br/>
+            <a href="https://github.com/wrench-project/wrench/releases/tag/v{{release.version}}" style="padding: 0.3em 2em">
+                <i class="fa fa-download"></i>&nbsp;&nbsp;
+                Download
+            </a>
+            <br/>
+            <div style="margin-top: 1em">
+                <a href="/wrench/{{release.version}}/install.html" class="release-btn">
+                    <i class="fa fa-cog"></i> Installation</a>&nbsp;&nbsp;
+                <a href="/wrench/{{release.version}}/index.html" class="release-btn">
+                    <i class="fa fa-book"></i> Documentation</a>&nbsp;&nbsp;
+                <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank"
+                   class="release-btn"><i class="fab fa-docker"></i> Docker Containers</a>&nbsp;&nbsp;
+                <a href="/wrench/{{release.version}}/wrench-101.html" class="release-btn">
+                    <i class="fa fa-graduation-cap"></i> WRENCH 101</a>&nbsp;&nbsp;
+                <a href="/wrench/{{release.version}}/wrench-102.html" class="release-btn">
+                    <i class="fa fa-graduation-cap"></i> WRENCH 102</a>
             </div>
+            <hr/>
+            This release includes a series of new features and bug fixes, including:
+            <ul style="margin-left: 1em; margin-bottom: 0">
+                {% for desc in release.description %}
+                <li>{{desc}}</li>
+                {% endfor %}
+            </ul>
+            <br/>
+            <a href="https://simgrid.org" target="_blank" class="simgrid">
+                Requires SimGrid {{release.simgrid_version}}
+            </a>
         </div>
-    </div>
-</div>
+        {% endfor %}
 
-<div class="space-small">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-title">
-                        <h1>Downloading the latest stable version</h1>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="plan-block">
-                        <div class="plan-header">
-                            <h3>WRENCH 1.9 <span style="color: #999; font-size: 0.7em">(August 24, 2021)</span></h3>
-                            <p class="plan-price">
-                                <a href="https://github.com/wrench-project/wrench/releases/tag/v1.9"
-                                   class="btn btn-success">
-                                    <i class="fa fa-download"></i> Download
-                                </a>
-                            </p>
-                        </div>
-                        <div class="plan-content">
-                            <p>This release includes a series of new features and bug fixes, including:
-                            <ul class="angle angle-right">
-                                <li>Performance improvement</li>
-                                <li>Updates to HTCondor component and API</li>
-                                <li>Enhancement</li>
-                            </ul>
-                            <p style="color: #888; font-weight: bold">
-                                **Requires <a href="https://simgrid.org" target="_blank">SimGrid 3.27</a>
-                            </p>
-                            <br/>
-                            <a href="/wrench/1.9/install.html" class="btn btn-default btn-xs">
-                                <i class="fa fa-cog"></i> Installation</a>
-                            <a href="/wrench/1.9/index.html" class="btn btn-default btn-xs">
-                                <i class="fa fa-book"></i> Documentation</a>
-                            <a href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank"
-                               class="btn btn-default btn-xs"><i class="fab fa-docker"></i> Docker Containers</a>
-                            <br/>
-                            <a href="/wrench/1.9/wrench-101.html" class="btn btn-linkedin btn-xs">
-                                <i class="fa fa-graduation-cap"></i> WRENCH 101</a>
-                            <a href="/wrench/1.9/wrench-102.html" class="btn btn-linkedin btn-xs">
-                                <i class="fa fa-graduation-cap"></i> WRENCH 102</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3" style="padding-top: 0em">
-                <div class="plan-block" style="padding: 1.5em">
-                    <div class="plan-header">
-                        <h3><a href="https://github.com/wrench-project/wrench" target="_blank">
-                            <i class="fab fa-github"></i> Dev's Corner</a></h3>
-                    </div>
-                    <div class="plan-content" style="line-height: 1.3em; color: #999">
-                        WRENCH's source code is available on
-                        <a href="https://github.com/wrench-project/wrench" target="_blank">GitHub</a>.
-                        Our preferred channel to report a bug or request a feature is via WRENCH's Github
-                        <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues Track</a>.
-                        <br/><br/>
-                        You can also reach the WRENCH team via our support email:
-                        <a href="mailto:support@wrench-project.org?subject=WRENCH Support Contact: Your Topic">support@wrench-project.org</a>.
-
-                        <div style="text-align: center; margin-top: 2em">
-                            <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
-                               target="_blank">
-                                <img src="https://img.shields.io/badge/slack-%40wrench--project-yellow?logo=slack"/></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p style="text-align: center">
-                        <a href="./previousreleases.html" class="btn btn-default btn-xs">
-                            <i class="fa fa-bullhorn"></i> Previous Releases
-                        </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-3" style="padding-top: 2em">
-                <div class="plan-block" style="padding: 1.5em">
-                    <div class="plan-header">
-                        <h3><a href="https://workflowhub.org" target="_blank">
-                            <img src="https://workflowhub.org/assets/images/logo-horizontal.png"
-                                 style="width: 80%"/></a></h3>
-                    </div>
-                    <div class="plan-content" style="line-height: 1.3em; color: #999">
-                        The WorkflowHub project provides a set of workflow traces and tools for generating synthetic,
-                        yet realistic, <strong>workflow traces</strong> which can be seamlessly used with simulators
-                        developed with WRENCH.
-                    </div>
-                </div>
-            </div>
+        <div style="margin-bottom: 2em; text-align: center">
+            <a href="/previousreleases" class="release-btn"
+               style="border-radius: 0.5em; padding: 0.4em 2em !important;">
+                <i class="fa fa-bullhorn"></i> Previous Releases
+            </a>
         </div>
-    </div>
-</div>
+    </article>
 
-<div class="space-medium bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="section-title">
-                    <h1>Retrieving the latest unstable version</h1>
-                    <p>If you want to use the latest unstable version, that will contain brand new features and can
-                        achieve up-to-date performances (but also contain bugs as the stabilization work is still
-                        underway), you may consider retrieving the latest unstable version.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="feature-block">
-                    <a href="https://github.com/wrench-project/wrench" target="_blank" class=" feature-icon">
-                        <i class="fab fa-github"></i>
+    <article class="post">
+        <header>
+            <div class="title">
+                <h3>Dev's Corner</h3>
+                <p>
+                    <a href="https://github.com/wrench-project/wrench" target="_blank">
+                        https://github.com/wrench-project/wrench
                     </a>
-                    <div class="feature-content">
-                        <p style="margin-bottom: 1em">Cloning from WRENCH's GitHub repository:</p>
-                        <pre>git clone https://github.com/wrench-project/wrench.git</pre>
-                    </div>
+                </p>
+            </div>
+            <div class="meta">
+                <div style="text-align: center">
+                    Join us on slack:
+                    <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
+                       target="_blank" style="border-bottom: 0">
+                        <img src="https://img.shields.io/badge/slack-%40wrench--project-yellow?logo=slack"
+                             alt="WRENCH Slack" style="min-height: 1.3em"/>
+                    </a>
                 </div>
             </div>
+        </header>
+        WRENCH's source code is available on
+        <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fab fa-github"></i> GitHub</a>.
+        Our preferred channel to report a bug or request a feature is via WRENCH's Github
+        <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues Track</a>.
+        <br/><br/>
+        You can also reach the WRENCH team via our support email at <i class="fa fa-envelope"></i>
+        <a href="mailto:support@wrench-project.org?subject=WRENCH Support Contact: Your Topic">support@wrench-project.org</a>.
+
+        <hr/>
+
+        <h3><a href="https://wfcommons.org" target="_blank">
+            <img src="https://wfcommons.org/images/wfcommons-horizontal.png"
+                 style="max-height: 2em" alt="WfCommons"/></a></h3>
+        <p style="line-height: 1.3em; color: #999">
+            The WfCommons project provides a set of workflow traces and tools for generating synthetic, yet realistic,
+            <strong>workflow instances</strong> which can be seamlessly used with simulators developed with WRENCH.
+        </p>
+    </article>
+
+    <article class="post">
+        <header>
+            <div class="title">
+                <h3>Retrieving the latest unstable version</h3>
+            </div>
+        </header>
+        <p>
+            If you want to use the latest unstable version, that will contain brand-new features and can
+            achieve up-to-date performances (but may also contain bugs as the stabilization work is still
+            underway), you may consider retrieving the latest unstable version.
+        </p>
+        <a href="https://github.com/wrench-project/wrench" target="_blank" class="featured-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <div>
+            <p style="margin-bottom: 1em">Cloning from WRENCH's GitHub repository:</p>
+            <pre>git clone https://github.com/wrench-project/wrench.git</pre>
         </div>
-    </div>
+    </article>
+
 </div>

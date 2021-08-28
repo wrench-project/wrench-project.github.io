@@ -1,3 +1,11 @@
+- name: "Jason Feuerstein"
+  role: "Developer"
+  description: "Computer Science undergraduate student at University of Southern California"
+  email: "jwfeuers@usc.edu"
+  linkedin: "https://www.linkedin.com/in/jasonfeuerstein"
+  website: ""
+  photo: "feuerstein.png"
+
 - name: "Gautam Jethwani"
   role: "Developer"
   description: "Computer Science undergraduate student at University of Southern California"

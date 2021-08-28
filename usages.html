@@ -1,78 +1,144 @@
 ---
 layout: default
+title: They Use WRENCH
+permalink: /usages
 ---
 
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="page-section">
-                    <h1 class="page-title ">They Use WRENCH</h1>
-                    <div class="page-breadcrumb">
-                        Publications, Simulators, and Research enabled by WRENCH.<br/>
-                        <i>A list of publications citing WRENCH is available <a href="/wrench-citations"
-                                                                                style="color: #bd7014">here</a></i>.
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                <div class="page-section">
-                    <p>
-                        <!-- ADD GENERAL TEXT ABOUT DOWNLOADS -->
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+        integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<div class="space-small">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2>Simulators</h2>
+<div id="main">
+
+    {% assign total_citations = site.data.citations | where: "usage", true | size %}
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>They Use WRENCH</h2>
+                Publications, Simulators, and Research enabled by WRENCH
             </div>
-        </div>
+        </header>
+        <h2>WRENCH Citations</h2>
+        WRENCH has supported the research in at least <strong>{{total_citations}} research articles</strong>.
+        These articles include research outcomes produced by our own team as well as other researchers from
+        the distributed computing community.
+        <br/><br/>
+        <canvas id="citationsChart" style="max-height: 20em; max-width: 100%"></canvas>
+        <br/>
+        <ol reversed>
+            {% assign citations = site.data.citations | sort: "year" | reverse %}
+            {% for n in citations %}
+            <li>
+                {% if n.usage %}<span class="usage">WRENCH-Simulator</span>&nbsp;{% endif %}
+                {% unless n.self %}<span class="external">External</span>&nbsp;{% endunless %}
+                <a href="{{n.url}}" target="_blank">{{n.title}}</a>,
+                <span style="color: #999">{{n.authors}}, {{n.year}}.</span>
+            </li>
+            {% endfor %}
+        </ol>
+
+    </article>
+
+
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Simulators</h2>
+                <p style="margin-bottom: 1em">If you would like to publish your WRENCH-enabled simulator
+                    in this page, reach out to the team by sending an email to:</p>
+                <pre><i class="far fa-envelope"></i> support@wrench-project.org</pre>
+            </div>
+        </header>
         <div class="row">
             {% if site.data.usage.size > 0 %}
             {% for n in site.data.usage %}
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="plan-block" style="padding: 1.5em">
-                    <div class="plan-header">
-                        <h3>{{ n.name }}</h3>
-                    </div>
-                    <div class="plan-content">
-                        <p>{{ n.description }}</p>
-                        <p>
-                            <a href="{{ n.url }}" target="_blank"
-                               class="btn btn-default btn-xs">
-                                <i class="fab fa-github"></i> GitHub Repository
-                            </a>
-                        </p>
-                    </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="simulators">
+                    <strong>{{ n.name }}</strong><br/>
+                    <span>{{ n.description }}</span><br/>
+                    <a href="{{ n.url }}" target="_blank" class="github-button">
+                        <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub Repository
+                    </a>
+                    {% if n.external %}&nbsp;&nbsp;<span class="external">External</span>{% endif %}
                 </div>
             </div>
             {% endfor %}
             {% endif %}
         </div>
-    </div>
+    </article>
+
 </div>
 
-<div class="space-medium bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="feature-block">
-                    <a href="https://github.com/wrench-project/wrench" target="_blank" class=" feature-icon">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    <div class="feature-content">
-                        <p style="margin-bottom: 1em">If you would like to publish your WRENCH-enabled simulator
-                            in this page, reach out to the team by sending an email to:</p>
-                        <pre>support@wrench-project.org</pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<script type="text/javascript">
+    let entries = [
+        {% assign citations = site.data.citations | sort: "year" %}
+    {% assign citation_count = citations | size %}
+    {% for n in citations %}
+    {
+        year: "{{n.year}}",
+            type: "{{n.type}}",
+        title: "{{n.title}}",
+        self: "{{n.self}}",
+        usage: "{{n.usage}}"
+    },
+    {% endfor %}
+    ]
+    let data = {
+        labels: [],
+        datasets: [],
+    }
+    let datasetTypes = ["Journal", "Conference", "Workshop", "PhD Thesis", "Master Thesis", "Report", "Presentation"];
+    let datasetColors = ["#A7226E", "#EC2049", "#F7DB4F", "#F26B38", "#2F9599", "#547980", "#FF8C94"];
+    for (let i = 0; i < datasetTypes.length; i++) {
+        data.datasets.push({
+            label: datasetTypes[i],
+            backgroundColor: datasetColors[i],
+            data: []
+        });
+    }
+    for (let i = 0; i < entries.length; i++) {
+        if (!data.labels.includes(entries[i].year)) {
+            data.labels.push(entries[i].year);
+            for (let j = 0; j < datasetTypes.length; j++) {
+                data.datasets[j].data.push(0);
+            }
+        }
+        let index = datasetTypes.indexOf(entries[i].type);
+        data.datasets[index].data[data.labels.indexOf(entries[i].year)]++;
+    }
+    console.log(data);
+    let ctx = document.getElementById("citationsChart");
+    new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: {
+            scales: {
+                y: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Citations'
+                    }
+                },
+                x: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Years'
+                    }
+                }
+            },
+            chartArea: {
+                backgroundColor: "#FEF8F8"
+            },
+            tooltips: {
+                position: 'nearest',
+                mode: 'point',
+                intersect: 'false'
+            }
+        }
+    });
+</script>

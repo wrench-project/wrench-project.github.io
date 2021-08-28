@@ -1,29 +1,24 @@
 # Site settings
 title: WRENCH
-subtitle: Workflow Management System Simulation Workbench
-email:
-description: WRENCH - Workflow Management System Simulation Workbench
-baseurl: ""
-url: "" # the base hostname & protocol for your site
-author:
-street_address:
-city:
-state:
-zip_code:
-country:
-phone:
+subtitle: Cyberinfrastructure Simulation Workbench
 
-# Social settings
-#500px_url:
-#facebook_url:
-#github_url:
-#gitlab_url: https://gitlab.com/u/andrewbanchich
-#googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-#instagram_url: https://instagram.com
-#linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-#pinterest_url:
-#slack_url:
-#twitter_url: https://twitter.com/andrewbanchich
-
-# Build settings
 markdown: kramdown
+enable-mathjax: yes
+
+permalink: /blog/:title/
+
+# Pagination
+paginate: 8
+paginate_path: /blog/page:num/
+
+plugins:
+  - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
+  - jekyll-feed       # Adds feed to the website at /feed.xml
+  - jekyll-paginate   # Used for sorting posts by page numbers.
+  - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
+
+exclude:
+  - .jekyll-cache
+  - .idea
+  - README.md
+  - LICENSE

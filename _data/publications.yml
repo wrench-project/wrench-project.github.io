@@ -5,67 +5,67 @@
   url: https://rafaelsilva.com/files/publications/casanova2021jpdc.pdf
 
 - title: "GLUME: A Strategy for Reducing Workflow Execution Times on Batch-Scheduled Platforms"
-  authors: "E. Hataishi, P.-F. Dutot, R. Ferreira da Silva, H. Casanova"
-  description: "Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP), 2021"
-  doi: ""
-  url: "https://henricasanova.github.io/files/papers/hataishi_jsspp2021.pdf"
+  authors: E. Hataishi, P.-F. Dutot, R. Ferreira da Silva, H. Casanova
+  description: Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP), 2021
+  doi: 
+  url: https://henricasanova.github.io/files/papers/hataishi_jsspp2021.pdf
 
-- title: "Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows"
-  authors: "T. Coleman, H. Casanova, T. Gwartney, R. Ferreira da Silva"
-  description: "International Conference on Computational Science (ICCS), 2021"
+- title: Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows
+  authors: T. Coleman, H. Casanova, T. Gwartney, R. Ferreira da Silva
+  description: International Conference on Computational Science (ICCS), 2021
   doi: 10.1007/978-3-030-77961-0_16
-  url: "https://rafaelsilva.com/files/publications/coleman2021iccs.pdf"
+  url: https://rafaelsilva.com/files/publications/coleman2021iccs.pdf
 
-- title: "Peachy Parallel Assignments (EduHPC 2020)"
-  authors: "H. Casanova, R. Ferreira da Silva, A. Gonzalez-Escribano, W. Koch, Y. Torres, and D. P. Bunde"
-  description: "2020 IEEE/ACM Workshop on Education for High-Performance Computing (EduHPC)"
-  doi: "10.1109/EduHPC51895.2020.00012"
-  url: "https://rafaelsilva.com/files/publications/casanova2020eduhpc.pdf"
+- title: Peachy Parallel Assignments (EduHPC 2020)
+  authors: H. Casanova, R. Ferreira da Silva, A. Gonzalez-Escribano, W. Koch, Y. Torres, and D. P. Bunde
+  description: 2020 IEEE/ACM Workshop on Education for High-Performance Computing (EduHPC)
+  doi: 10.1109/EduHPC51895.2020.00012
+  url: https://rafaelsilva.com/files/publications/casanova2020eduhpc.pdf
 
 - title: "WorkflowHub: Community Framework for Enabling Scientific Workflow Research and Development"
-  authors: "R. Ferreira da Silva, L. Pottier, T. Coleman, E. Deelman, and H. Casanova"
-  description: "15th Workshop on Workflows in Support of Large-Scale Science (WORKS’20), 2020"
-  doi: "10.1109/WORKS51914.2020.00012"
-  url: "https://rafaelsilva.com/files/publications/ferreiradasilva2020works.pdf"
+  authors: R. Ferreira da Silva, L. Pottier, T. Coleman, E. Deelman, and H. Casanova
+  description: 15th Workshop on Workflows in Support of Large-Scale Science (WORKS’20), 2020
+  doi: 10.1109/WORKS51914.2020.00012
+  url: https://rafaelsilva.com/files/publications/ferreiradasilva2020works.pdf
 
-- title: "Modeling the Performance of Scientific Workflow Executions on HPC Platforms with Burst Buffers"
-  authors: "L. Pottier, R. Ferreira da Silva, H. Casanova, and E. Deelman"
-  description: "IEEE Cluster, 2020"
-  doi: "10.1109/CLUSTER49012.2020.00019"
-  url: "https://rafaelsilva.com/files/publications/pottier2020cluster.pdf"
+- title: Modeling the Performance of Scientific Workflow Executions on HPC Platforms with Burst Buffers
+  authors: L. Pottier, R. Ferreira da Silva, H. Casanova, and E. Deelman
+  description: IEEE Cluster, 2020
+  doi: 10.1109/CLUSTER49012.2020.00019
+  url: https://rafaelsilva.com/files/publications/pottier2020cluster.pdf
 
-- title: "Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH"
-  authors: "H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter"
-  description: "Future Generation Computer Systems, 2020, vol. 112, p. 162-175"
-  doi: "10.1016/j.future.2020.05.030"
-  url: "https://rafaelsilva.com/files/publications/casanova2020fgcs.pdf"
+- title: Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH
+  authors: H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter
+  description: Future Generation Computer Systems, 2020, vol. 112, p. 162-175
+  doi: 10.1016/j.future.2020.05.030
+  url: https://rafaelsilva.com/files/publications/casanova2020fgcs.pdf
 
-- title: "Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of I/O-intensive Scientific Workflows"
-  authors: "R. Ferreira da Silva, H. Casanova, A. Orgerie, R. Tanaka, E. Deelman, and F. Suter"
-  description: "Journal of Computational Science, 2020"
-  doi: "10.1016/j.jocs.2020.101157"
-  url: "https://rafaelsilva.com/files/publications/ferreiradasilva2020jocs.pdf"
+- title: Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of I/O-intensive Scientific Workflows
+  authors: R. Ferreira da Silva, H. Casanova, A. Orgerie, R. Tanaka, E. Deelman, and F. Suter
+  description: Journal of Computational Science, 2020
+  doi: 10.1016/j.jocs.2020.101157
+  url: https://rafaelsilva.com/files/publications/ferreiradasilva2020jocs.pdf
 
-- title: "Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH"
-  authors: "R. Tanaka, R. Ferreira da Silva, and H. Casanova"
-  description: "Workshop on Education for High-Performance Computing (EduHPC), 2019"
-  doi: "10.1109/EduHPC49559.2019.00006"
-  url: "https://rafaelsilva.com/files/publications/tanaka2019eduhpc.pdf"
+- title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
+  authors: R. Tanaka, R. Ferreira da Silva, and H. Casanova
+  description: Workshop on Education for High-Performance Computing (EduHPC), 2019
+  doi: 10.1109/EduHPC49559.2019.00006
+  url: https://rafaelsilva.com/files/publications/tanaka2019eduhpc.pdf
 
-- title: "Bridging Concepts and Practice in eScience via Simulation-driven Engineering"
-  authors: "R. Ferreira da Silva, H. Casanova, R. Tanaka, and F. Suter"
-  description: "Workshop on Bridging from Concepts to Data and Computation for eScience (BC2DC’19), 15th International Conference on eScience (eScience), 2019, p. 609-614"
-  doi: "10.1109/eScience.2019.00084"
-  url: "https://rafaelsilva.com/files/publications/ferreiradasilva2019escience.pdf"
+- title: Bridging Concepts and Practice in eScience via Simulation-driven Engineering
+  authors: R. Ferreira da Silva, H. Casanova, R. Tanaka, and F. Suter
+  description: Workshop on Bridging from Concepts to Data and Computation for eScience (BC2DC’19), 15th International Conference on eScience (eScience), 2019, p. 609-614
+  doi: 10.1109/eScience.2019.00084
+  url: https://rafaelsilva.com/files/publications/ferreiradasilva2019escience.pdf
 
-- title: "Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows"
-  authors: "Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F."
-  description: "2019 International Conference on Computational Science (ICCS), 2019, p. 138-152"
-  doi: "10.1007/978-3-030-22734-0_11"
-  url: "https://rafaelsilva.com/files/publications/ferreiradasilva-iccs-2019.pdf"
+- title: Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows
+  authors: Ferreira da Silva, R., Orgerie, A-C., Casanova, H., Tanaka, R., Deelman, E., and Suter, F.
+  description: 2019 International Conference on Computational Science (ICCS), 2019, p. 138-152
+  doi: 10.1007/978-3-030-22734-0_11
+  url: https://rafaelsilva.com/files/publications/ferreiradasilva-iccs-2019.pdf
 
 - title: "WRENCH: A Framework for Simulating Workflow Management Systems"
-  authors: "Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R."
-  description: "13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018, p. 74–85"
-  doi: "10.1109/WORKS.2018.00013"
-  url: "https://rafaelsilva.com/files/publications/casanova-works-2018.pdf"
+  authors: Casanova, H., Pandey, S. , Oeth, J., Tanaka, R., Suter, F., and Ferreira da Silva, R.
+  description: 13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018, p. 74–85
+  doi: 10.1109/WORKS.2018.00013
+  url: https://rafaelsilva.com/files/publications/casanova-works-2018.pdf

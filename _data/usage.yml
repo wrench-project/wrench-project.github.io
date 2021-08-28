@@ -1,15 +1,19 @@
-- name: 'Pegasus Workflow Management System'
-  description: 'WRENCH-based simulator of the <a href="https://pegasus.isi.edu" target="_blank">Pegasus WMS</a>. It implements HTCondor and DAGMan workflow engine services as simulated core CI services.'
-  url: 'https://github.com/wrench-project/pegasus'
+- name: Pegasus Workflow Management System
+  description: WRENCH-based simulator of the <a href="https://pegasus.isi.edu" target="_blank">Pegasus WMS</a>. It implements HTCondor and DAGMan workflow engine services as simulated core CI services.
+  url: https://github.com/wrench-project/pegasus
+  external: False
 
-- name: 'WorkQueue Application Execution Framework'
-  description: 'WRENCH-based simulator of <a href="https://ccl.cse.nd.edu/software/workqueue/" target="_blank">WorkQueue</a>. It implements HTCondor and Pilot Job services as simulated core CI services.'
-  url: 'https://github.com/wrench-project/workqueue'
+- name: WorkQueue Application Execution Framework
+  description: WRENCH-based simulator of <a href="https://ccl.cse.nd.edu/software/workqueue/" target="_blank">WorkQueue</a>. It implements HTCondor and Pilot Job services as simulated core CI services.
+  url: https://github.com/wrench-project/workqueue
+  external: False
 
-- name: 'Burst Buffers'
-  description: 'WRENCH-enabled simulator for running scientific workflows on burst buffers architecture.'
-  url: 'https://github.com/lpottier/workflow-io-bb'
+- name: Burst Buffers
+  description: WRENCH-enabled simulator for running scientific workflows on burst buffers architecture.
+  url: https://github.com/lpottier/workflow-io-bb
+  external: True
 
-- name: 'I/O-aware Energy-efficiency Scheduling'
-  description: 'WRENCh-enabled simulator for evaluating energy consumption of I/O intensive workflows.'
+- name: I/O-aware Energy-efficiency Scheduling
+  description: WRENCh-enabled simulator for evaluating energy consumption of I/O intensive workflows.
   url: https://github.com/wrench-project/energy-aware-simulator
+  external: False

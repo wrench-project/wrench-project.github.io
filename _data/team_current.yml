@@ -1,47 +1,46 @@
-- name: "Henri Casanova"
-  role: "Principal Investigator (NSF)"
-  description: "Professor in the Information and Computer Science Department at University of Hawai'i at Manoa"
-  email: "henric@hawaii.edu"
-  linkedin: "https://www.linkedin.com/in/henricasanova/"
-  website: "http://henricasanova.github.io/"
-  photo: "casanova.jpg"
+- name: Henri Casanova
+  role: Principal Investigator (NSF)
+  description: Professor of Computer Science at the University of Hawai'i at Manoa
+  email: henric@hawaii.edu
+  linkedin: https://www.linkedin.com/in/henricasanova/
+  website: http://henricasanova.github.io/
+  photo: casanova.jpg
 
-- name: "Rafael Ferreira da Silva"
-  role: "Principal Investigator (NSF/CNRS)"
-  description: "Research Assistant Professor in the Computer Science Department at University of Southern California"
-  email: "rafsilva@isi.edu"
-  linkedin: "https://www.linkedin.com/in/rafaelfsilva"
-  website: "http://www.rafaelsilva.com/"
-  photo: "ferreiradasilva.jpg"
+- name: Rafael Ferreira da Silva
+  role: Principal Investigator (NSF/CNRS)
+  description: Senior Research Scientist at the Oak Ridge National Laboratory
+  email: rafsilva@isi.edu
+  linkedin: https://www.linkedin.com/in/rafaelfsilva
+  website: http://www.rafaelsilva.com/
+  photo: ferreiradasilva.jpg
 
-- name: "Frédéric Suter"
-  role: "Principal Investigator (CNRS)"
-  description: "Senior Research Scientist (CNRS) at the IN2P3 Computing Center, and member of the SimGrid team"
-  email: "frederic.suter@cc.in2p3.fr"
-  linkedin: "https://www.linkedin.com/in/frederic-suter-1656455/"
-  website: "http://graal.ens-lyon.fr/~fsuter/"
-  photo: "suter.jpg"
+- name: Frédéric Suter
+  role: Principal Investigator (CNRS)
+  description: Senior Research Scientist (CNRS) at the IN2P3 Computing Center, and member of the SimGrid team
+  email: frederic.suter@cc.in2p3.fr
+  linkedin: https://www.linkedin.com/in/frederic-suter-1656455/
+  website: http://graal.ens-lyon.fr/~fsuter/
+  photo: suter.jpg
 
-- name: "Derrick Luyen"
-  role: "Graduate Research Assistant"
-  description: "Computer Science Masters student at University of Hawaii at Manoa"
-  email: "dluyen@hawaii.edu"
-  linkedin: "https://www.linkedin.com/in/derrick-luyen-85b14b178"
-  website: ""
-  photo: "derrickluyen.jpg"
+- name: Derrick Luyen
+  role: Graduate Research Assistant
+  description: Computer Science Masters student at the University of Hawaii at Manoa
+  email: dluyen@hawaii.edu
+  linkedin: https://www.linkedin.com/in/derrick-luyen-85b14b178
+  website: 
+  photo: derrickluyen.jpg
 
-- name: "Tainã Coleman"
-  role: "Graduate Research Assistant"
-  description: "Computer Science PhD student at University of Southern California"
-  email: "tgcolema@usc.edu"
-  linkedin: "https://www.linkedin.com/in/tainacoleman/"
-  website: "http://tainacoleman.com/"
-  photo: "coleman.jpg"
+- name: Tainã Coleman
+  role: Graduate Research Assistant
+  description: Computer Science PhD student at the University of Southern California
+  email: tgcolema@usc.edu
+  linkedin: https://www.linkedin.com/in/tainacoleman/
+  website: http://tainacoleman.com/
+  photo: coleman.jpg
 
-- name: "Jason Feuerstein"
-  role: "Developer"
-  description: "Computer Science undergraduate student at University of Southern California"
-  email: "jwfeuers@usc.edu"
-  linkedin: "https://www.linkedin.com/in/jasonfeuerstein"
-  website: ""
-  photo: "feuerstein.png"
+- name: Loïc Pottier
+  description: Computer Scientist at the University of Southern California
+  email: lpottier@isi.edu
+  linkedin: https://www.linkedin.com/in/loic-pottier
+  website: http://loicpottier.com/
+  photo: pottier.jpg

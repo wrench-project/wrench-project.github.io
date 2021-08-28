@@ -1,0 +1,255 @@
+- year: 2021
+  type: Master Thesis
+  title: An Approach for Automating the Calibration of Simulations of Parallel and Distributed Computing Systems
+  authors: W. Koch
+  url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/75923/1/Koch_hawii_0085O_10933.pdf
+  self: True
+  usage: True
+
+- year: 2021
+  type: Master Thesis
+  title: Modeling the Linux Page Cache for Accurate Simulation of Data-Intensive Applications
+  authors: H-D. Do
+  url: https://spectrum.library.concordia.ca/988339/1/Do_MSC_S2021.pdf
+  self: False
+  usage: True
+
+- year: 2021
+  type: PhD Thesis
+  title: Modeling, Simulation, and Optimization of Variation-Aware Runtime-Reconfigurable Optical Interconnects
+  authors: Y. Wang
+  url: https://optoelectronics.ece.ucsb.edu/sites/default/files/2021-08/Dissertation_Yuyang_compressed-compressed.pdf
+  self: False
+  usage: True
+
+- year: 2021
+  type: Conference
+  title: "OpenDC 2.0: Convenient Modeling and Simulation of Emerging Technologies in Cloud Datacenters"
+  authors: F. Mastenbroek, G. Andreadis, S. Jounaid, W. Lai, J. Burley, J. Bosch, E.V. Eyk, L. Versluis, V.V. Beek, A. Iosup
+  url: http://dx.doi.org/10.1109/CCGrid51090.2021.00055
+  self: False
+  usage: False
+
+- year: 2021
+  type: Conference
+  title: Modeling the Linux page cache for accurate simulation of data-intensive applications
+  authors: H-D. Do, V. Hayot-Sasson, R. Ferreira da Silva, C. Steele, H. Casanova, T. Glatard
+  url: https://arxiv.org/abs/2101.01335
+  self: True
+  usage: True
+
+- year: 2021
+  type: Conference
+  title: "WfChef: Automated Generation of Accurate Scientific Workflow Generators"
+  authors: T. Coleman, H. Casanova, R. Ferreira da Silva
+  url: https://arxiv.org/abs/2105.00129
+  self: True
+  usage: True
+
+- year: 2021
+  type: Journal
+  title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
+  authors: H. Casanova, R. Tanaka, Koch, William, R. Ferreira da Silva
+  url: http://dx.doi.org/10.1016/j.jpdc.2021.05.009
+  self: True
+  usage: True
+
+- year: 2021
+  type: Workshop
+  title: "GLUME: A Strategy for Reducing Workflow Execution Times on Batch-Scheduled Platforms"
+  authors: E. Hataishi, P-F. Dutot, R. Ferreira da Silva, H. Casanova
+  url:
+  self: True
+  usage: True
+
+- year: 2021
+  type: Conference
+  title: Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows
+  authors: T. Coleman, H. Casanova, T. Gwartney, R. Ferreira da Silva
+  url: http://dx.doi.org/10.1007/978-3-030-77961-0_16
+  self: True
+  usage: True
+
+- year: 2021
+  type: PhD Thesis
+  title: Scalable end-to-end models for the time and energy performance of Fog infrastructures
+  authors: L. Guegan
+  urll: https://tel.archives-ouvertes.fr/tel-03134046/document
+  self: False
+  usage: False
+
+- year: 2020
+  type: PhD Thesis
+  title: Towards a Realistic Cloud Simulation
+  authors: R. Mathá
+  url: https://diglib.uibk.ac.at/ulbtirolhs/content/titleinfo/5580981/full.pdf
+  self: False
+  usage: False
+
+- year: 2020
+  type: Workshop
+  title: Integrating Machine Learning with HPC-driven Simulations for Enhanced Student Learning
+  authors: V. Jadhao, J. Kadupitiya
+  url: https://doi.org/10.1109/EduHPC51895.2020.00009
+  self: False
+  usage: False
+
+- year: 2020
+  type: Workshop
+  title: Peachy Parallel Assignments (EduHPC 2020)
+  authors: H. Casanova, R. Ferreira da Silva, A. Gonzalez-Escribano, W. Koch, Y. Torres, D. P. Bunde
+  url: http://dx.doi.org/10.1109/EduHPC51895.2020.00012
+  self: True
+  usage: True
+
+- year: 2020
+  type: Workshop
+  title: "WorkflowHub: Community Framework for Enabling Scientific Workflow Research and Development"
+  authors: R. Ferreira da Silva, L. Pottier, T. Coleman, E. Deelman, H. Casanova
+  url: http://dx.doi.org/10.1109/WORKS51914.2020.00012
+  self: True
+  usage: True
+
+- year: 2020
+  type: PhD Thesis
+  title: Predictive Resource Management for Scientific Workflows
+  authors: C.P. Witt
+  url: https://edoc.hu-berlin.de/handle/18452/22342
+  self: False
+  usage: False
+
+- year: 2020
+  type: Conference
+  title: Modeling the Performance of Scientific Workflow Executions on HPC Platforms with Burst Buffers
+  authors: L. Pottier, R. Ferreira da Silva, H. Casanova, E. Deelman
+  url: http://dx.doi.org/10.1109/CLUSTER49012.2020.00019
+  self: True
+  usage: True
+
+- year: 2020
+  type: Master Thesis
+  title: Efficient Execution of Scientific Workflows on Batch-Scheduled Clusters
+  authors: E. Hataishi
+  url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/68967/1/Hataishi_hawii_0085O_10585.pdf
+  self: True
+  usage: True
+
+- year: 2020
+  type: Journal
+  title: A Workflow Scheduling Algorithm for Reducing Data Transfers in Cloud IaaS
+  authors: J. E. Gnimassoun, T. N'Takpe, G. H. F. Diedie, S. Oumtanaga
+  url: https://dx.doi.org/10.14569/IJACSA.2020.0110534
+  self: False
+  usage: True
+
+- year: 2020
+  type: Journal
+  title: Simplified Workflow Simulation on Clouds based on Computation and Communication Noisiness
+  authors: R. Matha, S. Ristov, T. Fahringer, R. Prodan
+  url: http://dx.doi.org/10.1109/TPDS.2020.2967662
+  self: False
+  usage: False
+
+- year: 2020
+  type: Journal
+  title: Logistics Free Process Information System Based on Activiti+MongoDB
+  authors: Liu C, Li SC, Lyu XF
+  url: http://www.c-s-a.org.cn/html/2020/1/7251.html
+  self: False
+  usage: False
+
+- year: 2020
+  type: Journal
+  title: Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of I/O-intensive Scientific Workflows
+  authors: R. Ferreira da Silva, H. Casanova, A-C. Orgerie, R. Tanaka, E. Deelman, F. Suter
+  url: http://dx.doi.org/10.1016/j.jocs.2020.101157
+  self: True
+  usage: True
+
+- year: 2019
+  type: Workshop
+  title: "A Top-Down Performance Analysis Methodology for Workflows: Tracking Performance Issues from Overview to Individual Operations"
+  authors: R. Tschueter, C. Herold, W. Williams, M. Knespel, M. Weber
+  url: https://doi.org/10.1109/WORKS49585.2019.00008
+  self: False
+  usage: False
+
+- year: 2019
+  type: PhD Thesis
+  title: Contribution to High Performance Computing and Big Data Infrastructure Convergence
+  authors: M. Mercier
+  url: https://hal.archives-ouvertes.fr/tel-02284996v2/document
+  self: False
+  usage: False
+
+- year: 2019
+  type: Workshop
+  title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
+  authors: R. Tanaka, R. Ferreira da Silva, H. Casanova
+  url: https://doi.org/10.1109/EduHPC49559.2019.00006
+  self: True
+  usage: True
+
+- year: 2019
+  type: Workshop
+  title: Bridging Concepts and Practice in eScience via Simulation-driven Engineering
+  authors: R. Ferreira da Silva, H. Casanova, R. Tanaka, F. Suter
+  url: http://dx.doi.org/10.1109/eScience.2019.00084
+  self: True
+  usage: False
+
+- year: 2019
+  type: Presentation
+  title: Data Management to Promote Near-Data Processing
+  authors: F. Z. Boito
+  url: https://indico.cern.ch/event/838378/contributions/3516539/attachments/1897264/3130547/francieli_meeting_cern_august2019.pdf
+  self: False
+  usage: False
+
+- year: 2019
+  type: Conference
+  title: Accurately Simulating Energy Consumption of I/O-intensive Scientific Workflows
+  authors: R. Ferreira da Silva, A-C. Orgerie, H. Casanova, R. Tanaka, E. Deelman, F. Suter
+  url: http://dx.doi.org/10.1007/978-3-030-22734-0_11
+  self: True
+  usage: True
+
+- year: 2019
+  type: Workshop
+  title: "Empowering Agroecosystem Modeling with HTC Scientific Workflows: The Cycles Model Use Case"
+  authors: R. Ferreira da Silva, R. Mayani, Y. Shi, A. R. Kemanian, M. Rynge, E. Deelman
+  url: http://dx.doi.org/10.1109/BigData47090.2019.9006107
+  self: True
+  usage: False
+
+- year: 2019
+  type: Journal
+  title: Using Simple PID-inspired Controllers for Online Resilient Resource Management of Distributed Scientific Workflows
+  authors: R. Ferreira da Silva, R. Filgueira, E. Deelman, E. Pairo-Castineira, I. M. Overton, M. Atkinson
+  url: http://dx.doi.org/10.1016/j.future.2019.01.015
+  self: True
+  usage: False
+
+- year: 2018
+  type: Report
+  title: Évaluation d’algorithmes d’ordonnancement par simulation réaliste
+  authors: A. Faure, M. Poquet, O. Richard
+  url: https://hal.inria.fr/hal-01779936/document
+  self: False
+  usage: False
+
+- year: 2018
+  type: Workshop
+  title: "SMPI Courseware: Teaching Distributed-Memory Computing with MPI in Simulation"
+  authors: H. Casanova, A. Legrand, M. Quinson, F. Suter
+  url: https://doi.org/10.1109/EduHPC.2018.00006
+  self: True
+  usage: False
+
+- year: 2018
+  type: Master Thesis
+  title: Scheduling Heuristics For Executing Scientific Workflows On Homogeneous Clusters With Globallyand Locally-Accessible Persistent Storage
+  authors: S. Pandey
+  url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/62291/2018-08-ms-pandey.pdf
+  self: True
+  usage: True

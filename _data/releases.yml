@@ -1,0 +1,93 @@
+- version: 1.9
+  date: August 24, 2021
+  simgrid_version: 3.27
+  description:
+    - Performance improvement
+    - Updates to HTCondor component and API
+    - Enhancement
+
+- version: 1.8
+  date: February 18, 2021
+  simgrid_version: 3.26
+  description:
+    - I/O simulation model that includes the key features of the Linux page cache
+    - Extended HTCondor component model to simulate executions of the HTCondor Grid Universe
+    - A number of improvements to the WRENCH Dashboard (including visualization of I/O reads and writes and customizations)
+    - A number of documentation improvements, bug fixes, and code enhancements
+
+- version: 1.7
+  date: September 17, 2020
+  simgrid_version: 3.25
+  description:
+    - "Redesign of the WRENCH Dashboard: includes a number of graphs for visualizing the Gantt chart of the workflow execution, host utilization, network bandwidth usage, and energy consumption."
+    - "Improvements to BareMetalComputeService: load is now equally distributed among hosts, and the service provides an API equivalent to the squeue Slurm command."
+    - "Improvements to CloudComputeService: added a function to get the ComputeService for a VM based on its name."
+    - "Improvements to VirtualizedClusterComputeService: added a function to get the physical host."
+    - Enabled support for capturing network link's usage during the simulation.
+    - "Improvements to Simulation JSON output: added disk read/write failures, and network link usage."
+    - Added an exception handling for ensuring a link bandwidth in the platform file is not set to zero.
+    - A number of bug fixes and small enhancements
+
+- version: 1.6
+  date: May 7, 2020
+  simgrid_version: 3.25
+  description:
+    - "Refactored the WRENCH documentation: WRENCH 101 for users and WRENCH 102 for developers"
+    - "New collection of examples provided with WRENCH distribution: Over 10 examples of simulators including cloud and batch computing, and a simulator for workflow processing"
+    - "Removed dependency to Lemon library: We now use Boost, which is already used by SimGrid"
+    - "Simulation logging in now disabled by default: In an attempt to reduce the verbosity of simulation outputs, detailed simulation output (i.e., services and components) have been disabled. Full logging can be enabled using the --wrench-full-log command line argument, or via fine-grained logging capabilities (see documentation)."
+    - "Refactored the BatchComputeService class: Includes a conservative backfilling algorithm for validation purposes"
+    - "Improvements to simulation output processing and JSON output: Now, WRENCH provides an option to generate simulation output into a single JSON file (includes: task, host, disk I/O, and energy information)"
+    - Series of improvements to the WRENCH Dashboard
+    - A number of bug fixes and small enhancements
+
+- version: 1.5
+  date: February 9, 2020
+  simgrid_version: 3.25
+  description:
+    - Simulation of failures
+    - WRENCH Dashboard
+    - Enabled Pilot Job Submission for HTCondor compute service
+    - Improved exception handling
+    - Added a BatchComputeServiceProperty to make it possible to ignore bogus job specifications in workload trace files
+    - Allow users to define SIMGRID_INSTALL_PATH for non-standard SimGrid installations
+    - Code performance improvements
+    - Bug Fixes
+
+- version: 1.4
+  date: April 22, 2019
+  simgrid_version: 3.21
+  description:
+    - Updated Batsched support (support to new JSON-based protocol)
+    - Dump pstate and energy consumption data as JSON
+    - Adding support for bytesRead, bytesWritten, and avgCPU for workflows defined as JSON
+    - Adding ComputeService::getTotalNumCores() and ComputeService::getTotalNumIdleCores()
+    - wrench::BatchService should handle requested vs. real job run times when replaying traces
+    - Bug Fixes
+
+- version: 1.3
+  date: January 3, 2019
+  simgrid_version: 3.21
+  description:
+    - Development of a wrench-init tool
+    - MultiHostMultiCoreComputeService re-implemented as BareMetalComputeService
+    - Documentation of the JSON schema for workflows
+    - Documentation Guide containing detailed descriptions of WRENCH core services
+
+- version: 1.2
+  date: November 6, 2018
+  simgrid_version: 3.21
+  description:
+    - New HTCondor compute service
+    - Improved standard job submission to specific VM (Cloud Service)
+    - Allow a WMS to start a new service dynamically
+    - New function for dumping the workflow execution data in a JSON format
+
+- version: 1.1
+  date: August 26, 2018
+  simgrid_version: 3.20
+  description:
+    - Energy consumption by hosts and support for power state management
+    - Virtual machine management support including shutdown, start, suspend, and resume operations
+    - Enriched set of simulation events in the simulation output
+    - Command-line options
