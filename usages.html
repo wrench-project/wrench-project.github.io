@@ -13,7 +13,8 @@ permalink: /usages
 
 <div id="main">
 
-    {% assign total_citations = site.data.citations | where: "usage", true | size %}
+    {% assign total_usage = site.data.citations | where: "usage", true | size %}
+    {% assign total_citations = site.data.citations | size %}
     <article class="post">
         <header>
             <div class="title">
@@ -22,7 +23,8 @@ permalink: /usages
             </div>
         </header>
         <h2>WRENCH Citations</h2>
-        WRENCH has supported the research in at least <strong>{{total_citations}} research articles</strong>.
+        WRENCH has enabled research in <strong>{{total_usage}} research articles</strong>, and
+        has been cited in <strong>{{total_citations}}</strong> research publications.
         These articles include research outcomes produced by our own team as well as other researchers from
         the distributed computing community.
         <br/><br/>
