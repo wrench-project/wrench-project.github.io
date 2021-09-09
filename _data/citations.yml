@@ -1,4 +1,12 @@
 - year: 2021
+  type: Conference
+  title: Traffic-Adaptive Power Reconfiguration for Energy-Efficient and Energy-Proportional Optical Interconnects
+  authors: Y. Wang, K. T. Cheng
+  url: http://cadlab.ece.ucsb.edu/sites/default/files/papers/ICCAD21_Yuyang_Camera-ready.pdf
+  self: False
+  usage: True
+
+- year: 2021
   type: Master Thesis
   title: An Approach for Automating the Calibration of Simulations of Parallel and Distributed Computing Systems
   authors: W. Koch
