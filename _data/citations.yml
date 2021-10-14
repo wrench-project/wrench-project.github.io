@@ -1,3 +1,11 @@
+- year: 2022
+  type: Journal
+  title: "WfCommons: A Framework for Enabling Scientific Workflow Research and Development"
+  authors: T. Coleman, H. Casanova, L. Pottier, M. Kaushik, E. Deelman, R. Ferreira da Silva
+  url: http://dx.doi.org/10.1016/j.future.2021.09.043
+  self: True
+  usage: True
+
 - year: 2021
   type: Conference
   title: Traffic-Adaptive Power Reconfiguration for Energy-Efficient and Energy-Proportional Optical Interconnects
