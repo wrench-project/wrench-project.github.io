@@ -5,6 +5,14 @@
   url: http://dx.doi.org/10.1016/j.future.2021.09.043
   self: True
   usage: True
+  
+- year: 2021
+  type: PhD Thesis
+  title: Developing Data-intensive Scientific Workflow Scheduling Model on Heterogeneous Cloud Computing Resources
+  authors: K. B. Gutema
+  url: http://213.55.101.23/bitstream/handle/123456789/1843/Kenesa%20Bedasa.pdf?sequence=1&isAllowed=y
+  self: False
+  usage: False
 
 - year: 2021
   type: Journal
