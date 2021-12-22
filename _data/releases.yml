@@ -1,10 +1,18 @@
+- version: "1.10"
+  date: October 16, 2021
+  simgrid_version: 3.29
+  description:
+    - Support for programmatic platform description
+    - Enable a job to check locations for a file in some order of preference
+    - Enhancements
+
 - version: 1.9
   date: August 24, 2021
   simgrid_version: 3.27
   description:
     - Performance improvement
     - Updates to HTCondor component and API
-    - Enhancement
+    - Enhancements
 
 - version: 1.8
   date: February 18, 2021

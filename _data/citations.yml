@@ -1,3 +1,27 @@
+- year: 2022
+  type: Journal
+  title: "WfCommons: A Framework for Enabling Scientific Workflow Research and Development"
+  authors: T. Coleman, H. Casanova, L. Pottier, M. Kaushik, E. Deelman, R. Ferreira da Silva
+  url: http://dx.doi.org/10.1016/j.future.2021.09.043
+  self: True
+  usage: True
+  
+- year: 2021
+  type: PhD Thesis
+  title: Developing Data-intensive Scientific Workflow Scheduling Model on Heterogeneous Cloud Computing Resources
+  authors: K. B. Gutema
+  url: http://213.55.101.23/bitstream/handle/123456789/1843/Kenesa%20Bedasa.pdf?sequence=1&isAllowed=y
+  self: False
+  usage: False
+
+- year: 2021
+  type: Journal
+  title: Data-aware and simulation-driven planning of scientific workflows on IaaS clouds
+  authors: T. N'Takpé, J. E. Gnimassoun, S. Oumtanaga, F. Suter
+  url: https://doi.org/10.1002/cpe.6719
+  self: False
+  usage: True
+
 - year: 2021
   type: Conference
   title: Traffic-Adaptive Power Reconfiguration for Energy-Efficient and Energy-Proportional Optical Interconnects
