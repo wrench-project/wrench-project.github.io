@@ -5,7 +5,15 @@
   url: http://dx.doi.org/10.1016/j.future.2021.09.043
   self: True
   usage: True
-  
+
+- year: 2021
+  type: Workshop
+  title: Emerging Frameworks for Advancing Scientific Workflows Research, Development, and Education
+  authors: H. Casanova, E. Deelman, S. Gesing, M. Hildreth, S. Hudson, W. Koch, J. Larson, M.A. McDowell, N. Meyers, J-L. Navarro, G. Papadimitriou, R. Tanaka, I. Taylor, D. Thain, S.M. Wild, R. Filgueira, R. Ferreira da Silva
+  url: http://dx.doi.org/10.1109/WORKS54523.2021.00015
+  self: True
+  usage: True
+
 - year: 2021
   type: PhD Thesis
   title: Developing Data-intensive Scientific Workflow Scheduling Model on Heterogeneous Cloud Computing Resources
