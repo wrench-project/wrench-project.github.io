@@ -1,3 +1,10 @@
+- version: "1.11"
+  date: February 24, 2021
+  simgrid_version: 3.30
+  description:
+    - Minor changes and bug fixes
+    - Last 1.x release
+
 - version: "1.10"
   date: October 16, 2021
   simgrid_version: 3.29
