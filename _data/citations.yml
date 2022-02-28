@@ -1,5 +1,13 @@
 - year: 2022
   type: Journal
+  title: "Mutation and Dynamic Objective-based Farmland Fertility Algorithm for Workflow Scheduling in the Cloud"
+  authors: H. Li, Y. Wang, J. Huang, Y. Fan
+  url: https://doi.org/10.1016/j.jpdc.2022.02.005
+  self: False
+  usage: False
+
+- year: 2022
+  type: Journal
   title: "WfCommons: A Framework for Enabling Scientific Workflow Research and Development"
   authors: T. Coleman, H. Casanova, L. Pottier, M. Kaushik, E. Deelman, R. Ferreira da Silva
   url: http://dx.doi.org/10.1016/j.future.2021.09.043
