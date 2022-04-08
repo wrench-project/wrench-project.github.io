@@ -1,5 +1,12 @@
+- version: "2.0"
+  date: April 8, 2022
+  simgrid_version: "3.31"
+  description:
+    - Major release
+    - "WRENCH version 2.0 includes a new generic 'action' API, minor changes to the current 'workflow' API, vastly improved documentation, as well as significantly decreased simulation time and memory footprint."
+
 - version: "1.11"
-  date: February 24, 2021
+  date: February 24, 2022
   simgrid_version: "3.30"
   description:
     - Minor changes and bug fixes
