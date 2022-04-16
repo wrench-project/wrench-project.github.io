@@ -1,3 +1,15 @@
+- title: On the Feasibility of Simulation-driven Portfolio Scheduling for Cyberinfrastructure Runtime Systems
+  authors: H. Casanova, Y. C. Wong, L. Pottier, R. Ferreira da Silva
+  description: Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP), 2022
+  doi: 
+  url: https://rafaelsilva.com/files/publications/casanova2022jsspp.pdf
+
+- title: Peachy Parallel Assignments (EduPar 2022)
+  authors: H. M. Bücker, H. Casanova, R. Ferreira da Silva, A. Lasserre, D. Luyen, R. Namyst, J. Schoder, P-A. Wacrenier, D. P. Bunde
+  description: 12th NSF/TCPP Workshop on Parallel and Distributed Computing Education (EduPar), 2022
+  doi:
+  url: https://rafaelsilva.com/files/publications/bucker2022edupar.pdf
+
 - title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
   authors: H. Casanova, R. Tanaka, W. Koch, R. Ferreira da Silva
   description: Journal of Parallel and Distributed Computing, 2021
