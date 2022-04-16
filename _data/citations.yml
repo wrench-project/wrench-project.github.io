@@ -1,4 +1,20 @@
 - year: 2022
+  type: Workshop
+  title: On the Feasibility of Simulation-driven Portfolio Scheduling for Cyberinfrastructure Runtime Systems
+  authors: H. Casanova, Y. C. Wong, L. Pottier, R. Ferreira da Silva
+  url: https://rafaelsilva.com/files/publications/casanova2022jsspp.pdf
+  self: True
+  usage: True
+  
+- year: 2022
+  type: Workshop
+  title: Peachy Parallel Assignments (EduPar 2022)
+  authors: H. M. Bücker, H. Casanova, R. Ferreira da Silva, A. Lasserre, D. Luyen, R. Namyst, J. Schoder, P-A. Wacrenier, D. P. Bunde
+  url: https://rafaelsilva.com/files/publications/bucker2022edupar.pdf
+  self: True
+  usage: True
+
+- year: 2022
   type: Journal
   title: "Mutation and Dynamic Objective-based Farmland Fertility Algorithm for Workflow Scheduling in the Cloud"
   authors: H. Li, Y. Wang, J. Huang, Y. Fan
