@@ -1,4 +1,12 @@
 - year: 2022
+  type: Journal
+  title: Analysis of workflow schedulers in simulated distributed environments
+  authors: J. Beránek, S. Böhm, V. Cima 
+  url: https://doi.org/10.1007/s11227-022-04438-y
+  self: False
+  usage: False
+
+- year: 2022
   type: Workshop
   title: On the Feasibility of Simulation-driven Portfolio Scheduling for Cyberinfrastructure Runtime Systems
   authors: H. Casanova, Y. C. Wong, L. Pottier, R. Ferreira da Silva
