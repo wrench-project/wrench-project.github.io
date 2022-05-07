@@ -1,5 +1,13 @@
 - year: 2022
   type: Journal
+  title: M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks
+  authors: S. Pedratscher, S. Ristov, T. Fahringer
+  url: https://doi.org/10.1016/j.future.2022.04.021
+  self: False
+  usage: False
+
+- year: 2022
+  type: Journal
   title: Analysis of workflow schedulers in simulated distributed environments
   authors: J. Beránek, S. Böhm, V. Cima 
   url: https://doi.org/10.1007/s11227-022-04438-y
