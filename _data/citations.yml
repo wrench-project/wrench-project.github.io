@@ -1,6 +1,6 @@
 - year: 2022
   type: Journal
-  title: M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks
+  title: "M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks"
   authors: S. Pedratscher, S. Ristov, T. Fahringer
   url: https://doi.org/10.1016/j.future.2022.04.021
   self: False
