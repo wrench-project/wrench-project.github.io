@@ -1,4 +1,12 @@
 - year: 2022
+  type: Conference
+  title: "StorAlloc: A Simulator for Job Scheduling on Heterogeneous Storage Resources"
+  authors: J. Monniot, F. Tessier, M. Robert, G. Antoniu
+  url: https://hal.inria.fr/hal-03683568/document
+  self: False
+  usage: False
+
+- year: 2022
   type: Journal
   title: "M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks"
   authors: S. Pedratscher, S. Ristov, T. Fahringer
