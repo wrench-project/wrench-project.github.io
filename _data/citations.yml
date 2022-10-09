@@ -1,4 +1,12 @@
 - year: 2022
+  type: Journal
+  title: Robust Makespan Optimization via Genetic Algorithms on the Scientific Workflow Scheduling Problem
+  authors: P. Barredo, J. Puente 
+  url: https://link.springer.com/chapter/10.1007/978-3-031-06527-9_8
+  self: False
+  usage: False
+
+- year: 2022
   type: Conference
   title: "Sobre a simulação de algoritmos de escalonamento cientes de energia renovável"
   authors: A.E.L. Cupelli, M.F.S. Vasconcelos, K. Lima, D. Cordeiro
