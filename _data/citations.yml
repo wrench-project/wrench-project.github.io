@@ -1,4 +1,20 @@
 - year: 2022
+  type: Report
+  title: "BottleMod: Modeling Data Flows and Tasks for Fast Bottleneck Analysis"
+  authors: A. Losser, J. Witzke, F. Schintke, B. Scheuermann
+  url: https://arxiv.org/pdf/2209.05358.pdf
+  self: False
+  usage: True
+
+- year: 2022
+  type: Workshop
+  title: Co-scheduling Ensembles of In Situ Workflows
+  authors: T.M.A. Do, L. Pottier, R. Ferreira da Silva, F. Suter, S. Caino-Lores, M. Taufer, E. Deelman
+  url: https://arxiv.org/pdf/2208.09190.pdf
+  self: True
+  usage: True
+
+- year: 2022
   type: Conference
   title: "StorAlloc: A Simulator for Job Scheduling on Heterogeneous Storage Resources"
   authors: J. Monniot, F. Tessier, M. Robert, G. Antoniu
@@ -70,7 +86,7 @@
   self: False
   usage: False
 
-- year: 2021
+- year: 2022
   type: Journal
   title: Data-aware and simulation-driven planning of scientific workflows on IaaS clouds
   authors: T. N'Takpé, J. E. Gnimassoun, S. Oumtanaga, F. Suter
