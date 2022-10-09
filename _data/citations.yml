@@ -1,4 +1,12 @@
 - year: 2022
+  type: Conference
+  title: "Sobre a simulação de algoritmos de escalonamento cientes de energia renovável"
+  authors: A.E.L. Cupelli, M.F.S. Vasconcelos, K. Lima, D. Cordeiro
+  url: https://sol.sbc.org.br/index.php/eradsp/article/view/21919
+  self: False
+  usage: False
+
+- year: 2022
   type: Report
   title: "BottleMod: Modeling Data Flows and Tasks for Fast Bottleneck Analysis"
   authors: A. Losser, J. Witzke, F. Schintke, B. Scheuermann
