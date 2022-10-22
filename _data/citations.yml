@@ -1,4 +1,12 @@
 - year: 2022
+  type: Conference
+  title: "FaaSt: Optimize makespan of serverless workflows in federated commercial FaaS"
+  authors: S. Ristov, P. Gritsch
+  url: https://ieeexplore.ieee.org/abstract/document/9912692/authors#authors
+  self: False
+  usage: False
+
+- year: 2022
   type: Report
   title: "Reshi: Recommending Resources for Scientific Workflow Tasks on Heterogeneous Infrastructures"
   authors: J. Bader, F. Lehmann, A. Groth, L. Thamsen, D. Scheinert, J. Will, U. Leser, O. Kao
