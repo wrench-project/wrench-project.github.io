@@ -1,3 +1,11 @@
+- year: 2023
+  type: Journal
+  title: Developing a Workflow Management System Simulation for Capturing Internal IaaS Behavioural Knowledge
+  authors: A. Al-Haboobi, G. Kecskemeti 
+  url: https://doi.org/10.1007/s10723-022-09638-7
+  self: False
+  usage: False
+
 - year: 2022
   type: Conference
   title: Modeling Allocation of Heterogeneous Storage Resources on HPC Systems
