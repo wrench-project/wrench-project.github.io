@@ -1,3 +1,67 @@
+#- year: 2023
+#  type: Journal
+#  title: Developing a Workflow Management System Simulation for Capturing Internal IaaS Behavioural Knowledge
+#  authors: A. Al-Haboobi, G. Kecskemeti 
+#  url: https://doi.org/10.1007/s10723-022-09638-7
+#  self: False
+#  usage: False
+
+#- year: 2022
+#  type: Conference
+#  title: Modeling Allocation of Heterogeneous Storage Resources on HPC Systems
+#  authors: J. Monniot, F. Tessier, G. Antoniu
+#  url: https://hal.archives-ouvertes.fr/hal-03878252/
+#  self: False
+#  usage: False
+
+#- year: 2022
+#  type: Conference
+#  title: "FaaSt: Optimize makespan of serverless workflows in federated commercial FaaS"
+#  authors: S. Ristov, P. Gritsch
+#  url: https://ieeexplore.ieee.org/abstract/document/9912692/authors#authors
+#  self: False
+#  usage: False
+
+#- year: 2022
+#  type: Report
+#  title: "Reshi: Recommending Resources for Scientific Workflow Tasks on Heterogeneous Infrastructures"
+#  authors: J. Bader, F. Lehmann, A. Groth, L. Thamsen, D. Scheinert, J. Will, U. Leser, O. Kao
+#  url: https://arxiv.org/pdf/2208.07905.pdf
+#  self: False
+#  usage: False
+
+#- year: 2022
+#  type: Journal
+#  title: Robust Makespan Optimization via Genetic Algorithms on the Scientific Workflow Scheduling Problem
+#  authors: P. Barredo, J. Puente 
+#  url: https://link.springer.com/chapter/10.1007/978-3-031-06527-9_8
+#  self: False
+#  usage: False
+
+#- year: 2022
+#  type: Conference
+#  title: "Sobre a simulação de algoritmos de escalonamento cientes de energia renovável"
+#  authors: A.E.L. Cupelli, M.F.S. Vasconcelos, K. Lima, D. Cordeiro
+#  url: https://sol.sbc.org.br/index.php/eradsp/article/view/21919
+#  self: False
+#  usage: False
+
+- year: 2022
+  type: Report
+  title: "BottleMod: Modeling Data Flows and Tasks for Fast Bottleneck Analysis"
+  authors: A. Losser, J. Witzke, F. Schintke, B. Scheuermann
+  url: https://arxiv.org/pdf/2209.05358.pdf
+  self: False
+  usage: True
+
+- year: 2022
+  type: Workshop
+  title: Co-scheduling Ensembles of In Situ Workflows
+  authors: T.M.A. Do, L. Pottier, R. Ferreira da Silva, F. Suter, S. Caino-Lores, M. Taufer, E. Deelman
+  url: https://arxiv.org/pdf/2208.09190.pdf
+  self: True
+  usage: True
+
 #- year: 2022
 #  type: Conference
 #  title: "StorAlloc: A Simulator for Job Scheduling on Heterogeneous Storage Resources"
@@ -70,7 +134,7 @@
   #self: False
   #usage: False
 
-- year: 2021
+- year: 2022
   type: Journal
   title: Data-aware and simulation-driven planning of scientific workflows on IaaS clouds
   authors: T. N'Takpé, J. E. Gnimassoun, S. Oumtanaga, F. Suter
@@ -110,13 +174,13 @@
   self: False
   usage: True
 
-- year: 2021
-  type: Conference
-  title: "OpenDC 2.0: Convenient Modeling and Simulation of Emerging Technologies in Cloud Datacenters"
-  authors: F. Mastenbroek, G. Andreadis, S. Jounaid, W. Lai, J. Burley, J. Bosch, E.V. Eyk, L. Versluis, V.V. Beek, A. Iosup
-  url: http://dx.doi.org/10.1109/CCGrid51090.2021.00055
-  self: False
-  usage: False
+#- year: 2021
+#  type: Conference
+#  title: "OpenDC 2.0: Convenient Modeling and Simulation of Emerging Technologies in Cloud Datacenters"
+#  authors: F. Mastenbroek, G. Andreadis, S. Jounaid, W. Lai, J. Burley, J. Bosch, E.V. Eyk, L. Versluis, V.V. Beek, A. Iosup
+#  url: http://dx.doi.org/10.1109/CCGrid51090.2021.00055
+#  self: False
+#  usage: False
 
 - year: 2021
   type: Conference
