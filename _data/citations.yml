@@ -1,26 +1,26 @@
-- year: 2022
-  type: Conference
-  title: "StorAlloc: A Simulator for Job Scheduling on Heterogeneous Storage Resources"
-  authors: J. Monniot, F. Tessier, M. Robert, G. Antoniu
-  url: https://hal.inria.fr/hal-03683568/document
-  self: False
-  usage: False
+#- year: 2022
+#  type: Conference
+#  title: "StorAlloc: A Simulator for Job Scheduling on Heterogeneous Storage Resources"
+#  authors: J. Monniot, F. Tessier, M. Robert, G. Antoniu
+#  url: https://hal.inria.fr/hal-03683568/document
+#  self: False
+#  usage: False
 
-- year: 2022
-  type: Journal
-  title: "M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks"
-  authors: S. Pedratscher, S. Ristov, T. Fahringer
-  url: https://doi.org/10.1016/j.future.2022.04.021
-  self: False
-  usage: False
+#- year: 2022
+#  type: Journal
+#  title: "M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks"
+#  authors: S. Pedratscher, S. Ristov, T. Fahringer
+#  url: https://doi.org/10.1016/j.future.2022.04.021
+#  self: False
+#  usage: False
 
-- year: 2022
-  type: Journal
-  title: Analysis of workflow schedulers in simulated distributed environments
-  authors: J. Beránek, S. Böhm, V. Cima 
-  url: https://doi.org/10.1007/s11227-022-04438-y
-  self: False
-  usage: False
+#- year: 2022
+#  type: Journal
+#  title: Analysis of workflow schedulers in simulated distributed environments
+#  authors: J. Beránek, S. Böhm, V. Cima 
+#  url: https://doi.org/10.1007/s11227-022-04438-y
+#  self: False
+#  usage: False
 
 - year: 2022
   type: Workshop
@@ -38,13 +38,13 @@
   self: True
   usage: True
 
-- year: 2022
-  type: Journal
-  title: "Mutation and Dynamic Objective-based Farmland Fertility Algorithm for Workflow Scheduling in the Cloud"
-  authors: H. Li, Y. Wang, J. Huang, Y. Fan
-  url: https://doi.org/10.1016/j.jpdc.2022.02.005
-  self: False
-  usage: False
+#- year: 2022
+#  type: Journal
+#  title: "Mutation and Dynamic Objective-based Farmland Fertility Algorithm for Workflow Scheduling in the Cloud"
+#  authors: H. Li, Y. Wang, J. Huang, Y. Fan
+#  url: https://doi.org/10.1016/j.jpdc.2022.02.005
+#  self: False
+#  usage: False
 
 - year: 2022
   type: Journal
@@ -62,13 +62,13 @@
   self: True
   usage: True
 
-- year: 2021
-  type: PhD Thesis
-  title: Developing Data-intensive Scientific Workflow Scheduling Model on Heterogeneous Cloud Computing Resources
-  authors: K. B. Gutema
-  url: http://213.55.101.23/bitstream/handle/123456789/1843/Kenesa%20Bedasa.pdf?sequence=1&isAllowed=y
-  self: False
-  usage: False
+  #- year: 2021
+  #type: PhD Thesis
+  #title: Developing Data-intensive Scientific Workflow Scheduling Model on Heterogeneous Cloud Computing Resources
+  #authors: K. B. Gutema
+  #url: http://213.55.101.23/bitstream/handle/123456789/1843/Kenesa%20Bedasa.pdf?sequence=1&isAllowed=y
+  #self: False
+  #usage: False
 
 - year: 2021
   type: Journal
@@ -158,29 +158,29 @@
   self: True
   usage: True
 
-- year: 2021
-  type: PhD Thesis
-  title: Scalable end-to-end models for the time and energy performance of Fog infrastructures
-  authors: L. Guegan
-  urll: https://tel.archives-ouvertes.fr/tel-03134046/document
-  self: False
-  usage: False
+#- year: 2021
+#  type: PhD Thesis
+#  title: Scalable end-to-end models for the time and energy performance of Fog infrastructures
+#  authors: L. Guegan
+#  urll: https://tel.archives-ouvertes.fr/tel-03134046/document
+#  self: False
+#  usage: False
 
-- year: 2020
-  type: PhD Thesis
-  title: Towards a Realistic Cloud Simulation
-  authors: R. Mathá
-  url: https://diglib.uibk.ac.at/ulbtirolhs/content/titleinfo/5580981/full.pdf
-  self: False
-  usage: False
+#- year: 2020
+#  type: PhD Thesis
+#  title: Towards a Realistic Cloud Simulation
+#  authors: R. Mathá
+#  url: https://diglib.uibk.ac.at/ulbtirolhs/content/titleinfo/5580981/full.pdf
+#  self: False
+#  usage: False
 
-- year: 2020
-  type: Workshop
-  title: Integrating Machine Learning with HPC-driven Simulations for Enhanced Student Learning
-  authors: V. Jadhao, J. Kadupitiya
-  url: https://doi.org/10.1109/EduHPC51895.2020.00009
-  self: False
-  usage: False
+#- year: 2020
+#  type: Workshop
+#  title: Integrating Machine Learning with HPC-driven Simulations for Enhanced Student Learning
+#  authors: V. Jadhao, J. Kadupitiya
+#  url: https://doi.org/10.1109/EduHPC51895.2020.00009
+#  self: False
+#  usage: False
 
 - year: 2020
   type: Workshop
@@ -198,13 +198,13 @@
   self: True
   usage: True
 
-- year: 2020
-  type: PhD Thesis
-  title: Predictive Resource Management for Scientific Workflows
-  authors: C.P. Witt
-  url: https://edoc.hu-berlin.de/handle/18452/22342
-  self: False
-  usage: False
+#- year: 2020
+#  type: PhD Thesis
+#  title: Predictive Resource Management for Scientific Workflows
+#  authors: C.P. Witt
+#  url: https://edoc.hu-berlin.de/handle/18452/22342
+#  self: False
+#  usage: False
 
 - year: 2020
   type: Conference
@@ -230,21 +230,21 @@
   self: False
   usage: True
 
-- year: 2020
-  type: Journal
-  title: Simplified Workflow Simulation on Clouds based on Computation and Communication Noisiness
-  authors: R. Matha, S. Ristov, T. Fahringer, R. Prodan
-  url: http://dx.doi.org/10.1109/TPDS.2020.2967662
-  self: False
-  usage: False
+#- year: 2020
+#  type: Journal
+#  title: Simplified Workflow Simulation on Clouds based on Computation and Communication Noisiness
+#  authors: R. Matha, S. Ristov, T. Fahringer, R. Prodan
+#  url: http://dx.doi.org/10.1109/TPDS.2020.2967662
+#  self: False
+#  usage: False
 
-- year: 2020
-  type: Journal
-  title: Logistics Free Process Information System Based on Activiti+MongoDB
-  authors: Liu C, Li SC, Lyu XF
-  url: http://www.c-s-a.org.cn/html/2020/1/7251.html
-  self: False
-  usage: False
+#- year: 2020
+#  type: Journal
+#  title: Logistics Free Process Information System Based on Activiti+MongoDB
+#  authors: Liu C, Li SC, Lyu XF
+#  url: http://www.c-s-a.org.cn/html/2020/1/7251.html
+#  self: False
+#  usage: False
 
 - year: 2020
   type: Journal
@@ -254,21 +254,21 @@
   self: True
   usage: True
 
-- year: 2019
-  type: Workshop
-  title: "A Top-Down Performance Analysis Methodology for Workflows: Tracking Performance Issues from Overview to Individual Operations"
-  authors: R. Tschueter, C. Herold, W. Williams, M. Knespel, M. Weber
-  url: https://doi.org/10.1109/WORKS49585.2019.00008
-  self: False
-  usage: False
+#- year: 2019
+#  type: Workshop
+#  title: "A Top-Down Performance Analysis Methodology for Workflows: Tracking Performance Issues from Overview to Individual Operations"
+#  authors: R. Tschueter, C. Herold, W. Williams, M. Knespel, M. Weber
+#  url: https://doi.org/10.1109/WORKS49585.2019.00008
+#  self: False
+#  usage: False
 
-- year: 2019
-  type: PhD Thesis
-  title: Contribution to High Performance Computing and Big Data Infrastructure Convergence
-  authors: M. Mercier
-  url: https://hal.archives-ouvertes.fr/tel-02284996v2/document
-  self: False
-  usage: False
+#- year: 2019
+#  type: PhD Thesis
+#  title: Contribution to High Performance Computing and Big Data Infrastructure Convergence
+#  authors: M. Mercier
+#  url: https://hal.archives-ouvertes.fr/tel-02284996v2/document
+#  self: False
+#  usage: False
 
 - year: 2019
   type: Workshop
@@ -286,13 +286,13 @@
   self: True
   usage: False
 
-- year: 2019
-  type: Presentation
-  title: Data Management to Promote Near-Data Processing
-  authors: F. Z. Boito
-  url: https://indico.cern.ch/event/838378/contributions/3516539/attachments/1897264/3130547/francieli_meeting_cern_august2019.pdf
-  self: False
-  usage: False
+#- year: 2019
+#  type: Presentation
+#  title: Data Management to Promote Near-Data Processing
+#  authors: F. Z. Boito
+#  url: https://indico.cern.ch/event/838378/contributions/3516539/attachments/1897264/3130547/francieli_meeting_cern_august2019.pdf
+#  self: False
+#  usage: False
 
 - year: 2019
   type: Conference
@@ -318,13 +318,13 @@
   self: True
   usage: False
 
-- year: 2018
-  type: Report
-  title: Évaluation d’algorithmes d’ordonnancement par simulation réaliste
-  authors: A. Faure, M. Poquet, O. Richard
-  url: https://hal.inria.fr/hal-01779936/document
-  self: False
-  usage: False
+#- year: 2018
+#  type: Report
+#  title: Évaluation d’algorithmes d’ordonnancement par simulation réaliste
+#  authors: A. Faure, M. Poquet, O. Richard
+#  url: https://hal.inria.fr/hal-01779936/document
+#  self: False
+#  usage: False
 
 - year: 2018
   type: Workshop
