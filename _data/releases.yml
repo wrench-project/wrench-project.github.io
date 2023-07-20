@@ -1,3 +1,10 @@
+- version: "2.2"
+  date: July 20, 2023
+  simgrid_version: "3.34"
+  description:
+    - Minor release
+    - "WRENCH version 2.2 includes the implementation of a new File Proxy storage service and of new Compound storage service, the implementation of an MPI Action that makes it possible to simulate MPI programs, the implementation of a daemon that makes it possible to implement simulations using a REST API, as well as many minor improvements, new features, and bug fixes."
+
 - version: "2.1"
   date: October 7, 2022
   simgrid_version: "3.32"
