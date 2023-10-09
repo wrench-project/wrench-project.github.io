@@ -1,3 +1,11 @@
+- year: 2023
+  type: Journal
+  title: Precise makespan optimization via hybrid genetic algorithm for scientific workflow scheduling problem
+  authors: P. Barredo, J. Puente
+  url: https://doi.org/10.1007/s11047-023-09950-5
+  self: False
+  usage: True
+
 #- year: 2023
 #  type: Journal
 #  title: Developing a Workflow Management System Simulation for Capturing Internal IaaS Behavioural Knowledge
@@ -5,6 +13,14 @@
 #  url: https://doi.org/10.1007/s10723-022-09638-7
 #  self: False
 #  usage: False
+
+- year: 2022
+  type: Conference
+  title: Robust Makespan Optimization Via Genetic Algorithms On the Scientific Workflow Scheduling Problem
+  authors: P. Barredo, J. Puente
+  url: https://doi.org/10.1007/978-3-031-06527-9_8
+  self: False
+  usage: True
 
 #- year: 2022
 #  type: Conference
