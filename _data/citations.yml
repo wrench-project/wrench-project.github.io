@@ -1,3 +1,19 @@
+- year: 2024
+  type: Conference
+  title: Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study
+  authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
+  url: https://arxiv.org/abs/2403.13918
+  self: True
+  usage: True
+
+- year: 2023
+  type: Conference
+  title: Modelling Distributed Heterogeneous Computing Infrastructures for HEP Applications
+  authors: M. Horzela, H. Casanova, M. Giffels, A. Gottmann, R. Hofsaess, G. Quast, S. Rossi Tisbeni, A. Streit, F. Suter
+  url: https://arxiv.org/abs/2403.14903
+  self: True
+  usage: True
+
 - year: 2023
   type: Journal
   title: Precise makespan optimization via hybrid genetic algorithm for scientific workflow scheduling problem
