@@ -1,6 +1,6 @@
 - year: 2024
   type: Conference
-  title: Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study
+  title: "Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study"
   authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
   url: https://arxiv.org/abs/2403.13918
   self: True
