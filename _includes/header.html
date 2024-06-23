@@ -1,21 +1,95 @@
 {% assign releases = site.data.releases %}
-<header id="header">
-    <h1><a href="/"><img src="/images/logo-horizontal.png" style="width: 10em" alt=""/></a></h1>
-    <nav class="links">
-        <ul>
-            <li><a href="/wrench/{{releases[0].version}}/" title="User Guide">Documentation</a></li>
-            <li><a href="/install" title="Current and Past Releases">Install</a></li>
-            <li><a href="/publications" title="Publications">Publications</a></li>
-            <li><a href="/usages">They Use WRENCH</a></li>
-            <li><a href="/about" title="Who are we?">About</a></li>
-            <li><a href="https://eduwrench.org" target="_blank" title="eduWRENCH.org">Education</a></li>
-        </ul>
-    </nav>
-    <nav class="main">
-        <ul>
-            <li>
-                <a href="/wrench/{{releases[0].version}}/getting_started.html">Get Started!</a>
-            </li>
-        </ul>
-    </nav>
+<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <div id="header" class="nav-collapse">
+        <div class="row clearfix">
+            <div class="col-1">
+
+                <!--Logo-->
+                <div id="logo">
+
+                    <!--Logo that is shown on the banner-->
+                    <img src="/images/logo-horizontal.png" id="banner-logo" alt="Landing Page" />
+                    <!--End of Banner Logo-->
+
+                    <!--The Logo that is shown on the sticky Navigation Bar-->
+                    <img src="/images/logo-horizontal.png" id="navigation-logo" alt="Landing Page" />
+                    <!--End of Navigation Logo-->
+
+                </div>
+                <!--End of Logo-->
+
+                <!--Main Navigation-->
+                <nav id="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#banner">Home</a>
+                        </li>
+                        <li>
+                            <a href="#framework">Framework</a>
+                        </li>
+                        <li>
+                            <a href="#publications">Publications</a>
+                        </li>
+                        <li>
+                            <a href="#usage">They Use WRENCH</a>
+                        </li>
+                        <li>
+                            <a href="https://eduwrench.org" target="_blank" title="eduWRENCH.org">Education</a>
+                        </li>
+                        <li>
+                            <a href="#about" title="Who are we?">About</a>
+                        </li>
+                        <li>
+                            <a href="#dev-corner">Dev's Corner</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/wrench-project/wrench" target="_blank" style="font-size: 1.25em"
+                                title="GitHub">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
+                                target="_blank" style="font-size: 1.25em" title="Join our Slack workspace">
+                                <i class="fa fa-slack"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--End of Main Navigation-->
+
+                <div id="nav-trigger"><span></span></div>
+                <nav id="nav-mobile"></nav>
+
+            </div>
+        </div>
+    </div><!--End of Header-->
+
+    <!--Banner Content-->
+    <div id="banner-content" class="row clearfix">
+
+        <div class="col-38">
+
+            <div class="section-heading">
+                <h1 style="text-transform: uppercase; font-size: 2.4em; line-height: 1.2em;">
+                    Cyberinfrastructure Simulation Workbench
+                </h1>
+                <h2>WRENCH is an open-source framework that provides <strong>high-level simulation abstractions</strong>
+                    to <strong>ease the development</strong> of <strong>accurate</strong> and <strong>scalable</strong>
+                    simulators of distributed computing applications, systems, and platforms. It has been used
+                    successfully for <strong>research</strong>, <strong>development</strong>, and
+                    <strong>education</strong></h2>
+            </div>
+
+            {% for release in releases limit: 1 %}
+            <a href="/wrench/{{releases[0].version}}/getting_started.html" target="_blank"
+                class="button">WRENCH-{{release.version}} &mdash; DOCUMENTATION</a>&nbsp;&nbsp;
+            <div>
+                <span style="color: #999; font-size: 0.9em;">Released on {{release.date}}<br />Requires <a
+                        href="https://simgrid.org/" target="_blank">SimGrid {{release.simgrid_version}}</a></span>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div><!--End of Row-->
 </header>
