@@ -1,4 +1,12 @@
 - year: 2024
+  type: Journal
+  title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
+  authors: J. McDonald, J. Dobbs, Y. C. Wong, R. Ferreira da Silva, H. Casanova
+  url: https://doi.org/10.1016/j.future.2024.07.005
+  self: True
+  usage: True
+
+- year: 2024
   type: Conference
   title: Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study
   authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
