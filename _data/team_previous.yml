@@ -1,3 +1,19 @@
+- name: Derrick Luyen
+  role: Graduate Research Assistant
+  description: Computer Science Masters student at the University of Hawaii at Manoa
+  email: dluyen@hawaii.edu
+  linkedin: https://www.linkedin.com/in/derrick-luyen-85b14b178
+  website: 
+  photo: derrickluyen.jpg
+
+- name: Tainã Coleman
+  role: Graduate Research Assistant
+  description: Computer Science PhD student at the University of Southern California
+  email: tgcolema@usc.edu
+  linkedin: https://www.linkedin.com/in/tainacoleman/
+  website: http://tainacoleman.com/
+  photo: coleman.jpg
+
 - name: "Jason Feuerstein"
   role: "Developer"
   description: "Computer Science undergraduate student at University of Southern California"

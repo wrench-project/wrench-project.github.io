@@ -1,3 +1,11 @@
+- title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
+  authors: J. McDonald, J. Dobbs, Y.C. Wong, R. Ferreira da Silva, H. Casanova
+  type: Journal
+  year: 2024
+  url: https://rafaelsilva.com/files/publications/mcdonald2024simulation.pdf
+  self: True
+  usage: True
+
 - year: 2024
   type: Journal
   title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
@@ -8,7 +16,7 @@
 
 - year: 2024
   type: Conference
-  title: Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study
+  title: "Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study"
   authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
   url: https://arxiv.org/abs/2403.13918
   self: True
@@ -191,7 +199,7 @@
   usage: True
 
 - year: 2021
-  type: Master Thesis
+  type: PhD Thesis
   title: An Approach for Automating the Calibration of Simulations of Parallel and Distributed Computing Systems
   authors: W. Koch
   url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/75923/1/Koch_hawii_0085O_10933.pdf
@@ -199,7 +207,7 @@
   usage: True
 
 - year: 2021
-  type: Master Thesis
+  type: PhD Thesis
   title: Modeling the Linux Page Cache for Accurate Simulation of Data-Intensive Applications
   authors: H-D. Do
   url: https://spectrum.library.concordia.ca/988339/1/Do_MSC_S2021.pdf
@@ -319,7 +327,7 @@
   usage: True
 
 - year: 2020
-  type: Master Thesis
+  type: PhD Thesis
   title: Efficient Execution of Scientific Workflows on Batch-Scheduled Clusters
   authors: E. Hataishi
   url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/68967/1/Hataishi_hawii_0085O_10585.pdf
@@ -439,7 +447,7 @@
   usage: False
 
 - year: 2018
-  type: Master Thesis
+  type: PhD Thesis
   title: Scheduling Heuristics For Executing Scientific Workflows On Homogeneous Clusters With Globallyand Locally-Accessible Persistent Storage
   authors: S. Pandey
   url: https://scholarspace.manoa.hawaii.edu/bitstream/10125/62291/2018-08-ms-pandey.pdf

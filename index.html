@@ -3,444 +3,349 @@ layout: default
 permalink: /
 ---
 
-<!-- Main -->
-<div id="main">
+<!--Main Content Area-->
+<main id="content">
 
-    <article class="post">
-        <div class="row" style="margin-bottom: 2em">
-            <div class="col-md-4" style="padding: 1em">
-                <div class="pull-left">
-                    <i class="fa fa-th-large" style="color: goldenrod"></i>
+    <section id="framework" class="introduction scrollto">
+        <div class="row clearfix">
+            <div class="col-3">
+                <div class="section-heading">
+                    <h3>THE WRENCH FRAMEWORK</h3>
+                    <h2 class="section-title">Accurate, scalable, and reproducible simulations</h2>
+                    <p class="section-subtitle" style="color: #666">
+                        WRENCH builds on the open-source <a href="https://simgrid.org"
+                            target="_blank"><strong>SimGrid</strong></a> simulation framework for simulation accuracy
+                        (via its validated simulation models), scalability (low ratio of simulation time to simulated
+                        time, ability to run large simulations on a single computer with low compute, memory, and energy
+                        footprints), and expressivity (ability to simulate arbitrary platform, application, and
+                        execution scenarios). WRENCH provides high-level simulation abstractions on top of SimGrid to
+                        make it possible to implement simulators of complex scenarios with minimal development effort.
+                    </p>
                 </div>
-                <h3 class="bb-title">Simulation Building Blocks</h3>
-                <p class="bb-text">
-                    Prototype implementations of cyberinfrastructure (CI) components and underlying algorithms
-                </p>
             </div>
-            <div class="col-md-4" style="padding: 1em">
-                <div class="pull-left">
-                    <i class="fa fa-bullseye" style="color: orangered"></i>
+
+            <div class="col-2-3">
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-th-large" style="color: goldenrod"></i>&nbsp;&nbsp;SIMULATION BUILDING
+                            BLOCKS</h4>
+                        <p>Prototype implementations of cyberinfrastructure (CI) components and underlying algorithms
+                        </p>
+                    </div>
                 </div>
-                <h3 class="bb-title">Simulation Accuracy</h3>
-                <p class="bb-text">
-                    Captures the behavior of a real-world system with as little bias as possible via
-                    validated simulation models
-                </p>
+
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-bullseye" style="color: orangered"></i>&nbsp;&nbsp;SIMULATION ACCURACY</h4>
+                        <p>Captures the behavior of a real-world system with as little bias as possible via validated
+                            simulation models</p>
+                    </div>
+                </div>
+
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-expand" style="color: dodgerblue"></i>&nbsp;&nbsp;SCALABILITY</h4>
+                        <p>Ability to run large simulations quickly on a single computer with low compute, memory, and
+                            energy footprints</p>
+                    </div>
+                </div>
+
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-check" style="color: mediumseagreen"></i>&nbsp;&nbsp;REPRODUCIBLE RESULTS
+                        </h4>
+                        <p>Reproduction or repetition of published results by a party working independently using the
+                            same/different simulation models</p>
+                    </div>
+                </div>
+
+                <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-book" style="color: darkorange"></i>&nbsp;&nbsp;EDUCATION</h4>
+                        <p><a href="https://eduwrench.org" target="_blank">eduWRENCH</a> provides a set of
+                            simulation-driven, self-contained, modules for teaching parallel and distributed computing.
+                            These modules span a range of proficiency levels, from college freshmen to graduate
+                            students, and for assessing the pedagogic effectiveness of simulation-drive pedagogy</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4" style="padding: 1em">
-                <div class="pull-left">
-                    <i class="fa fa-expand" style="color: dodgerblue"></i>
-                </div>
-                <h3 class="bb-title">Scalability</h3>
-                <p class="bb-text">
-                    Ability to run large simulations quickly on a single computer with low compute, memory, and energy
-                    footprints
-                </p>
-            </div>
-            <div class="col-md-4" style="padding: 1em">
-                <div class="pull-left">
-                    <i class="fa fa-check" style="color: mediumseagreen"></i>
-                </div>
-                <h3 class="bb-title">Reproducible Results</h3>
-                <p class="bb-text">
-                    Reproduction or repetition of published results by a party working independently using the
-                    same/different simulation models
-                </p>
-            </div>
-            <div class="col-md-8" style="padding: 1em">
-                <div class="pull-left">
-                    <i class="fa fa-book-reader" style="color: darkorange"></i>
-                </div>
-                <h3 class="bb-title">Education</h3>
-                <p class="bb-text">
-                    <strong style="color: #999"><a href="https://eduwrench.org/" target="_blank">eduWRENCH</a></strong>
-                    provides a set of
-                    simulation-driven, self-contained, modules for teaching parallel and distributed computing.
-                    These modules span a range of proficiency levels, from college freshmen to graduate students, and
-                    for assessing the pedagogic effectiveness of simulation-drive pedagogy
+
+            <div class="col-1" style="padding-top: 0;">
+                <p class="section-subtitle" style="color: #666">
+                    In a nutshell, WRENCH makes it possible to:
+                <ul class="section-subtitle" style="color: #999; margin-left: 1em;">
+                    <li>Develop in-simulation implementations of runtime systems that execute application workloads on
+                        distributed hardware platforms managed by various software services commonly known as
+                        Cyberinfrastructure (CI) services; and</li>
+                    <li>Quickly, scalably, and accurately simulate, on a single computer, arbitrary application and
+                        platform
+                        scenarios for these runtime system
+                        implementation.</li>
+                </ul>
                 </p>
             </div>
         </div>
-    </article>
+    </section>
 
-    <article class="post">
-        <header>
-            <div class="title">
-                <h1>What is WRENCH?</h1>
-            </div>
-        </header>
-        <img src="/images/wrench-architecture.png" alt="WRENCH architecture"
-             style="max-width: 30em; float: right; margin-left: 1em"/>
 
-        <p>
-        WRENCH is an open-source framework that provides <strong>high-level simulation abstractions</strong>
-        to <strong>ease the development</strong> of <strong>accurate</strong> and <strong>scalable</strong> simulators of
-        distributed computing applications, systems, and platforms. It has been used successfully for <strong>research, development, and education</strong>.  
-        </p>
-        <p>
-            WRENCH builds  on the open-source <a href="https://simgrid.org" target="_blank">SimGrid</a> simulation framework for
-        simulation accuracy (via its validated simulation models), scalability (low ratio of
-simulation time to simulated time, ability to run large simulations on a
-single computer with low compute, memory, and energy footprints), and
-expressivity (ability to simulate arbitrary platform, application, and
-execution scenarios).  WRENCH provides high-level
-simulation abstractions on top of SimGrid to make it
-possible to implement simulators of complex scenarios with minimal
-development effort.
-    </p>
-    <p>
-In a nutshell, WRENCH makes it possible to:
-    <ul>
-        <li>Develop in-simulation implementations of runtime systems that execute application workloads on distributed hardware platforms managed by various software services commonly known as Cyberinfrastructure (CI) services; and</li>
-    <li>Quickly, scalably, and accurately simulate, on a single computer, arbitrary application and platform scenarios for these runtime system
-implementation.</li>
-    </ul>
-    </p>
-    </article>
+    <section id="publications" class="secondary-color text-center scrollto clearfix ">
+        <div class="row clearfix" style="display: flex; flex-wrap: wrap;">
+            <div class="section-heading" style="margin: auto">
+                <h3>RESEARCH PUBLICATIONS</h3>
+                <h2 class="section-title">Research Papers, Journal Articles, and Technical Reports</h2>
+            </div>
 
-    <article class="post">
-        <header>
-            <div class="title">
-                <h3>WRENCH in Numbers</h3>
-                <p>Since 2018</p>
+            <div>
+                <strong style="font-size: 1.25em;">Citing WRENCH</strong>
+                <p>
+                    When citing WRENCH, please use the following paper. You should also actually read that paper, as it
+                    provides a recent and general overview on the framework.
+                </p>
+                <pre>H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S. Albrecht, J. Oeth, and F. Suter, "Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH", Future Generation Computer Systems, vol. 112, p. 162-175, 2020.</pre>
+                <pre>
+@article{wrench,
+    title = {Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH},
+    author = {Casanova, Henri and Ferreira da Silva, Rafael and Tanaka, Ryan and Pandey, Suraj and Jethwani, Gautam and Koch, William and Albrecht, Spencer and Oeth, James and Suter, Fr\'{e}d\'{e}ric},
+    journal = {Future Generation Computer Systems},
+    volume = {112},
+    number = {},
+    pages = {162--175},
+    year = {2020},
+    doi = {10.1016/j.future.2020.05.030}
+}</pre>
             </div>
-        </header>
+            {% if site.data.publications.size > 0 %}
+            {% for n in site.data.publications %}
+            <div class="pricing-block wow fadeInUp" data-wow-delay="0.4s">
+                <div class="pricing-block-content"
+                    style="padding: 0; display: flex; max-width: 380px; min-width: 380px; margin: 1em 1em">
+                    <p><a href="{{ n.url }}" target="_blank">{{ n.title }}</a>,
+                        {{ n.authors }}, {{ n.description }},
+                        doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </section>
 
-        {% assign numbers = site.data.numbers %}
-        {% assign publications = site.data.publications | size %}
-        {% assign citations = site.data.citations | size %}
 
-        <div class="row">
-            <!-- RELEASES -->
-            <div class="col-md-3 numbers numbers-red">
-                <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ numbers.releases }}"></span>
-                &nbsp;&nbsp;&nbsp;<i class="fab fa-github" style="font-size: 3em"></i>
-                <br/><span style="color: #fff">stable software releases</span>
+    {% assign total_usage = site.data.citations | size %}
+    <section id="usage" class="scrollto clearfix">
+        <div class="row clearfix">
+
+            <div class="col-3">
+
+                <div class="section-heading">
+                    <h3>THEY USE WRENCH</h3>
+                    <h2 class="section-title">Research Outcomes Enabled by WRENCH</h2>
+                    <p class="section-subtitle">
+                        WRENCH has enabled research in <strong>{{ total_usage }} research articles.</strong> These
+                        articles include research outcomes produced by our own team as well as other researchers from
+                        the workflows community.
+                    </p>
+                </div>
+
             </div>
-            <!-- LINES OF CODE -->
-            <div class="col-md-3 numbers numbers-b-r">
-                <span class="timer" data-from="1" data-to="{{ numbers.loc }}" style="font-size: 4em"></span>
-                <span style="font-size: 4em">K</span>
-                <br/><span style="color: #5E5F5E">lines of code of WRENCH core software </span>
-            </div>
-            <!-- PEDAGOGIC MODULES -->
-            <div class="col-md-3 numbers numbers-b-b">
-                <i class="fas fa-graduation-cap" style="font-size: 3em; color: #DF6F38"></i>
-                <span style="font-size: 4em; color: #DF6F38" class="timer" data-from="1"
-                      data-to="{{ numbers.modules }}"></span>
-                <br/><span style="color: #DF6F38">pedagogic modules</span>
-            </div>
-            <!-- PAPERS -->
-            <div class="col-md-3 numbers numbers-yellow">
-                <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ publications }}"></span>
-                <br/><span style="color: #fff">peer-reviewed research papers</span>
+
+            <div class="col-2-3">
+                <canvas id="usageChart" style="max-height: 23em; max-width: 100%"></canvas>
             </div>
         </div>
-        <div class="row">
-            <!-- SIMULATORS -->
-            <div class="col-md-3 numbers">
-                <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ numbers.simulators }}"></span>
-                <br/><span style="color: #5E5F5E">WRENCH-enabled simulators for research</span>
+
+        <div class="row clearfix" style="display: flex; flex-wrap: wrap; margin-top: 0; padding-top: 0;">
+            {% assign usages = site.data.citations | sort: "year" | reverse %}
+            {% for n in usages %}
+            <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s" style="display: flex;">
+                <div style="box-shadow: #eee 1px 1px 1px; padding: 1em; border: 1px #fafafa solid">
+                    <p class="pricing-sub" style="margin: 0">
+                        {{n.authors}}, <strong><a href="{{n.url}}" target="_blank">{{n.title}}</a></strong>,
+                        {{n.year}}
+                    </p>
+                </div>
             </div>
-            <!-- CONTRIBUTORS -->
-            <div class="col-md-3 numbers numbers-orange">
-                <span style="font-size: 4em" class="timer" data-from="1" data-to="{{ numbers.contributors }}"></span>
-                &nbsp;&nbsp;&nbsp;<i class="fas fa-users" style="font-size: 2.5em"></i>
-                <br/><span style="color: #fff; font-size: 0.9em">contributors for WRENCH core software</span>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+    <script type="text/javascript">
+        let entries = [
+            {% assign usages = site.data.citations | sort: "year" %}
+        {% for n in usages %}
+        {
+            year: "{{n.year}}",
+                type: "{{n.type}}"
+        },
+        {% endfor %}
+        ]
+        let data = {
+            labels: [],
+            datasets: [],
+        }
+        let datasetTypes = ["Journal", "Conference", "Workshop", "PhD Thesis", "Report"];
+        let datasetColors = ["#A7226E", "#EC2049", "#F7DB4F", "#F26B38", "#2F9599", "#547980", "#FF8C94"];
+        for (let i = 0; i < datasetTypes.length; i++) {
+            data.datasets.push({
+                label: datasetTypes[i],
+                backgroundColor: datasetColors[i],
+                data: []
+            });
+        }
+        for (let i = 0; i < entries.length; i++) {
+            if (!data.labels.includes(entries[i].year)) {
+                data.labels.push(entries[i].year);
+                for (let j = 0; j < datasetTypes.length; j++) {
+                    data.datasets[j].data.push(0);
+                }
+            }
+            let index = datasetTypes.indexOf(entries[i].type);
+            data.datasets[index].data[data.labels.indexOf(entries[i].year)]++;
+        }
+        let ctx = document.getElementById("usageChart");
+        new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: '# Usages in Research Outcomes'
+                        }
+                    },
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: 'Years'
+                        }
+                    }
+                },
+                chartArea: {
+                    backgroundColor: "#FEF8F8"
+                },
+                tooltips: {
+                    position: 'nearest',
+                    mode: 'point',
+                    intersect: 'false'
+                }
+            }
+        });
+    </script>
+
+
+    <section id="about" class="secondary-color text-center scrollto clearfix ">
+        <div class="row clearfix" style="display: flex; flex-wrap: wrap;">
+            <div class="section-heading" style="margin: auto">
+                <h3>WHO ARE WE?</h3>
+                <h2 class="section-title">ABOUT</h2>
             </div>
-            <!-- CITATIONS -->
-            <div class="col-md-3 numbers numbers-b-r">
-                <span class="timer" data-from="1" data-to="{{ citations }}" style="font-size: 4em"></span>
-                &nbsp;&nbsp;&nbsp;<i class="fas fa-file-alt" style="font-size: 2.2em !important"></i>
-                <br/><span style="color: #5E5F5E">peer-reviewed papers and thesis citing WRENCH</span>
+
+            <div>
+                <p>WRENCH is open-source software distributed under the LGPLV3 license</p>
+                <p>
+                    WRENCH is mainly developed by a collaborative team from the <a href="https://www.ics.hawaii.edu/"
+                        target="_blank">University of Hawai'i at Mãnoa</a> (UHM), the <a
+                        href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank">Oak Ridge
+                        National Laboratory</a> (ORNL), and the University of Southern California (USC).
+                </p>
             </div>
-            <!-- PEDAGOGIC SIMULATORS -->
-            <div class="col-md-3 numbers">
-                <span class="timer" data-from="1" data-to="{{ numbers.pedagogic_simulators }}"
-                      style="font-size: 4em"></span>
-                <br/><span style="color: #5E5F5E">simulators for pedagogic modules</span>
+
+            {% if site.data.team_current.size > 0 %}
+            {% for n in site.data.team_current %}
+            <div class="pricing-block wow fadeInUp" data-wow-delay="0.4s">
+                <div class="pricing-block-content"
+                    style="padding: 0; display: flex; max-width: 380px; min-width: 380px; margin: 1em 1em">
+                    <div>
+                        <img src="/images/aboutus/{{ n.photo }}" alt=""
+                            style="max-height: 4em; min-height: 4em; min-width: 4em; max-width: 4em; border-radius: 0.25em" /><br />
+                        <a href="mailto:{{ n.email }}" style="font-size: 0.8em;"><i class="fa fa-envelope"></i></a>
+                        <a href="{{ n.linkedin }}" target="_blank" style="font-size: 0.8em;"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="{{ n.website }}" target="_blank" style="font-size: 0.8em;"><i
+                                class="fa fa-link"></i></a>
+                    </div>
+
+                    <div style="text-align: left; margin: 0; margin-left: 1em;">
+                        <p style="line-height: 1.2em; margin: 0;">
+                            <strong>{{ n.name }}</strong><br />
+                            <span style="color: #999; font-size: 0.9em;">{{ n.description }}</span><br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <div class="col-1"><br />PREVIOUS CONTRIBUTORS</div>
+            {% if site.data.team_current.size > 0 %}
+            {% for n in site.data.team_previous %}
+            <div class="pricing-block wow fadeInUp" data-wow-delay="0.4s">
+                <div class="pricing-block-content"
+                    style="padding: 0; display: flex; max-width: 380px; min-width: 380px; margin: 1em 1em">
+                    <div>
+                        <img src="/images/aboutus/{{ n.photo }}" alt=""
+                            style="max-height: 3em; min-height: 3em; min-width: 3em; max-width: 3em; border-radius: 0.25em; filter: grayscale(1);" />
+                    </div>
+
+                    <div style="text-align: left; margin: 0; margin-left: 1em;">
+                        <p style="line-height: 1.2em; margin: 0;">
+                            <a href="{{ n.linkedin }}" target="_blank" style="font-size: 0.8em;"><i
+                                    class="fa fa-linkedin"></i></a>&nbsp;&nbsp;<strong>{{ n.name }}</strong><br />
+                            <span style="color: #999; font-size: 0.9em;">{{ n.description }}</span><br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+
+
+    <section id="dev-corner" class="introduction scrollto">
+        <div class="row clearfix">
+            <div class="col-2">
+                <div class="section-heading">
+                    <h3>DEV'S CORNER</h3>
+                    <h2 class="section-title">Best practices and collaborative insights for developing and enhancing the WRENCH simulation framework</h2>
+                    <p class="section-subtitle" style="color: #666">
+                        WRENCH's source code is available on <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i> GitHub</a>. Our preferred channel to report a bug or request a feature is via WRENCH's Github <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues Track</a>.
+                    </p>
+                    <p class="section-subtitle" style="color: #666">
+                        You can also reach the WRENCH team via our support email at <a href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-slack" style="color: goldenrod"></i>&nbsp;&nbsp;JOIN US ON SLACK</h4>
+                        <p>Connect with the <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q" target="_blank">WRENCH community on Slack</a> to collaborate with peers, share your experiences, and get real-time support and updates on the WRENCH simulation framework</p>
+                    </div>
+                </div>
+
+                <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-block-description">
+                        <h4><a href="https://wfcommons.org/" target="_blank"><img src="https://wfcommons.org/images/wfcommons-horizontal.png" style="max-height: 1.75em;" /></a></h4>
+                        <p>The WfCommons project offers a collection of workflow traces and tools for generating synthetic yet realistic workflow instances, seamlessly compatible with simulators developed using the WRENCH framework</p>
+                    </div>
+                </div>
+
+                <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-block-description">
+                        <h4><i class="fa fa-github"></i> Latest Unstable Version</h4>
+                        <p>If you want to use the latest unstable version, that will contain brand-new features and can achieve up-to-date performances (but may also contain bugs as the stabilization work is still underway), you may consider retrieving the latest unstable version.</p>
+                        <pre style="background-color: #eee; margin: 0;">git clone https://github.com/wrench-project/wrench.git</pre>
+                    </div>
+                </div>
             </div>
         </div>
-        <br/>
-    </article>
-
-</div>
-
-<!--<div class="slider">-->
-<!--    <div class="owl-carousel slider">-->
-<!--        <div class="item">-->
-<!--            <div class="slider-img"><img src="./images/slider-bg.png" alt=""></div>-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">-->
-<!--                        <div class="slider-captions">-->
-<!--                            <h1 class="slider-title">Workflow Management System<br/>Simulation Workbench</h1>-->
-<!--                            <p class="slider-text hidden-xs">Accurate, scalable, and reproducible simulations</p>-->
-<!--                            <a href="downloads.html" class="btn btn-default btn-sm hidden-sm hidden-xs" style="background-color: #666; color: #fff">-->
-<!--                                <i class="fa fa-download"></i>&nbsp;&nbsp;Download WRENCH-1.9-->
-<!--                            </a>-->
-<!--                            <span class="slider-text hidden-xs" style="font-size: 0.8em; margin-top: 10em">&nbsp;Released on August 24, 2021</span>-->
-<!--                            <br/>-->
-<!--&lt;!&ndash;                            <span style="font-size: 0.8em; color: #999">***WRENCH 1.8 will be released in late February 2021.</span>&ndash;&gt;-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12">-->
-<!--                        <div class="slider-profile">-->
-<!--                            <div class="profile"><img src="./images/logo-vertical.png" alt="" class="img-responsive">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="space-medium">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-8 col-sm-12" style="padding-top: 2em">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                        <div class="testimonial-block">-->
-<!--                            <div>-->
-<!--                                <div class="pull-left" style="margin-right: 0.5em; margin-top: -0.4em">-->
-<!--                            <span class="fa-stack fa-2x" style="font-size: 1em">-->
-<!--                                <i class="fa fa-square fa-stack-2x" style="color: goldenrod"></i>-->
-<!--                                <i class="fa fa-th-large fa-stack-1x fa-inverse"></i>-->
-<!--                            </span>-->
-<!--                                </div>-->
-<!--                                <h3>Simulation Building Blocks</h3>-->
-<!--                                <p class="testimonial-text">-->
-<!--                                    Prototype implementations of Workflow Management System (WMS) components and-->
-<!--                                    underlying algorithms-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                        <div class="testimonial-block">-->
-<!--                            <div>-->
-<!--                                <div class="pull-left" style="margin-right: 0.5em; margin-top: -0.4em">-->
-<!--                            <span class="fa-stack fa-2x" style="font-size: 1em">-->
-<!--                                <i class="fa fa-square fa-stack-2x" style="color: orangered"></i>-->
-<!--                                <i class="fa fa-bullseye fa-stack-1x fa-inverse"></i>-->
-<!--                            </span>-->
-<!--                                </div>-->
-<!--                                <h3>Simulation Accuracy</h3>-->
-<!--                                <p class="testimonial-text">-->
-<!--                                    Captures the behavior of a real-world system with as little bias as possible via-->
-<!--                                    validated simulation models-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                        <div class="testimonial-block">-->
-<!--                            <div>-->
-<!--                                <div class="pull-left" style="margin-right: 0.5em; margin-top: -0.4em">-->
-<!--                                    <span class="fa-stack fa-2x" style="font-size: 1em">-->
-<!--                                        <i class="fa fa-square fa-stack-2x" style="color: dodgerblue"></i>-->
-<!--                                        <i class="fa fa-expand fa-stack-1x fa-inverse"></i>-->
-<!--                                    </span>-->
-<!--                                </div>-->
-<!--                                <h3>Scalability</h3>-->
-<!--                                <p class="testimonial-text">-->
-<!--                                    Low ratio of simulation time to simulated time, ability to run large simulations-->
-<!--                                    on a single computer with low compute, memory, and energy footprints-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                        <div class="testimonial-block">-->
-<!--                            <div>-->
-<!--                                <div class="pull-left" style="margin-right: 0.5em; margin-top: -0.4em">-->
-<!--                                    <span class="fa-stack fa-2x" style="font-size: 1em">-->
-<!--                                        <i class="fa fa-square fa-stack-2x" style="color: mediumseagreen"></i>-->
-<!--                                        <i class="fa fa-check fa-stack-1x fa-inverse"></i>-->
-<!--                                    </span>-->
-<!--                                </div>-->
-<!--                                <h3>Reproducible Results</h3>-->
-<!--                                <p class="testimonial-text">-->
-<!--                                    Reproduction or repetition of published results by a party working-->
-<!--                                    independently using the same/different simulation models-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                        <div class="testimonial-block" style="background-color: #f9f9f9">-->
-<!--                            <div>-->
-<!--                                <div class="pull-left" style="margin-right: 0.5em; margin-top: -0.4em">-->
-<!--                                    <span class="fa-stack fa-2x" style="font-size: 1em">-->
-<!--                                        <i class="fa fa-square fa-stack-2x" style="color: darkorange"></i>-->
-<!--                                        <i class="fas fa-book-reader fa-stack-1x fa-inverse"></i>-->
-<!--                                    </span>-->
-<!--                                </div>-->
-<!--                                <h3>Education</h3>-->
-<!--                                <p class="testimonial-text" style="margin-bottom: 1em">-->
-<!--                                    Simulation-driven pedagogic modules for teaching parallel and distributed computing-->
-<!--                                </p>-->
-<!--                                <p style="color: #999">-->
-<!--                                    The <strong style="color: #999"><a href="https://eduwrench.org/" target="_blank">-->
-<!--                                        eduWRENCH Project</a></strong>-->
-<!--                                    provides a set of simulation-driven, self-contained, modules that span a-->
-<!--                                    range of proficiency levels, from college freshmen to graduate students, and for-->
-<!--                                    assessing the pedagogic effectiveness of simulation-drive pedagogy-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4 col-sm-12" style="padding-top: 2em">-->
-<!--                <a class="twitter-timeline" data-lang="en" data-height="40em" data-width="100%" data-theme="light"-->
-<!--                   href="https://twitter.com/wrenchproject">Tweets by wrenchproject</a>-->
-<!--                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="space-small bg-light">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">-->
-<!--                <div class="section-title">-->
-<!--                    <h1>What is WRENCH?</h1>-->
-<!--                </div>-->
-<!--                <p>-->
-<!--                    WRENCH enables novel avenues for scientific workflow use, research,-->
-<!--                    development, and education in the context of large-scale scientific-->
-<!--                    computations and data analyses. WRENCH is an open-source library for-->
-<!--                    developing simulators. WRENCH exposes several high-level simulation-->
-<!--                    abstractions to provide high-level <strong>building blocks</strong>-->
-<!--                    for developing custom simulators.-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    WRENCH provides a software framework that makes it possible to simulate-->
-<!--                    <strong>large-scale</strong> hypothetical scenarios <strong>quickly and-->
-<!--                    accurately</strong> on a single computer, obviating the need for expensive-->
-<!--                    and time-consuming trial and error experiments.-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    WRENCH enables <strong>scientists</strong> to make quick and informed-->
-<!--                    choices when executing their workflows, <strong>software developers</strong>-->
-<!--                    to implement more efficient software infrastructures to support workflows,-->
-<!--                    and <strong>researchers</strong> to develop novel efficient algorithms-->
-<!--                    to be embedded within these software infrastructures.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right">-->
-<!--                <img src="./images/wrench-architecture.png" style="width: 25em !important"/>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="space-medium">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                <div class="section-title">-->
-<!--                    <h1>WRENCH in numbers <span style="font-size: 0.5em">(since 2018)</span></h1>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--    </div>-->
-<!--</div>-->
-<!--<p>&nbsp;</p>-->
-
-<!--<div class="space-small bg-light">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                <div class="section-title">-->
-<!--                    <h1>Highlighted Publications</h1>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                <div class="testimonial-block">-->
-<!--                    <div>-->
-<!--                        <strong><i class="fa fa-file-pdf"></i>-->
-<!--                            <a href="https://rafaelsilva.com/files/publications/casanova2020fgcs.pdf" target="_blank">-->
-<!--                                Developing Accurate and Scalable Simulators of Production Workflow Management Systems-->
-<!--                                with WRENCH-->
-<!--                            </a></strong>-->
-<!--                        <p class="testimonial-text" style="font-size: 0.9em">-->
-<!--                            <i>H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani, W. Koch, S.-->
-<!--                                Albrecht, J. Oeth, and F. Suter</i><br/>-->
-<!--                            Future Generation Computer Systems, 2020.-->
-<!--                            DOI: <a href="http://dx.doi.org/10.1016/j.future.2020.05.030" target="_blank">-->
-<!--                            10.1016/j.future.2020.05.030</a>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                <div class="testimonial-block">-->
-<!--                    <div>-->
-<!--                        <strong><i class="fa fa-file-pdf"></i>-->
-<!--                            <a href="https://rafaelsilva.com/files/publications/tanaka2019eduhpc.pdf" target="_blank">-->
-<!--                                Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH-->
-<!--                            </a></strong>-->
-<!--                        <p class="testimonial-text" style="font-size: 0.9em">-->
-<!--                            <i>R. Tanaka, R. Ferreira da Silva, and H. Casanova</i><br/>-->
-<!--                            Workshop on Education for High-Performance Computing (EduHPC), 2019.-->
-<!--                            DOI: <a href="http://dx.doi.org/10.1109/EduHPC49559.2019.00006" target="_blank">-->
-<!--                            10.1109/EduHPC49559.2019.00006</a>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                <div class="testimonial-block">-->
-<!--                    <div>-->
-<!--                        <strong><i class="fa fa-file-pdf"></i>-->
-<!--                            <a href="https://rafaelsilva.com/files/publications/ferreiradasilva2020jocs.pdf"-->
-<!--                               target="_blank">-->
-<!--                                Characterizing, Modeling, and Accurately Simulating Power and Energy Consumption of-->
-<!--                                I/O-intensive Scientific Workflows-->
-<!--                            </a></strong>-->
-<!--                        <p class="testimonial-text" style="font-size: 0.9em">-->
-<!--                            <i>R. Ferreira da Silva, H. Casanova, A. Orgerie, R. Tanaka, E. Deelman, and F.-->
-<!--                                Suter</i><br/>-->
-<!--                            Journal of Computational Science, 2020.-->
-<!--                            DOI: <a href="http://dx.doi.org/10.1016/j.jocs.2020.101157" target="_blank">-->
-<!--                            10.1016/j.jocs.2020.101157</a>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                <div class="testimonial-block">-->
-<!--                    <div>-->
-<!--                        <strong><i class="fa fa-file-pdf"></i>-->
-<!--                            <a href="https://rafaelsilva.com/files/publications/casanova-works-2018.pdf"-->
-<!--                               target="_blank">-->
-<!--                                WRENCH: A Framework for Simulating Workflow Management Systems-->
-<!--                            </a></strong>-->
-<!--                        <p class="testimonial-text" style="font-size: 0.9em">-->
-<!--                            <i>H. Casanova, S. Pandey, J. Oeth, R. Tanaka, F. Suter, and R. Ferreira da Silva</i><br/>-->
-<!--                            13th Workshop on Workflows in Support of Large-Scale Science (WORKS’18), 2018.-->
-<!--                            DOI: <a href="http://dx.doi.org/10.1109/WORKS.2018.00013" target="_blank">-->
-<!--                            10.1109/WORKS.2018.00013</a>.-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<script type="text/javascript">
-    $('.timer').countTo();
-</script>
+    </section>
+</main>
