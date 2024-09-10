@@ -1,3 +1,10 @@
+- version: "2.3"
+  date: September 10, 2024
+  simgrid_version: "3.36"
+  description:
+    - Minor release
+    - "WRENCH version 2.3 includes a more complete REST API implementation as well as various software upgrades and bug fixes."
+
 - version: "2.2"
   date: July 20, 2023
   simgrid_version: "3.34"
