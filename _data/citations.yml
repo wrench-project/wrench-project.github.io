@@ -1,3 +1,11 @@
+- year: 2024
+  type: Conference
+  title: "Automated Calibration of a Simulator of MPI Application Executions"
+  authors: Y. C. Wong, F. Suter, K. Mehta, H. Casanova, J. McDonald
+  url: https://doi.ieeecomputersociety.org/10.1109/e-Science62913.2024.10678714
+  self: True
+  usage: True
+
 - title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
   authors: J. McDonald, J. Dobbs, Y.C. Wong, R. Ferreira da Silva, H. Casanova
   type: Journal
