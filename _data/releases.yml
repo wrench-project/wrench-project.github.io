@@ -1,3 +1,10 @@
+- version: "2.4"
+  date: October 29, 2024
+  simgrid_version: "3.36"
+  description:
+    - Minor release
+    - "WRENCH version 2.4 uses the SimGrid File System Module for all file system simulation,  includes a more complete REST API implementation and documentation, as well as various software housekeeping updates."
+
 - version: "2.3"
   date: September 10, 2024
   simgrid_version: "3.36"
