@@ -1,3 +1,11 @@
+- version: "2.6"
+  date: March 13, 2025
+  simgrid_version: "4.0"
+  description:
+    - Minor release
+    - "WRENCH version 2.6 adds a backfilling depth feature to the EASY and conservative_bf backfilling scheduling algorithms in the BatchComputeService implementation; is upgraded to use SimGrid v4.0 (and SimGrid's FSMod v0.3); and include minor software and documentation updates and fixes."
+
+
 - version: "2.5"
   date: December 16, 2024
   simgrid_version: "3.36"
