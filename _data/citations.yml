@@ -1,11 +1,18 @@
 - year: 2024
+  type: Workshop
+  title: "Automated Calibration of Parallel and Distributed Computing Simulators: A Case Study"
+  authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
+  url: https://doi.org/10.1109/IPDPSW63119.2024.00173
+  self: True
+  usage: True
+
+- year: 2024
   type: Conference
   title: "Simulation of Large-Scale HPC Storage Systems: Challenges and Methodologies"
   authors: J. Monniot, F. Tessier, H. Casanova, G. Antoniu
   url: https://henricasanova.github.io/files/papers/monniot_hipc2024.pdf
   self: True
   usage: True
-
 
 - year: 2024
   type: Conference
