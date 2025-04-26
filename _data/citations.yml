@@ -1,4 +1,12 @@
 - year: 2024
+  type: Conference
+  title: "Modeling Distributed Computing Infrastructures for HEP Applications"
+  authors: M. Horzela, H. Casanova, M. Giffels, A. Gottmann, R. Hofsaess, G. Quast, S. R. Tisbeni, A. Streit, F. Suter
+  url: https://doi.org/10.1051/epjconf/202429504032
+  self: True
+  usage: True
+
+- year: 2024
   type: Workshop
   title: "Automated Calibration of Parallel and Distributed Computing Simulators: A Case Study"
   authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
