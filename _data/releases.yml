@@ -1,3 +1,11 @@
+- version: "2.7"
+  date: May 19, 2025
+  simgrid_version: "4.0"
+  description:
+    - Minor release
+    - "WRENCH version 2.7 adds a ServerlessComputeService implementation and accompanying API to simulate serverless, function-based infrastructures; and include minor software and documentation updates and fixes."
+
+
 - version: "2.6"
   date: March 13, 2025
   simgrid_version: "4.0"
