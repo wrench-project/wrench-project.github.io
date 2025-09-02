@@ -30,14 +30,6 @@
   self: True
   usage: True
 
-- title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
-  authors: J. McDonald, J. Dobbs, Y.C. Wong, R. Ferreira da Silva, H. Casanova
-  type: Journal
-  year: 2024
-  url: https://doi.org/10.1016/j.future.2024.07.005
-  self: True
-  usage: True
-
 - year: 2024
   type: Journal
   title: An exploration of online-simulation-driven portfolio scheduling in workflow management systems
