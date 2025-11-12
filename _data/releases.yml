@@ -1,3 +1,10 @@
+- version: "2.8"
+  date: Nov 12, 2025
+  simgrid_version: "4.1"
+  description:
+    - Minor release
+    - "WRENCH version 2.8 adds a new feature so that controllers can raise events in and send messages to other controllers, which enables a broader range of simulation designs (at the cost of added complexity); and include minor software and documentation updates and fixes."
+
 - version: "2.7"
   date: May 19, 2025
   simgrid_version: "4.0"
