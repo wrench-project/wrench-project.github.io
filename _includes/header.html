@@ -1,4 +1,5 @@
 {% assign releases = site.data.releases %}
+{% assign release = releases[0] %}
 <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
     <div id="header" class="nav-collapse">
         <div class="row clearfix">
@@ -67,29 +68,53 @@
 
     <!--Banner Content-->
     <div id="banner-content" class="row clearfix">
-
-        <div class="col-38">
-
-            <div class="section-heading">
-                <h1 style="text-transform: uppercase; font-size: 2.4em; line-height: 1.2em;">
-                    Cyberinfrastructure Simulation Workbench
-                </h1>
-                <h2>WRENCH is an open-source framework that provides <strong>high-level simulation abstractions</strong>
-                    to <strong>ease the development</strong> of <strong>accurate</strong> and <strong>scalable</strong>
-                    simulators of distributed computing applications, systems, and platforms. It has been used
-                    successfully for <strong>research</strong>, <strong>development</strong>, and
-                    <strong>education</strong></h2>
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">WRENCH Simulation Framework</p>
+                <div class="section-heading">
+                    <h1>Simulate complex cyberinfrastructure at scale</h1>
+                    <p class="hero-lede">Build accurate, scalable simulators for workflows, platforms, and runtime
+                        systems with high-level abstractions on top of SimGrid. Explore design tradeoffs and validate
+                        ideas before deploying to production infrastructure.</p>
+                </div>
+                <div class="hero-tags">
+                    <span>SimGrid-based</span>
+                    <span>Validated models</span>
+                    <span>Reproducible results</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="/wrench/{{ release.version }}/getting_started.html" target="_blank"
+                        class="button">Documentation</a>
+                    <a href="#framework" class="button ghost">Framework overview</a>
+                </div>
+                
             </div>
-
-            {% for release in releases limit: 1 %}
-            <a href="/wrench/{{releases[0].version}}/getting_started.html" target="_blank"
-                class="button">WRENCH-{{release.version}} &mdash; DOCUMENTATION</a>&nbsp;&nbsp;
-            <div>
-                <span style="color: #999; font-size: 0.9em;">Released on {{release.date}}<br />Requires <a
-                        href="https://simgrid.org/" target="_blank">SimGrid {{release.simgrid_version}}</a></span>
+            <div class="hero-panel">
+                <div class="hero-card hero-card-primary">
+                    <span class="hero-card-label">Latest release</span>
+                    <h3>WRENCH-{{ release.version }}</h3>
+                    <p>New abstractions, improved performance, and workflow-centric simulation tooling.</p>
+                    <div class="release-details">
+                        <span><i class="fa fa-calendar"></i> {{ release.date }}</span>
+                        <span><i class="fa fa-cubes"></i> SimGrid {{ release.simgrid_version }}</span>
+                    </div>
+                    <a href="/wrench/{{ release.version }}/getting_started.html" target="_blank" class="button ghost">Read
+                        the docs</a>
+                </div>
+                <div class="hero-card accent hero-card-links">
+                    <h3>Quick links</h3>
+                    <ul class="hero-links">
+                        <li><a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i>
+                                GitHub repository</a></li>
+                        <li><a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
+                                target="_blank"><i class="fa fa-slack"></i> Join the Slack workspace</a></li>
+                        <li><a href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i>
+                                support@wrench-project.org</a></li>
+                        <li><a href="https://github.com/wrench-project/wrench/issues" target="_blank"><i
+                                    class="fa fa-bug"></i> Report an issue</a></li>
+                    </ul>
+                </div>
             </div>
-            {% endfor %}
         </div>
-
     </div><!--End of Row-->
 </header>

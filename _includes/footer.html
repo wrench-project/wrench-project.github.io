@@ -1,41 +1,59 @@
 <!--Footer-->
 <footer id="landing-footer" class="clearfix">
-    <div class="row clearfix">
-        <p id="copyright" class="col-2">&copy;2017&ndash;{{ site.time | date: '%Y' }} WRENCH Team<br />
-            <a href="mailto:support@wrench-project.org">support@wrench-project.org</a>
-        </p>
-
-        <div style="float: right; margin-left: 2em; margin-top: 1em;">
-            <a href="https://isi.edu/" target="_blank"
-                style="text-decoration: none !important; border-bottom: none !important;">
-                <img src="/images/logo-usc.png" style="height: 2.8em" alt="University of Southern California" />
-            </a>
+    <div class="row clearfix footer-top">
+        <div class="footer-brand">
+            <img src="/images/logo-horizontal.png" alt="WRENCH logo" />
+            <p>Open-source simulation workbench for scalable cyberinfrastructure research.</p>
+            <div class="footer-actions">
+                <a href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>
+                <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i>
+                    GitHub</a>
+                <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
+                    target="_blank"><i class="fa fa-slack"></i> Slack</a>
+            </div>
         </div>
-        <div style="float: right; margin-left: 2em; margin-top: 1em;">
-            <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank" style="border: 0">
-                <img src="/images/logo-ornl.png" style="height: 2.8em" alt="ORNL" />
-            </a>
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <a href="#framework">Framework</a>
+            <a href="#publications">Publications</a>
+            <a href="#usage">Research outcomes</a>
+            <a href="#about">About</a>
+            <a href="#dev-corner">Dev's Corner</a>
         </div>
-        <div style="float: right; margin-left: 1em; margin-top: 1em;">
-            <a href="https://www.ics.hawaii.edu" target="_blank" style="border: 0">
-                <img src="/images/logo-uhm.png" style="height: 3em" alt="UHM" />
-            </a>
+        <div class="footer-links">
+            <h4>Community</h4>
+            <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issue tracker</a>
+            <a href="https://simgrid.org/" target="_blank">SimGrid</a>
+            <a href="https://eduwrench.org" target="_blank">eduWRENCH</a>
+            <a href="https://wfcommons.org/" target="_blank">WfCommons</a>
         </div>
-        <div style="float: right; width: 10em; text-align: right; margin-top: 1em;">Mainly developed by:</div>
+        <div class="footer-institutions">
+            <span>Mainly developed by</span>
+            <div class="footer-logos">
+                <a href="https://www.ics.hawaii.edu" target="_blank">
+                    <img src="/images/logo-uhm.png" alt="UHM" />
+                </a>
+                <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank">
+                    <img src="/images/logo-ornl.png" alt="ORNL" />
+                </a>
+            </div>
+        </div>
     </div>
-    
-    <div class="row clearfix">
-        <p class="col-1">
-            WRENCH is funded by the National Science Foundation (NSF) under grants number
+
+    <div class="row clearfix footer-bottom">
+        <div class="footer-funding">
+            WRENCH is funded by the National Science Foundation (NSF) under grants
             <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106059" target="_blank">2106059</a>,
             <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106147" target="_blank">2106147</a>,
             <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank">2103489</a>, and
             <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank">2103508</a>;
-            and the National Center for Scientific Research (CNRS) under grant number PICS07239.
-            Any opinions, findings, and conclusions or recommendations expressed in this material are those
-            of the author(s) and do not necessarily reflect the views of the National Science Foundation or
-            the National Center for Scientific Research.
-        </p>
+            and the National Center for Scientific Research (CNRS) under grant PICS07239. Any opinions, findings, and
+            conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily
+            reflect the views of NSF or CNRS.
+        </div>
+        <div class="footer-meta">
+            &copy;2017&ndash;{{ site.time | date: '%Y' }} WRENCH Team
+        </div>
     </div>
 </footer>
 <!--End of Footer-->
