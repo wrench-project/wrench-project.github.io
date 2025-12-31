@@ -20,58 +20,69 @@ permalink: /
                             confidence before deployment.
                         </p>
                     </div>
-                    <div class="framework-tags">
+                    <!-- <div class="framework-tags">
                         <span>Validated models</span>
                         <span>Scalable execution</span>
                         <span>Reproducible experiments</span>
                         <span>Education-ready</span>
+                    </div> -->
+                    <div class="framework-steps">
+                        <div class="framework-step">
+                            <span class="step-label">Define</span>
+                            <p>Capture platforms, workflows, and services with reusable abstractions.</p>
+                        </div>
+                        <div class="framework-step">
+                            <span class="step-label">Simulate</span>
+                            <p>Run large scenarios fast, with transparent performance signals.</p>
+                        </div>
+                        <div class="framework-step">
+                            <span class="step-label">Validate</span>
+                            <p>Compare outcomes to production behavior and tune models.</p>
+                        </div>
                     </div>
-                    <div class="framework-actions">
+                    <!-- <div class="framework-actions">
                         <a href="#publications" class="button">See research outputs</a>
                         <a href="#dev-corner" class="button ghost">Developer resources</a>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="framework-figure">
-                    <img src="/images/wrench-architecture.png" alt="WRENCH architecture overview" />
-                    <p class="figure-caption">Architecture overview showing WRENCH abstractions atop SimGrid.</p>
-                </div>
-            </div>
+                <div class="framework-feature-stack">
+                    <div class="feature-grid">
+                        <div class="icon-block icon-top wow fadeInUp feature-card accent-gold" data-wow-delay="0.1s">
+                            <div class="icon-block-description">
+                                <h4><i class="fa fa-cubes"></i>&nbsp;&nbsp;MODULAR BUILDING BLOCKS</h4>
+                                <p>Compose CI services, runtime systems, and algorithms from reusable components.</p>
+                            </div>
+                        </div>
 
-            <div class="feature-grid">
-                <div class="icon-block icon-top wow fadeInUp feature-card accent-gold" data-wow-delay="0.1s">
-                    <div class="icon-block-description">
-                        <h4><i class="fa fa-cubes"></i>&nbsp;&nbsp;MODULAR BUILDING BLOCKS</h4>
-                        <p>Compose CI services, runtime systems, and algorithms from reusable components.</p>
-                    </div>
-                </div>
+                        <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.3s">
+                            <div class="icon-block-description">
+                                <h4><i class="fa fa-check-circle"></i>&nbsp;&nbsp;VALIDATED MODELS</h4>
+                                <p>Anchor results in models that reflect observed system behavior.</p>
+                            </div>
+                        </div>
 
-                <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.3s">
-                    <div class="icon-block-description">
-                        <h4><i class="fa fa-check-circle"></i>&nbsp;&nbsp;VALIDATED MODELS</h4>
-                        <p>Anchor results in models that reflect observed system behavior.</p>
-                    </div>
-                </div>
+                        <div class="icon-block icon-top wow fadeInUp feature-card accent-teal" data-wow-delay="0.5s">
+                            <div class="icon-block-description">
+                                <h4><i class="fa fa-line-chart"></i>&nbsp;&nbsp;SCALABLE RUNS</h4>
+                                <p>Simulate large scenarios quickly on a single workstation.</p>
+                            </div>
+                        </div>
 
-                <div class="icon-block icon-top wow fadeInUp feature-card accent-teal" data-wow-delay="0.5s">
-                    <div class="icon-block-description">
-                        <h4><i class="fa fa-line-chart"></i>&nbsp;&nbsp;SCALABLE RUNS</h4>
-                        <p>Simulate large scenarios quickly on a single workstation.</p>
-                    </div>
-                </div>
+                        <div class="icon-block icon-top wow fadeInUp feature-card accent-ink" data-wow-delay="0.5s">
+                            <div class="icon-block-description">
+                                <h4><i class="fa fa-refresh"></i>&nbsp;&nbsp;REPRODUCIBLE EXPERIMENTS</h4>
+                                <p>Share configurations and rerun experiments with consistent outcomes.</p>
+                            </div>
+                        </div>
 
-                <div class="icon-block icon-top wow fadeInUp feature-card accent-ink" data-wow-delay="0.5s">
-                    <div class="icon-block-description">
-                        <h4><i class="fa fa-refresh"></i>&nbsp;&nbsp;REPRODUCIBLE EXPERIMENTS</h4>
-                        <p>Share configurations and rerun experiments with consistent outcomes.</p>
-                    </div>
-                </div>
-
-                <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.5s">
-                    <div class="icon-block-description">
-                        <h4><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;EDUCATION TOOLKIT</h4>
-                        <p><a href="https://eduwrench.org" target="_blank">eduWRENCH</a> delivers classroom-ready
-                            simulation modules from freshman to graduate levels.</p>
+                        <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.5s">
+                            <div class="icon-block-description">
+                                <h4><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;EDUCATION TOOLKIT</h4>
+                                <p><a href="https://eduwrench.org" target="_blank">eduWRENCH</a> delivers classroom-ready
+                                    simulation modules from freshman to graduate levels.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,6 +100,14 @@ permalink: /
                     <p class="section-subtitle">Grab the official citation and browse papers authored by the WRENCH
                         team.</p>
                 </div>
+                <!-- <div class="publication-highlight">
+                    <h4>Why researchers cite WRENCH</h4>
+                    <ul>
+                        <li>Reproducible results across platforms</li>
+                        <li>Model fidelity grounded in observed traces</li>
+                        <li>Fast iteration on workflow and scheduler ideas</li>
+                    </ul>
+                </div> -->
                 <div class="content-card citation-card">
                     <strong class="card-title">Cite WRENCH</strong>
                     <p class="section-subtitle">BibTeX entry:</p>
@@ -133,6 +152,9 @@ permalink: /
 
 
     {% assign total_usage = site.data.citations | size %}
+    {% assign usages_sorted = site.data.citations | sort: "year" %}
+    {% assign first_year = usages_sorted.first.year %}
+    {% assign last_year = usages_sorted.last.year %}
     <section id="usage" class="scrollto clearfix">
         <div class="row clearfix">
 
@@ -152,6 +174,23 @@ permalink: /
                     <canvas id="usageChart"></canvas>
                 </div>
             </div>
+            <!-- <div class="usage-insights">
+                <div class="insight-card">
+                    <span class="insight-label">Coverage</span>
+                    <strong>{{ first_year }} — {{ last_year }}</strong>
+                    <p>Years of research outcomes powered by WRENCH.</p>
+                </div>
+                <div class="insight-card">
+                    <span class="insight-label">Total impact</span>
+                    <strong>{{ total_usage }} articles</strong>
+                    <p>Published work citing WRENCH simulations.</p>
+                </div>
+                <div class="insight-card">
+                    <span class="insight-label">Domains</span>
+                    <strong>Workflows + CI</strong>
+                    <p>HPC, cloud, data-intensive pipelines, and cyberinfrastructure.</p>
+                </div>
+            </div> -->
             <div class="usage-panel">
                 <div class="usage-header">
                     <h3>Paper list</h3>
@@ -188,7 +227,7 @@ permalink: /
             datasets: [],
         }
         let datasetTypes = ["Journal", "Conference", "Workshop", "PhD Thesis", "Report"];
-        let datasetColors = ["#DC5C5F", "#F57C5B", "#F2C14E", "#2C8D8F", "#E07A5F", "#4E8098", "#F4A261"];
+        let datasetColors = ["#2B6DF6", "#35C0A3", "#F26B4C", "#E5B355", "#0B1B2B", "#6D7C91", "#8BB8F5"];
         for (let i = 0; i < datasetTypes.length; i++) {
             data.datasets.push({
                 label: datasetTypes[i],
@@ -247,84 +286,74 @@ permalink: /
                 <h2 class="section-title">ABOUT</h2>
             </div>
 
-            <div class="about-layout">
-                <div class="about-intro">
-                    <h3>Open-source, research-driven</h3>
-                    <p>WRENCH is an open-source framework distributed under the LGPLv3 license, built to enable
-                        reproducible, community-driven cyberinfrastructure research.</p>
-                    <div class="about-tags">
-                        <span>LGPLv3</span>
-                        <span>Open-source</span>
-                        <span>Community-led</span>
-                    </div>
+            <div class="about-intro about-single">
+                <h3>Open-source, research-driven</h3>
+                <p>WRENCH is an open-source framework distributed under the LGPLv3 license, built to enable
+                    reproducible, community-driven cyberinfrastructure research.</p>
+                <p><strong>Core institutions:</strong> University of Hawai'i at Mãnoa (UHM) and Oak Ridge National
+                    Laboratory (ORNL).</p>
+                <p><strong>Collaboration model:</strong> Researchers, educators, and developers advancing open
+                    simulation practices together.</p>
+                <div class="about-tags">
+                    <span>LGPLv3</span>
+                    <span>Open-source</span>
+                    <span>Community-led</span>
                 </div>
-                <div class="about-highlights">
-                    <div class="about-card">
-                        <h4>Core institutions</h4>
-                        <p>University of Hawai'i at Mãnoa (UHM), Oak Ridge National Laboratory (ORNL), and the
-                            University of Southern California (USC).</p>
+                {% assign current_count = site.data.team_current | size %}
+                {% assign previous_count = site.data.team_previous | size %}
+                <div class="contributors-panel">
+                    <div class="contributors-header">
+                        <h3>Contributors</h3>
+                        <p>{{ current_count }} current collaborators · {{ previous_count }} alumni contributors.</p>
                     </div>
-                    <div class="about-card">
-                        <h4>Collaboration model</h4>
-                        <p>Researchers, educators, and developers advancing open simulation practices together.</p>
-                    </div>
-                </div>
-            </div>
-
-            {% assign current_count = site.data.team_current | size %}
-            {% assign previous_count = site.data.team_previous | size %}
-            <div class="contributors-panel">
-                <div class="contributors-header">
-                    <h3>Contributors</h3>
-                    <p>{{ current_count }} current collaborators · {{ previous_count }} alumni contributors.</p>
-                </div>
-                <div class="contributors-grid">
-                    <div class="contributors-group">
-                        <h4>Current team</h4>
-                        <div class="contributors-list">
-                            {% if site.data.team_current.size > 0 %}
-                            <ul class="contributors-compact contributors-current">
-                                {% for n in site.data.team_current %}
-                                <li class="wow fadeInUp" data-wow-delay="0.4s">
-                                    <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
-                                    <div>
-                                        <span class="contributor-name">{{ n.name }}</span>
-                                        <span class="contributor-role">{{ n.description }}</span>
-                                    </div>
-                                    <div class="contributor-links">
-                                        <a href="mailto:{{ n.email }}" aria-label="Email"><i
-                                                class="fa fa-envelope"></i></a>
-                                        <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
-                                                class="fa fa-linkedin"></i></a>
-                                        <a href="{{ n.website }}" target="_blank" aria-label="Website"><i
-                                                class="fa fa-link"></i></a>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
+                    <div class="contributors-grid">
+                        <div class="contributors-group">
+                            <h4>Current team</h4>
+                            <div class="contributors-list">
+                                {% if site.data.team_current.size > 0 %}
+                                <ul class="contributors-compact contributors-current">
+                                    {% for n in site.data.team_current %}
+                                    <li class="wow fadeInUp" data-wow-delay="0.4s">
+                                        <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
+                                        <div>
+                                            <span class="contributor-name">{{ n.name }}</span>
+                                            <span class="contributor-role">{{ n.description }}</span>
+                                        </div>
+                                        <div class="contributor-links">
+                                            <a href="mailto:{{ n.email }}" aria-label="Email"><i
+                                                    class="fa fa-envelope"></i></a>
+                                            <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
+                                                    class="fa fa-linkedin"></i></a>
+                                            <a href="{{ n.website }}" target="_blank" aria-label="Website"><i
+                                                    class="fa fa-link"></i></a>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </div>
                         </div>
-                    </div>
-                    <div class="contributors-group">
-                        <h4>Previous contributors</h4>
-                        <div class="contributors-list is-alumni">
-                            {% if site.data.team_previous.size > 0 %}
-                            <ul class="contributors-compact contributors-current is-alumni">
-                                {% for n in site.data.team_previous %}
-                                <li>
-                                    <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
-                                    <div>
-                                        <span class="contributor-name">{{ n.name }}</span>
-                                        <span class="contributor-role">{{ n.description }}</span>
-                                    </div>
-                                    <div class="contributor-links">
-                                        <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
-                                                class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
+                        <div class="contributors-group">
+                            <h4>Previous contributors</h4>
+                            <div class="contributors-list is-alumni">
+                                {% if site.data.team_previous.size > 0 %}
+                                <ul class="contributors-compact contributors-current is-alumni" style="border: 0; padding: 0;">
+                                    {% for n in site.data.team_previous %}
+                                    <li>
+                                        <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
+                                        <div>
+                                            <span class="contributor-name">{{ n.name }}</span>
+                                            <span class="contributor-role">{{ n.description }}</span>
+                                        </div>
+                                        <div class="contributor-links">
+                                            <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
+                                                    class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,47 +362,75 @@ permalink: /
     </section>
 
 
+    {% assign releases = site.data.releases %}
+    {% assign release = releases[0] %}
     <section id="dev-corner" class="introduction scrollto section-slab">
         <div class="row clearfix">
-            <div class="col-2">
-                <div class="section-heading">
-                    <h3>DEV'S CORNER</h3>
-                    <h2 class="section-title">Developer resources, support, and community</h2>
-                    <p class="section-subtitle">
-                        Source code lives on <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i> GitHub</a>. Report bugs or request features via the <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues tracker</a>.
-                    </p>
-                    <p class="section-subtitle">
-                        Reach the team at <a href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-3 dev-grid">
-                <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="dev-card-header">
-                        <span class="dev-icon"><i class="fa fa-slack"></i></span>
-                        <h4>Join the WRENCH Slack</h4>
+            <div class="dev-layout">
+                <div class="dev-intro">
+                    <div class="section-heading">
+                        <h3>DEV'S CORNER</h3>
+                        <h2 class="section-title">Everything you need to build, test, and collaborate</h2>
+                        <p class="section-subtitle">
+                            Source code lives on <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i> GitHub</a>. Report bugs or request features via the <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues tracker</a>.
+                        </p>
                     </div>
-                    <p>Collaborate with the community, share experiences, and get support in real time.</p>
-                    <a class="dev-link" href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q" target="_blank">Join the workspace</a>
-                </div>
-
-                <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="dev-card-header">
-                        <span class="dev-icon"><i class="fa fa-puzzle-piece"></i></span>
-                        <h4>Workflow assets</h4>
+                    <div class="dev-actions">
+                        <a class="button" href="/wrench/{{ release.version }}/getting_started.html" target="_blank">Get started</a>
+                        <a class="button ghost" href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>
                     </div>
-                    <p>Access workflow traces and generators via <a href="https://wfcommons.org/" target="_blank">WfCommons</a> to feed WRENCH simulators.</p>
-                    <a class="dev-link" href="https://wfcommons.org/" target="_blank">Explore WfCommons</a>
+                    <div class="dev-quick">
+                        <div class="dev-cta-card">
+                            <span class="dev-cta-label">Community</span>
+                            <h4>Join the WRENCH Slack</h4>
+                            <p>Collaborate with the community, share experiences, and get support in real time.</p>
+                            <a class="dev-link" href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q" target="_blank">Join the workspace</a>
+                        </div>
+                        <div class="dev-cta-card">
+                            <span class="dev-cta-label">Research assets</span>
+                            <h4>Workflow traces + generators</h4>
+                            <p>Access workflow assets via <a href="https://wfcommons.org/" target="_blank">WfCommons</a> to feed WRENCH simulators.</p>
+                            <a class="dev-link" href="https://wfcommons.org/" target="_blank">Explore WfCommons</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="dev-card-header">
-                        <span class="dev-icon"><i class="fa fa-github"></i></span>
-                        <h4>Latest unstable build</h4>
+                <div class="dev-resource-grid">
+                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="dev-card-header">
+                            <span class="dev-icon"><i class="fa fa-code"></i></span>
+                            <h4>Core repository</h4>
+                        </div>
+                        <p>Track releases, browse issues, and contribute to the main codebase.</p>
+                        <a class="dev-link" href="https://github.com/wrench-project/wrench" target="_blank">View GitHub</a>
                     </div>
-                    <p>Grab the freshest features and performance updates (with the usual experimental caveats).</p>
-                    <pre>git clone https://github.com/wrench-project/wrench.git</pre>
+
+                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="dev-card-header">
+                            <span class="dev-icon"><i class="fa fa-bug"></i></span>
+                            <h4>Issue tracker</h4>
+                        </div>
+                        <p>File bugs, request features, and follow roadmap discussions.</p>
+                        <a class="dev-link" href="https://github.com/wrench-project/wrench/issues" target="_blank">Open an issue</a>
+                    </div>
+
+                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="dev-card-header">
+                            <span class="dev-icon"><i class="fa fa-flask"></i></span>
+                            <h4>Latest unstable build</h4>
+                        </div>
+                        <p>Grab the freshest features and performance updates (with the usual experimental caveats).</p>
+                        <pre>git clone https://github.com/wrench-project/wrench.git</pre>
+                    </div>
+
+                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="dev-card-header">
+                            <span class="dev-icon"><i class="fa fa-book"></i></span>
+                            <h4>Documentation hub</h4>
+                        </div>
+                        <p>API references, tutorials, and guides to speed up onboarding.</p>
+                        <a class="dev-link" href="/wrench/{{ release.version }}/getting_started.html" target="_blank">Read the docs</a>
+                    </div>
                 </div>
             </div>
         </div>
