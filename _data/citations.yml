@@ -1,7 +1,7 @@
 - year: 2025
   type: Conference
   title: "Surrogate Modeling for Scalable Evaluation of Distributed Computing Systems for HEP Applications"
-  authos: L. Schmid, M. Horzela, V. Zhyla, M. Giffels, G. Quast, A. Koziolek
+  authors: L. Schmid, M. Horzela, V. Zhyla, M. Giffels, G. Quast, A. Koziolek
   url: https://www.epj-conferences.org/articles/epjconf/abs/2025/22/epjconf_chep2025_01130/epjconf_chep2025_01130.html
   self: False
   usage: True
@@ -17,7 +17,7 @@
 - year: 2025
   type: Conference
   title: "BottleMod: Modeling Data Flows and Tasks for Fast Bottleneck Analysis"
-  authors: A. Lößer, J. Witzke, F. Schintke, B. Scheuermann
+  authors: "A. Loßer, J. Witzke, F. Schintke, B. Scheuermann"
   url: https://dl.acm.org/doi/abs/10.1145/3676151.3719382
   self: False
   usage: True
