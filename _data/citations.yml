@@ -8,6 +8,22 @@
 
 - year: 2025
   type: Conference
+  title: "ML-based adaptive prefetching and data placement for us hep systems"
+  authors: V.S.S. Lamba Karanam, S.S. Barla, B. Ramamurthy, D. Weitzel
+  url: https://www.epj-conferences.org/articles/epjconf/abs/2025/22/epjconf_chep2025_01011/epjconf_chep2025_01011.html
+  self: False
+  usage: True
+
+- year: 2025
+  type: PhD Thesis
+  title: "Non-blackbox Robust Design of Machine Learning in Networks"
+  authors: V.S.S. Lamba Karanam
+  url: https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1394&context=dissunl
+  self: False
+  usage: True
+
+- year: 2025
+  type: Conference
   title: "Surrogate Modeling for Scalable Evaluation of Distributed Computing Systems for HEP Applications"
   authors: L. Schmid, M. Horzela, V. Zhyla, M. Giffels, G. Quast, A. Koziolek
   url: https://www.epj-conferences.org/articles/epjconf/abs/2025/22/epjconf_chep2025_01130/epjconf_chep2025_01130.html
