@@ -1,3 +1,11 @@
+- year: 2026
+  type: Conference
+  title: "Performance and Energy Consumption Prediction of Scientific Workflows using Machine Learning"
+  authors: F. Barbosa, E. Damasceno, F. Queiroz, J.B. Guimaraes, D. Cordeiro, J.S. Araujo, M. Amaris
+  url: https://carlaconference.org/
+  self: False
+  usage: True
+
 - year: 2025
   type: Conference
   title: "Surrogate Modeling for Scalable Evaluation of Distributed Computing Systems for HEP Applications"
