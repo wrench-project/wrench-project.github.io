@@ -1,4 +1,12 @@
 - year: 2026
+  type: PhD Thesis
+  title: "Simulation Studies on the Integration of NHR@Göttingen into the WLCG"
+  authors: A. Leone
+  url: https://uni-goettingen.de/de/document/download/9459ae968c3789f0d038478238894a29.pdf/BSc_Adrian_Leone.pdf
+  self: False
+  usage: True
+
+- year: 2026
   type: Conference
   title: "Performance and Energy Consumption Prediction of Scientific Workflows using Machine Learning"
   authors: F. Barbosa, E. Damasceno, F. Queiroz, J.B. Guimaraes, D. Cordeiro, J.S. Araujo, M. Amaris
