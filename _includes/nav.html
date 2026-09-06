@@ -1,0 +1,33 @@
+{%- assign release = site.data.releases[0] -%}
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader" data-nav>
+  <div class="shell site-header__inner">
+    <a class="brand" href="#top" aria-label="WRENCH home">
+      <img src="/images/logo-horizontal.png" alt="WRENCH" width="150" height="28" />
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main">
+      <ul class="site-nav__list" data-spy-nav>
+        <li><a href="#framework">Framework</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#publications">Cite</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#about">Team</a></li>
+        <li><a href="/wrench/{{ release.version }}/index.html">Docs <span class="ext-dot" aria-hidden="true"></span></a></li>
+        <li><a href="https://eduwrench.org" target="_blank" rel="noopener">Education <span class="ext-dot" aria-hidden="true"></span></a></li>
+      </ul>
+      <div class="site-nav__aside">
+        <a class="icon-btn" href="https://github.com/wrench-project/wrench" target="_blank" rel="noopener" aria-label="WRENCH on GitHub" title="GitHub">{% include icon.html name="github" %}</a>
+        <a class="icon-btn" href="{{ site.slack_url }}" target="_blank" rel="noopener" aria-label="Join the WRENCH Slack" title="Slack">{% include icon.html name="slack" %}</a>
+        <a class="btn btn--sm btn--primary" href="/wrench/{{ release.version }}/getting_started.html">Get started</a>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <span class="nav-toggle__open">{% include icon.html name="menu" %}</span>
+      <span class="nav-toggle__close">{% include icon.html name="close" %}</span>
+    </button>
+  </div>
+  <div class="site-header__progress" id="scrollProgress" aria-hidden="true"></div>
+</header>

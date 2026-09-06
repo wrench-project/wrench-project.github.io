@@ -1,21 +1,26 @@
-# Site settings
+# ---------------------------------------------------------------------------
+# Site settings — wrench-project.org
+# ---------------------------------------------------------------------------
 title: WRENCH
-subtitle: Cyberinfrastructure Simulation Workbench
+tagline: Cyberinfrastructure Simulation Workbench
+description: >-
+  WRENCH is an open-source framework for building accurate, scalable, and
+  reproducible simulators of parallel and distributed computing systems.
+  Built on SimGrid, it lets researchers, educators, and developers prototype
+  runtime systems and evaluate workflow, scheduling, storage, and energy
+  strategies without access to a production platform.
+url: "https://wrench-project.org"
+baseurl: ""
+lang: en
+
+# Referenced from _includes/nav.html and _includes/footer.html
+slack_url: "https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
+support_email: support@wrench-project.org
 
 markdown: kramdown
-enable-mathjax: yes
-
-permalink: /blog/:title/
-
-# Pagination
-paginate: 8
-paginate_path: /blog/page:num/
 
 plugins:
-  - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
-  - jekyll-feed       # Adds feed to the website at /feed.xml
-  - jekyll-paginate   # Used for sorting posts by page numbers.
-  - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
+  - jekyll-sitemap    # /sitemap.xml and /robots.txt
 
 exclude:
   - .jekyll-cache

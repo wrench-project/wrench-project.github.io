@@ -1,38 +1,18 @@
-<!DOCTYPE HTML>
-<html>
-
-<head lang="en">
-    {% include head.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  {% include head.html %}
 </head>
+<body id="top" class="{{ page.body_class }}">
+  {% include nav.html %}
 
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status" class="la-ball-triangle-path">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!--End of Preloader-->
+  <main id="main">
+    {{ content }}
+  </main>
 
-    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
-        </div>
-        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
-    </div>
+  {% include footer.html %}
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-        {% include header.html %}
-
-        {{ content }}
-
-        {% include footer.html %}
-    </div>
-
+  <script src="/assets/js/site.js?v=3" defer></script>
+  {{ page.scripts }}
 </body>
-
 </html>

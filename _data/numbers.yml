@@ -1,6 +1,7 @@
-releases: 14
-loc: 28
-modules: 22
-simulators: 7
-contributors: 16
-pedagogic_simulators: 17
+# Curated figures that cannot be derived from the other data files.
+# Everything else (release count, publications, citations, contributors,
+# simulators) is computed from _data/*.yml at build time — do not duplicate
+# those here, they drift.
+loc: 28                   # thousands of lines of code in the WRENCH core
+modules: 22               # pedagogic modules on eduWRENCH
+pedagogic_simulators: 17  # interactive simulators backing those modules

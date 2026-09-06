@@ -3,436 +3,892 @@ layout: default
 permalink: /
 ---
 
-<!--Main Content Area-->
-<main id="content">
+{%- assign release = site.data.releases[0] -%}
+{%- assign release_count = site.data.releases | size -%}
+{%- assign citation_count = site.data.citations | size -%}
+{%- assign current_count = site.data.team_current | size -%}
+{%- assign previous_count = site.data.team_previous | size -%}
+{%- assign contributor_count = current_count | plus: previous_count -%}
+{%- assign numbers = site.data.numbers -%}
+{%- assign years = site.data.citations | map: 'year' | uniq | sort -%}
+{%- assign first_year = years | first -%}
+{%- assign last_year = years | last -%}
 
-    <section id="framework" class="introduction scrollto section-slab">
-        <div class="row clearfix">
-            <div class="framework-hero">
-                <div class="framework-copy">
-                    <div class="section-heading">
-                        <h3>THE WRENCH FRAMEWORK</h3>
-                        <h2 class="section-title">A simulation workbench for modern cyberinfrastructure</h2>
-                        <p class="section-subtitle">
-                            WRENCH builds on <a href="https://simgrid.org" target="_blank"><strong>SimGrid</strong></a>
-                            to deliver validated models, fast execution, and expressive scenario design. Prototype
-                            runtime systems, stress-test scheduling strategies, and explore platform behavior with
-                            confidence before deployment.
-                        </p>
-                    </div>
-                    <!-- <div class="framework-tags">
-                        <span>Validated models</span>
-                        <span>Scalable execution</span>
-                        <span>Reproducible experiments</span>
-                        <span>Education-ready</span>
-                    </div> -->
-                    <div class="framework-steps">
-                        <div class="framework-step">
-                            <span class="step-label">Define</span>
-                            <p>Capture platforms, workflows, and services with reusable abstractions.</p>
-                        </div>
-                        <div class="framework-step">
-                            <span class="step-label">Simulate</span>
-                            <p>Run large scenarios fast, with transparent performance signals.</p>
-                        </div>
-                        <div class="framework-step">
-                            <span class="step-label">Validate</span>
-                            <p>Compare outcomes to production behavior and tune models.</p>
-                        </div>
-                    </div>
-                    <!-- <div class="framework-actions">
-                        <a href="#publications" class="button">See research outputs</a>
-                        <a href="#dev-corner" class="button ghost">Developer resources</a>
-                    </div> -->
-                </div>
+<!-- ══════════════════════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="shell hero__inner">
 
-                <div class="framework-feature-stack">
-                    <div class="feature-grid">
-                        <div class="icon-block icon-top wow fadeInUp feature-card accent-gold" data-wow-delay="0.1s">
-                            <div class="icon-block-description">
-                                <h4><i class="fa fa-cubes"></i>&nbsp;&nbsp;MODULAR BUILDING BLOCKS</h4>
-                                <p>Compose CI services, runtime systems, and algorithms from reusable components.</p>
-                            </div>
-                        </div>
+    <div class="hero__copy" data-reveal>
+      <div class="hero-badge">
+        <span class="hero-badge__tag">New</span>
+        <span><b>WRENCH-{{ release.version }}</b> on SimGrid&nbsp;{{ release.simgrid_version }} · {{ release.date }}</span>
+      </div>
 
-                        <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.3s">
-                            <div class="icon-block-description">
-                                <h4><i class="fa fa-check-circle"></i>&nbsp;&nbsp;VALIDATED MODELS</h4>
-                                <p>Anchor results in models that reflect observed system behavior.</p>
-                            </div>
-                        </div>
+      <h1>Simulate the system<br />before you <span class="serif">build</span> it.</h1>
 
-                        <div class="icon-block icon-top wow fadeInUp feature-card accent-teal" data-wow-delay="0.5s">
-                            <div class="icon-block-description">
-                                <h4><i class="fa fa-line-chart"></i>&nbsp;&nbsp;SCALABLE RUNS</h4>
-                                <p>Simulate large scenarios quickly on a single workstation.</p>
-                            </div>
-                        </div>
+      <p class="hero__lede">
+        WRENCH is an open-source workbench for building <strong>accurate, scalable, and
+        reproducible</strong> simulators of parallel and distributed computing systems.
+        Prototype a runtime system, compare scheduling strategies, or run a thousand
+        what-if scenarios overnight — on a single laptop, without touching a production
+        platform.
+      </p>
 
-                        <div class="icon-block icon-top wow fadeInUp feature-card accent-ink" data-wow-delay="0.5s">
-                            <div class="icon-block-description">
-                                <h4><i class="fa fa-refresh"></i>&nbsp;&nbsp;REPRODUCIBLE EXPERIMENTS</h4>
-                                <p>Share configurations and rerun experiments with consistent outcomes.</p>
-                            </div>
-                        </div>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/wrench/{{ release.version }}/getting_started.html">
+          Get started {% include icon.html name="arrow-right" %}
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#framework">See how it works</a>
+      </div>
 
-                        <div class="icon-block icon-top wow fadeInUp feature-card accent-orange" data-wow-delay="0.5s">
-                            <div class="icon-block-description">
-                                <h4><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;EDUCATION TOOLKIT</h4>
-                                <p><a href="https://eduwrench.org" target="_blank">eduWRENCH</a> delivers classroom-ready
-                                    simulation modules from freshman to graduate levels.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <b><span data-count="{{ citation_count }}">{{ citation_count }}</span></b>
+          <span>papers &amp; theses citing WRENCH</span>
         </div>
-    </section>
-
-
-    <section id="publications" class="secondary-color scrollto clearfix">
-        <div class="row clearfix">
-            {% assign publication_count = site.data.publications | size %}
-            <div class="col-3">
-                <div class="section-heading">
-                    <h3>RESEARCH PUBLICATIONS</h3>
-                    <h2 class="section-title">Citing WRENCH &amp; published work</h2>
-                    <p class="section-subtitle">Grab the official citation and browse papers authored by the WRENCH
-                        team.</p>
-                </div>
-                <!-- <div class="publication-highlight">
-                    <h4>Why researchers cite WRENCH</h4>
-                    <ul>
-                        <li>Reproducible results across platforms</li>
-                        <li>Model fidelity grounded in observed traces</li>
-                        <li>Fast iteration on workflow and scheduler ideas</li>
-                    </ul>
-                </div> -->
-                <div class="content-card citation-card">
-                    <strong class="card-title">Cite WRENCH</strong>
-                    <p class="section-subtitle">BibTeX entry:</p>
-                    <pre>
-@article{wrench,
-    title = {Developing Accurate and Scalable Simulators of Production Workflow Management Systems with WRENCH},
-    author = {Casanova, Henri and Ferreira da Silva, Rafael and Tanaka, Ryan and Pandey, Suraj and Jethwani, Gautam and Koch, William and Albrecht, Spencer and Oeth, James and Suter, Fr\'{e}d\'{e}ric},
-    journal = {Future Generation Computer Systems},
-    volume = {112},
-    number = {},
-    pages = {162--175},
-    year = {2020},
-    doi = {10.1016/j.future.2020.05.030}
-}</pre>
-                </div>
-            </div>
-
-            <div class="col-2-3">
-                <div class="publications-panel">
-                    <div class="publications-header">
-                        <div>
-                            <h3>WRENCH Team Publications</h3>
-                            <p>Journals, conferences, workshops, and reports curated by the team.</p>
-                        </div>
-                        <div class="publications-badge">Curated list</div>
-                    </div>
-                    <div class="publications-list">
-                        {% if site.data.publications.size > 0 %}
-                        {% for n in site.data.publications %}
-                        <div class="publication-item">
-                            <p><a href="{{ n.url }}" target="_blank">{{ n.title }}</a>, {{ n.authors }},
-                                {{ n.description }}, doi: <a href="http://dx.doi.org/{{ n.doi }}" target="_blank">{{ n.doi }}</a>
-                            </p>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
+        <div class="hero__meta-item">
+          <b><span data-count="{{ release_count }}">{{ release_count }}</span></b>
+          <span>stable releases since 2017</span>
         </div>
-    </section>
+        <div class="hero__meta-item">
+          <b>LGPLv3</b>
+          <span>free and open source</span>
+        </div>
+      </div>
+    </div>
 
-
-    {% assign total_usage = site.data.citations | size %}
-    {% assign usages_sorted = site.data.citations | sort: "year" %}
-    {% assign first_year = usages_sorted.first.year %}
-    {% assign last_year = usages_sorted.last.year %}
-    <section id="usage" class="scrollto clearfix">
-        <div class="row clearfix">
-
-            <div class="col-3">
-
-                <div class="section-heading">
-                    <h3>THEY USE WRENCH</h3>
-                    <h2 class="section-title">Research Outcomes &amp; Papers Using WRENCH</h2>
-                    <p class="section-subtitle">
-                        WRENCH has enabled research in <strong>{{ total_usage }} articles.</strong> Explore outcomes by
-                        year and browse the papers that rely on WRENCH across the workflows community.
-                    </p>
-                </div>
-            </div>
-            <div class="col-2-3">
-                <div class="chart-card">
-                    <canvas id="usageChart"></canvas>
-                </div>
-            </div>
-            <!-- <div class="usage-insights">
-                <div class="insight-card">
-                    <span class="insight-label">Coverage</span>
-                    <strong>{{ first_year }} — {{ last_year }}</strong>
-                    <p>Years of research outcomes powered by WRENCH.</p>
-                </div>
-                <div class="insight-card">
-                    <span class="insight-label">Total impact</span>
-                    <strong>{{ total_usage }} articles</strong>
-                    <p>Published work citing WRENCH simulations.</p>
-                </div>
-                <div class="insight-card">
-                    <span class="insight-label">Domains</span>
-                    <strong>Workflows + CI</strong>
-                    <p>HPC, cloud, data-intensive pipelines, and cyberinfrastructure.</p>
-                </div>
-            </div> -->
-            <div class="usage-panel">
-                <div class="usage-header">
-                    <h3>Paper list</h3>
-                    <p>Scroll to browse publications that use WRENCH.</p>
-                </div>
-                <div class="usage-list">
-                    {% assign usages = site.data.citations | sort: "year" | reverse %}
-                    {% for n in usages %}
-                    <div class="usage-item">
-                        <p><strong><a href="{{n.url}}" target="_blank">{{n.title}}</a></strong> — {{n.authors}},
-                            {{n.year}}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+    <div class="hero__side" data-reveal data-delay="2">
+      <!-- Code window with tabs -->
+      <div class="window" data-tabs>
+        <div class="window__bar">
+          <div class="window__dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="window__tabs" role="tablist" aria-label="Example code">
+            <button class="window__tab is-active" data-tab="cpp" type="button">simulator.cpp</button>
+            <button class="window__tab" data-tab="xml" type="button">platform.xml</button>
+            <button class="window__tab" data-tab="sh" type="button">install</button>
+          </div>
         </div>
 
-    </section>
+        <div class="window__body">
+          <div class="window__pane is-active" data-pane="cpp">
+<pre><code><span class="c-com">// A complete simulator, in a handful of calls.</span>
+<span class="c-key">#include</span> <span class="c-str">&lt;wrench.h&gt;</span>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<span class="c-type">int</span> <span class="c-fn">main</span>(<span class="c-type">int</span> argc, <span class="c-type">char</span> **argv) {
+  <span class="c-key">auto</span> simulation = wrench::Simulation::createSimulation();
+  simulation-&gt;init(&amp;argc, argv);
 
-    <script type="text/javascript">
-        let entries = [
-            {% assign usages = site.data.citations | sort: "year" %}
-        {% for n in usages %}
-        {
-            year: "{{n.year}}",
-                type: "{{n.type}}"
-        },
-        {% endfor %}
-        ]
-        let data = {
-            labels: [],
-            datasets: [],
-        }
-        let datasetTypes = ["Journal", "Conference", "Workshop", "PhD Thesis", "Report"];
-        let datasetColors = ["#2B6DF6", "#35C0A3", "#F26B4C", "#E5B355", "#0B1B2B", "#6D7C91", "#8BB8F5"];
-        for (let i = 0; i < datasetTypes.length; i++) {
-            data.datasets.push({
-                label: datasetTypes[i],
-                backgroundColor: datasetColors[i],
-                data: []
-            });
-        }
-        for (let i = 0; i < entries.length; i++) {
-            if (!data.labels.includes(entries[i].year)) {
-                data.labels.push(entries[i].year);
-                for (let j = 0; j < datasetTypes.length; j++) {
-                    data.datasets[j].data.push(0);
-                }
-            }
-            let index = datasetTypes.indexOf(entries[i].type);
-            data.datasets[index].data[data.labels.indexOf(entries[i].year)]++;
-        }
-        let ctx = document.getElementById("usageChart");
-        new Chart(ctx, {
-            type: 'bar',
-            data: data,
-            options: {
-                scales: {
-                    y: {
-                        stacked: true,
-                        title: {
-                            display: true,
-                            text: '# Usages in Research Outcomes'
-                        }
-                    },
-                    x: {
-                        stacked: true,
-                        title: {
-                            display: true,
-                            text: 'Years'
-                        }
-                    }
-                },
-                chartArea: {
-                    backgroundColor: "#F8FBFF"
-                },
-                tooltips: {
-                    position: 'nearest',
-                    mode: 'point',
-                    intersect: 'false'
-                }
-            }
-        });
-    </script>
+  <span class="c-com">// 1. The hardware: hosts, disks, links, routes</span>
+  simulation-&gt;instantiatePlatform(<span class="c-str">"platform.xml"</span>);
 
+  <span class="c-com">// 2. The cyberinfrastructure services</span>
+  <span class="c-key">auto</span> storage = simulation-&gt;add(
+      wrench::SimpleStorageService::createSimpleStorageService(
+          <span class="c-str">"storage_host"</span>, {<span class="c-str">"/"</span>}));
 
-    <section id="about" class="secondary-color scrollto clearfix">
-        <div class="row clearfix">
-            <div class="section-heading">
-                <h3>WHO ARE WE?</h3>
-                <h2 class="section-title">ABOUT</h2>
-            </div>
+  <span class="c-key">auto</span> compute = simulation-&gt;add(
+      <span class="c-key">new</span> wrench::BareMetalComputeService(
+          <span class="c-str">"compute_host"</span>, {<span class="c-str">"compute_host"</span>}, <span class="c-str">""</span>));
 
-            <div class="about-intro about-single">
-                <h3>Open-source, research-driven</h3>
-                <p>WRENCH is an open-source framework distributed under the LGPLv3 license, built to enable
-                    reproducible, community-driven cyberinfrastructure research.</p>
-                <p><strong>Core institutions:</strong> University of Hawai'i at Mãnoa (UHM) and Oak Ridge National
-                    Laboratory (ORNL).</p>
-                <p><strong>Collaboration model:</strong> Researchers, educators, and developers advancing open
-                    simulation practices together.</p>
-                <div class="about-tags">
-                    <span>LGPLv3</span>
-                    <span>Open-source</span>
-                    <span>Community-led</span>
-                </div>
-                {% assign current_count = site.data.team_current | size %}
-                {% assign previous_count = site.data.team_previous | size %}
-                <div class="contributors-panel">
-                    <div class="contributors-header">
-                        <h3>Contributors</h3>
-                        <p>{{ current_count }} current collaborators · {{ previous_count }} alumni contributors.</p>
-                    </div>
-                    <div class="contributors-grid">
-                        <div class="contributors-group">
-                            <h4>Current team</h4>
-                            <div class="contributors-list">
-                                {% if site.data.team_current.size > 0 %}
-                                <ul class="contributors-compact contributors-current">
-                                    {% for n in site.data.team_current %}
-                                    <li class="wow fadeInUp" data-wow-delay="0.4s">
-                                        <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
-                                        <div>
-                                            <span class="contributor-name">{{ n.name }}</span>
-                                            <span class="contributor-role">{{ n.description }}</span>
-                                        </div>
-                                        <div class="contributor-links">
-                                            <a href="mailto:{{ n.email }}" aria-label="Email"><i
-                                                    class="fa fa-envelope"></i></a>
-                                            <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
-                                                    class="fa fa-linkedin"></i></a>
-                                            <a href="{{ n.website }}" target="_blank" aria-label="Website"><i
-                                                    class="fa fa-link"></i></a>
-                                        </div>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                            </div>
-                        </div>
-                        <div class="contributors-group">
-                            <h4>Previous contributors</h4>
-                            <div class="contributors-list is-alumni">
-                                {% if site.data.team_previous.size > 0 %}
-                                <ul class="contributors-compact contributors-current is-alumni" style="border: 0; padding: 0;">
-                                    {% for n in site.data.team_previous %}
-                                    <li>
-                                        <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" />
-                                        <div>
-                                            <span class="contributor-name">{{ n.name }}</span>
-                                            <span class="contributor-role">{{ n.description }}</span>
-                                        </div>
-                                        <div class="contributor-links">
-                                            <a href="{{ n.linkedin }}" target="_blank" aria-label="LinkedIn"><i
-                                                    class="fa fa-linkedin"></i></a>
-                                        </div>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <span class="c-com">// 3. Your runtime system / algorithm under test</span>
+  simulation-&gt;add(<span class="c-key">new</span> MyController(compute, storage, <span class="c-str">"user_host"</span>));
+
+  <span class="c-com">// 4. Run it — seconds of wall clock, days of simulated time</span>
+  simulation-&gt;launch();
+}</code></pre>
+          </div>
+
+          <div class="window__pane" data-pane="xml">
+<pre><code><span class="c-com">&lt;!-- Describe any platform you can imagine --&gt;</span>
+<span class="c-key">&lt;platform</span> <span class="c-type">version</span>=<span class="c-str">"4.1"</span><span class="c-key">&gt;</span>
+  <span class="c-key">&lt;zone</span> <span class="c-type">id</span>=<span class="c-str">"AS0"</span> <span class="c-type">routing</span>=<span class="c-str">"Full"</span><span class="c-key">&gt;</span>
+
+    <span class="c-key">&lt;host</span> <span class="c-type">id</span>=<span class="c-str">"compute_host"</span> <span class="c-type">speed</span>=<span class="c-str">"100Gf"</span> <span class="c-type">core</span>=<span class="c-str">"8"</span><span class="c-key">&gt;</span>
+      <span class="c-key">&lt;disk</span> <span class="c-type">id</span>=<span class="c-str">"scratch"</span> <span class="c-type">read_bw</span>=<span class="c-str">"1500MBps"</span>
+                         <span class="c-type">write_bw</span>=<span class="c-str">"800MBps"</span><span class="c-key">&gt;</span>
+        <span class="c-key">&lt;prop</span> <span class="c-type">id</span>=<span class="c-str">"size"</span>  <span class="c-type">value</span>=<span class="c-str">"5000GiB"</span><span class="c-key">/&gt;</span>
+        <span class="c-key">&lt;prop</span> <span class="c-type">id</span>=<span class="c-str">"mount"</span> <span class="c-type">value</span>=<span class="c-str">"/scratch"</span><span class="c-key">/&gt;</span>
+      <span class="c-key">&lt;/disk&gt;</span>
+    <span class="c-key">&lt;/host&gt;</span>
+
+    <span class="c-key">&lt;host</span> <span class="c-type">id</span>=<span class="c-str">"user_host"</span> <span class="c-type">speed</span>=<span class="c-str">"10Gf"</span> <span class="c-type">core</span>=<span class="c-str">"1"</span><span class="c-key">/&gt;</span>
+
+    <span class="c-key">&lt;link</span> <span class="c-type">id</span>=<span class="c-str">"wan"</span> <span class="c-type">bandwidth</span>=<span class="c-str">"5000MBps"</span> <span class="c-type">latency</span>=<span class="c-str">"20us"</span><span class="c-key">/&gt;</span>
+
+    <span class="c-key">&lt;route</span> <span class="c-type">src</span>=<span class="c-str">"user_host"</span> <span class="c-type">dst</span>=<span class="c-str">"compute_host"</span><span class="c-key">&gt;</span>
+      <span class="c-key">&lt;link_ctn</span> <span class="c-type">id</span>=<span class="c-str">"wan"</span><span class="c-key">/&gt;</span>
+    <span class="c-key">&lt;/route&gt;</span>
+
+  <span class="c-key">&lt;/zone&gt;</span>
+<span class="c-key">&lt;/platform&gt;</span></code></pre>
+          </div>
+
+          <div class="window__pane" data-pane="sh" data-copy-scope>
+<pre id="heroInstall"><code><span class="c-com"># Docker — everything preinstalled</span>
+docker pull wrenchproject/wrench:{{ release.version }}
+docker run <span class="c-key">-it</span> wrenchproject/wrench:{{ release.version }}
+
+<span class="c-com"># …or build from source (needs SimGrid {{ release.simgrid_version }})</span>
+git clone https://github.com/wrench-project/wrench.git
+<span class="c-fn">cd</span> wrench &amp;&amp; mkdir build &amp;&amp; <span class="c-fn">cd</span> build
+cmake .. &amp;&amp; make <span class="c-key">-j4</span>
+sudo make install</code></pre>
+          </div>
         </div>
-    </section>
 
-
-    {% assign releases = site.data.releases %}
-    {% assign release = releases[0] %}
-    <section id="dev-corner" class="introduction scrollto section-slab">
-        <div class="row clearfix">
-            <div class="dev-layout">
-                <div class="dev-intro">
-                    <div class="section-heading">
-                        <h3>DEV'S CORNER</h3>
-                        <h2 class="section-title">Everything you need to build, test, and collaborate</h2>
-                        <p class="section-subtitle">
-                            Source code lives on <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i> GitHub</a>. Report bugs or request features via the <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issues tracker</a>.
-                        </p>
-                    </div>
-                    <div class="dev-actions">
-                        <a class="button" href="/wrench/{{ release.version }}/getting_started.html" target="_blank">Get started</a>
-                        <a class="button ghost" href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>
-                    </div>
-                    <div class="dev-quick">
-                        <div class="dev-cta-card">
-                            <span class="dev-cta-label">Community</span>
-                            <h4>Join the WRENCH Slack</h4>
-                            <p>Collaborate with the community, share experiences, and get support in real time.</p>
-                            <a class="dev-link" href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q" target="_blank">Join the workspace</a>
-                        </div>
-                        <div class="dev-cta-card">
-                            <span class="dev-cta-label">Research assets</span>
-                            <h4>Workflow traces + generators</h4>
-                            <p>Access workflow assets via <a href="https://wfcommons.org/" target="_blank">WfCommons</a> to feed WRENCH simulators.</p>
-                            <a class="dev-link" href="https://wfcommons.org/" target="_blank">Explore WfCommons</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dev-resource-grid">
-                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="dev-card-header">
-                            <span class="dev-icon"><i class="fa fa-code"></i></span>
-                            <h4>Core repository</h4>
-                        </div>
-                        <p>Track releases, browse issues, and contribute to the main codebase.</p>
-                        <a class="dev-link" href="https://github.com/wrench-project/wrench" target="_blank">View GitHub</a>
-                    </div>
-
-                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="dev-card-header">
-                            <span class="dev-icon"><i class="fa fa-bug"></i></span>
-                            <h4>Issue tracker</h4>
-                        </div>
-                        <p>File bugs, request features, and follow roadmap discussions.</p>
-                        <a class="dev-link" href="https://github.com/wrench-project/wrench/issues" target="_blank">Open an issue</a>
-                    </div>
-
-                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="dev-card-header">
-                            <span class="dev-icon"><i class="fa fa-flask"></i></span>
-                            <h4>Latest unstable build</h4>
-                        </div>
-                        <p>Grab the freshest features and performance updates (with the usual experimental caveats).</p>
-                        <pre>git clone https://github.com/wrench-project/wrench.git</pre>
-                    </div>
-
-                    <div class="dev-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="dev-card-header">
-                            <span class="dev-icon"><i class="fa fa-book"></i></span>
-                            <h4>Documentation hub</h4>
-                        </div>
-                        <p>API references, tutorials, and guides to speed up onboarding.</p>
-                        <a class="dev-link" href="/wrench/{{ release.version }}/getting_started.html" target="_blank">Read the docs</a>
-                    </div>
-                </div>
-            </div>
+        <div class="window__foot">
+          <span>C++ · Python &amp; REST APIs available</span>
+          <button class="copy-btn" type="button" data-copy="#heroInstall">
+            {% include icon.html name="copy" %}<span data-copy-label>Copy install</span>
+          </button>
         </div>
-    </section>
-</main>
+      </div>
+
+      <div class="mini-card">
+        <span class="mini-card__icon">{% include icon.html name="shield" %}</span>
+        <div>
+          <b>Validated against real systems</b>
+          <span>Simulation models calibrated on production executions, not guesswork.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ TRUST -->
+<section class="trust">
+  <div class="shell trust__inner">
+    <span class="trust__label">Built and used by</span>
+    <div class="trust__logos">
+      <a href="https://www.ics.hawaii.edu" target="_blank" rel="noopener" title="University of Hawai&#699;i at Mānoa">
+        <img src="/images/logo-uhm.png" alt="University of Hawai&#699;i at Mānoa" loading="lazy" /></a>
+      <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank" rel="noopener" title="Oak Ridge National Laboratory">
+        <img src="/images/logo-ornl.png" alt="Oak Ridge National Laboratory" loading="lazy" /></a>
+      <a href="https://isi.edu" target="_blank" rel="noopener" title="University of Southern California">
+        <img src="/images/logo-usc.png" alt="University of Southern California" loading="lazy" /></a>
+      <a href="https://simgrid.org" target="_blank" rel="noopener" title="SimGrid">
+        <img src="/images/logo-simgrid.png" alt="SimGrid" loading="lazy" /></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ STATS -->
+<section class="section section--tight">
+  <div class="shell">
+    <div class="stats" data-reveal>
+      <div class="stat">
+        <div class="stat__value"><span data-count="{{ citation_count }}">{{ citation_count }}</span></div>
+        <p class="stat__label">peer-reviewed papers and theses citing WRENCH</p>
+        <div class="stat__bar"></div>
+      </div>
+      <div class="stat">
+        <div class="stat__value"><span data-count="{{ numbers.loc }}">{{ numbers.loc }}</span><sup>K</sup></div>
+        <p class="stat__label">lines of tested, documented C++ in the core</p>
+        <div class="stat__bar"></div>
+      </div>
+      <div class="stat">
+        <div class="stat__value"><span data-count="{{ numbers.modules }}">{{ numbers.modules }}</span></div>
+        <p class="stat__label">pedagogic modules on eduWRENCH</p>
+        <div class="stat__bar"></div>
+      </div>
+      <div class="stat">
+        <div class="stat__value"><span data-count="{{ contributor_count }}">{{ contributor_count }}</span></div>
+        <p class="stat__label">contributors across four institutions</p>
+        <div class="stat__bar"></div>
+      </div>
+      <div class="stat">
+        <div class="stat__value"><span data-count="{{ release_count }}">{{ release_count }}</span></div>
+        <p class="stat__label">stable releases, 2017&ndash;{{ site.time | date: '%Y' }}</p>
+        <div class="stat__bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ FRAMEWORK -->
+<section class="section section--panel" id="framework">
+  <div class="shell">
+    <div class="section-head section-head--split" data-reveal>
+      <div>
+        <p class="eyebrow">The framework</p>
+        <h2>Four layers. One <span class="serif">honest</span> simulation.</h2>
+      </div>
+      <p class="lede">
+        WRENCH sits on top of <a href="https://simgrid.org" target="_blank" rel="noopener">SimGrid</a>'s
+        validated simulation kernel and adds the abstractions that actually matter to
+        systems research — compute services, storage, data movement, and the runtime
+        logic you want to study. You write the interesting part; WRENCH handles the rest.
+      </p>
+    </div>
+
+    <div class="arch">
+      <div class="arch-stack">
+        <article class="layer layer--sim" data-reveal>
+          <div class="layer__spine">Simulators</div>
+          <div class="layer__body">
+            <h3>Simulators of workload executions</h3>
+            <p>Standalone programs that reproduce how a workload runs on a platform —
+              runnable anywhere, in seconds, with fully deterministic output.</p>
+            <div class="layer__tags"><span>Reproducible</span><span>Single machine</span><span>Deterministic</span></div>
+          </div>
+        </article>
+
+        <article class="layer layer--user" data-reveal data-delay="1">
+          <div class="layer__spine">User API</div>
+          <div class="layer__body">
+            <h3>Simulated runtime systems</h3>
+            <ul class="layer__list">
+              <li><b>General-purpose runtime systems</b> — schedulers, resource managers, brokers.</li>
+              <li><b>Workflow management systems</b> — model production WMSs end to end.</li>
+              <li><b>Research prototypes</b> — try an idea long before it needs an implementation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="layer layer--dev" data-reveal data-delay="2">
+          <div class="layer__spine">Developer API</div>
+          <div class="layer__body">
+            <h3>Simulated core services</h3>
+            <ul class="layer__list">
+              <li><b>Computation</b> — cloud, batch, bare-metal, and serverless services.</li>
+              <li><b>Storage</b> — simple storage, XRootD, Globus- and FTP-style transfers.</li>
+              <li><b>Network monitoring</b> — proximity services with a Vivaldi coordinate model.</li>
+              <li><b>Data location</b> — file registries and replica catalogs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="layer layer--grid" data-reveal data-delay="3">
+          <div class="layer__spine">SimGrid</div>
+          <div class="layer__body">
+            <h3>Simulated platform</h3>
+            <p>The SimGrid S4U kernel provides the analytically validated models for CPU,
+              disk, and network contention that everything above stands on.</p>
+            <div class="layer__tags"><span>SimGrid {{ release.simgrid_version }}</span><span>S4U API</span><span>Validated models</span></div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="arch-flow" data-reveal data-delay="2">
+        <h4>How a study goes</h4>
+        <div class="arch-flow__steps">
+          <div class="arch-flow__step">
+            <span class="arch-flow__num">1</span>
+            <div><b>Describe</b><p>Write the platform in XML and instantiate the services your scenario needs.</p></div>
+          </div>
+          <div class="arch-flow__step">
+            <span class="arch-flow__num">2</span>
+            <div><b>Implement</b><p>Put your algorithm in a controller against the User API — the part you're actually researching.</p></div>
+          </div>
+          <div class="arch-flow__step">
+            <span class="arch-flow__num">3</span>
+            <div><b>Sweep</b><p>Run thousands of configurations in a batch; each one is fast and repeatable.</p></div>
+          </div>
+          <div class="arch-flow__step">
+            <span class="arch-flow__num">4</span>
+            <div><b>Publish</b><p>Ship the simulator with the paper so reviewers and readers can reproduce every figure.</p></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ CAPABILITIES -->
+<section class="section">
+  <div class="shell">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What you get</p>
+      <h2>Everything a systems experiment needs</h2>
+      <p class="lede">Simulation abstractions that would otherwise cost you a year of
+        infrastructure code — already written, already validated, already documented.</p>
+    </div>
+
+    <div class="grid grid--auto">
+      <article class="card card--glow" data-reveal>
+        <span class="card__icon">{% include icon.html name="cpu" %}</span>
+        <h3>Compute services</h3>
+        <p>Bare-metal, batch-scheduled clusters (with FCFS, conservative, and EASY
+          backfilling), virtualized clusters, clouds, and serverless functions.</p>
+      </article>
+
+      <article class="card card--glow card--azure" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="database" %}</span>
+        <h3>Storage &amp; data</h3>
+        <p>File systems modelled by SimGrid's FSMod, simple and XRootD storage,
+          replica catalogs, caching, and explicit data movement.</p>
+      </article>
+
+      <article class="card card--glow card--teal" data-reveal data-delay="2">
+        <span class="card__icon">{% include icon.html name="network" %}</span>
+        <h3>Network &amp; topology</h3>
+        <p>Contention-aware links and routes, arbitrary topologies, and network
+          proximity services for locality-aware scheduling research.</p>
+      </article>
+
+      <article class="card card--glow card--amber" data-reveal data-delay="3">
+        <span class="card__icon">{% include icon.html name="bolt" %}</span>
+        <h3>Energy models</h3>
+        <p>Per-host power profiles and pstate control, so energy-efficiency questions
+          get first-class answers alongside makespan.</p>
+      </article>
+
+      <article class="card card--glow card--crimson" data-reveal>
+        <span class="card__icon">{% include icon.html name="puzzle" %}</span>
+        <h3>Composable by design</h3>
+        <p>Services are building blocks. Mix a cloud, a batch queue, and three storage
+          tiers in one scenario, and swap any of them out in a line of code.</p>
+      </article>
+
+      <article class="card card--glow card--ink" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="code" %}</span>
+        <h3>C++, Python, and REST</h3>
+        <p>Write simulators in C++ for speed, drive them from Python, or run WRENCH as a
+          service behind its REST API.</p>
+      </article>
+
+      <article class="card card--glow" data-reveal data-delay="2">
+        <span class="card__icon">{% include icon.html name="refresh" %}</span>
+        <h3>Reproducible by default</h3>
+        <p>Same inputs, same trace, same numbers — on your laptop, on a reviewer's
+          laptop, three years from now.</p>
+      </article>
+
+      <article class="card card--glow card--teal" data-reveal data-delay="3">
+        <span class="card__icon">{% include icon.html name="chart" %}</span>
+        <h3>Scale without a cluster</h3>
+        <p>Thousands of hosts and tasks simulate in seconds to minutes on one machine —
+          parameter sweeps become practical.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ AUDIENCES -->
+<section class="section section--panel">
+  <div class="shell">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow">Who it's for</p>
+      <h2>Three ways people use WRENCH</h2>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="audience audience--res" data-reveal>
+        <p class="audience__eyebrow">Researchers</p>
+        <h3>Evaluate an idea in a week, not a year</h3>
+        <p>Test scheduling, data-management, and resource-provisioning strategies at
+          scales and in configurations no testbed will give you.</p>
+        <ul>
+          <li>{% include icon.html name="check" %} Controlled, repeatable experiments</li>
+          <li>{% include icon.html name="check" %} Sweeps over platforms and workloads</li>
+          <li>{% include icon.html name="check" %} Artifacts reviewers can actually rerun</li>
+        </ul>
+        <a class="link-arrow" href="/usages">See {{ citation_count }} published results {% include icon.html name="arrow-right" %}</a>
+      </article>
+
+      <article class="audience audience--edu" data-reveal data-delay="1">
+        <p class="audience__eyebrow">Educators</p>
+        <h3>Teach distributed computing without a cluster</h3>
+        <p><a href="https://eduwrench.org" target="_blank" rel="noopener">eduWRENCH</a> turns
+          WRENCH into {{ numbers.modules }} browser-based pedagogic modules — from first-year
+          concepts to graduate coursework.</p>
+        <ul>
+          <li>{% include icon.html name="check" %} {{ numbers.modules }} ready-to-assign modules</li>
+          <li>{% include icon.html name="check" %} {{ numbers.pedagogic_simulators }} interactive simulators</li>
+          <li>{% include icon.html name="check" %} No hardware, no accounts, no queue waits</li>
+        </ul>
+        <a class="link-arrow" href="https://eduwrench.org" target="_blank" rel="noopener">Visit eduWRENCH {% include icon.html name="arrow-up-right" %}</a>
+      </article>
+
+      <article class="audience audience--dev" data-reveal data-delay="2">
+        <p class="audience__eyebrow">Developers</p>
+        <h3>Model your runtime system before you refactor it</h3>
+        <p>Build a digital twin of a workflow engine or resource manager and see what a
+          design change does — long before it reaches users.</p>
+        <ul>
+          <li>{% include icon.html name="check" %} Simulate production WMS behaviour</li>
+          <li>{% include icon.html name="check" %} Real workflow traces from WfCommons</li>
+          <li>{% include icon.html name="check" %} Docker images and a REST API</li>
+        </ul>
+        <a class="link-arrow" href="/wrench/{{ release.version }}/index.html">Read the docs {% include icon.html name="arrow-right" %}</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════ INSTALL -->
+<section class="section" id="install">
+  <div class="shell">
+    <div class="section-head section-head--split" data-reveal>
+      <div>
+        <p class="eyebrow">Get started</p>
+        <h2>Installed in <span class="serif">minutes</span>, not an afternoon</h2>
+      </div>
+      <p class="lede">WRENCH is free software under the LGPLv3. Pull a Docker image with the
+        toolchain already built, or compile from source if you plan to contribute.</p>
+    </div>
+
+    <article class="release release--latest" data-reveal>
+      <div class="release__head">
+        <div>
+          <span class="pill pill--brand"><span class="dot-live"></span> Latest stable</span>
+          <div class="release__version" style="margin-top:.5rem">WRENCH-{{ release.version }}</div>
+          <div class="release__date">Released {{ release.date }} · requires
+            <a href="https://simgrid.org" target="_blank" rel="noopener">SimGrid {{ release.simgrid_version }}</a></div>
+        </div>
+        <a class="btn btn--primary" href="https://github.com/wrench-project/wrench/releases/tag/v{{ release.version }}" target="_blank" rel="noopener">
+          {% include icon.html name="download" %} Download {{ release.version }}
+        </a>
+      </div>
+      <div class="release__body">
+        {%- for desc in release.description -%}
+        {%- unless forloop.first -%}<p>{{ desc }}</p>{%- endunless -%}
+        {%- endfor -%}
+      </div>
+      <div class="release__links">
+        <a class="reslink" href="/wrench/{{ release.version }}/installation.html">{% include icon.html name="download" %} Installation guide</a>
+        <a class="reslink" href="/wrench/{{ release.version }}/getting_started.html">{% include icon.html name="terminal" %} Getting started</a>
+        <a class="reslink" href="/wrench/{{ release.version }}/wrench_101.html">{% include icon.html name="graduation" %} WRENCH 101</a>
+        <a class="reslink" href="/wrench/{{ release.version }}/wrench_102.html">{% include icon.html name="puzzle" %} WRENCH 102</a>
+        <a class="reslink" href="/wrench/{{ release.version }}/api_user.html">{% include icon.html name="book" %} API reference</a>
+        <a class="reslink" href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" rel="noopener">{% include icon.html name="docker" %} Docker images</a>
+        <a class="reslink" href="https://github.com/wrench-project/wrench/releases" target="_blank" rel="noopener">{% include icon.html name="tag" %} All {{ release_count }} releases</a>
+      </div>
+    </article>
+
+    <div class="grid grid--2" style="margin-top:1.15rem">
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="docker" %}</span>
+        <h3>Docker</h3>
+        <p>The fastest route — WRENCH, SimGrid, and the toolchain already built.</p>
+        <pre style="margin-top:1rem" id="cmdDocker"><code>docker pull wrenchproject/wrench:{{ release.version }}
+docker run -it wrenchproject/wrench:{{ release.version }}</code></pre>
+        <div style="margin-top:.9rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <button class="copy-btn" type="button" data-copy="#cmdDocker">{% include icon.html name="copy" %}<span data-copy-label>Copy</span></button>
+          <a class="link-arrow" href="https://hub.docker.com/r/wrenchproject/wrench/" target="_blank" rel="noopener">All tags {% include icon.html name="arrow-up-right" %}</a>
+        </div>
+      </article>
+
+      <article class="card card--azure" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="code" %}</span>
+        <h3>Build from source</h3>
+        <p>Full control, and the way to go if you're contributing.</p>
+        <pre style="margin-top:1rem" id="cmdSource"><code>git clone https://github.com/wrench-project/wrench.git
+cd wrench
+mkdir build &amp;&amp; cd build
+cmake .. &amp;&amp; make -j4
+sudo make install</code></pre>
+        <div style="margin-top:.9rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <button class="copy-btn" type="button" data-copy="#cmdSource">{% include icon.html name="copy" %}<span data-copy-label>Copy</span></button>
+          <a class="link-arrow" href="/wrench/{{ release.version }}/installation.html">Full guide {% include icon.html name="arrow-right" %}</a>
+        </div>
+      </article>
+    </div>
+
+    <article class="card" style="margin-top:1.15rem" data-reveal>
+      <h3 style="margin-bottom:1.2rem">Requirements</h3>
+      <div class="feature-row">
+        <div class="feature">
+          <span class="feature__icon">{% include icon.html name="layers" %}</span>
+          <div><h4>SimGrid {{ release.simgrid_version }}</h4><p>Plus the SimGrid File System Module (FSMod) 0.4.</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">{% include icon.html name="code" %}</span>
+          <div><h4>A C++14 compiler</h4><p>g++ 7.5+ or clang 9.0+, driven by CMake 3.10 or higher.</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">{% include icon.html name="doc" %}</span>
+          <div><h4>JSON for Modern C++</h4><p>Version 3.11.0 or higher.</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">{% include icon.html name="puzzle" %}</span>
+          <div><h4>Optional extras</h4><p>Batsched for richer batch scheduling, Asio for the REST API daemon, Google&nbsp;Test and Doxygen for development.</p></div>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem;font-size:.875rem">
+        The <a href="/wrench/{{ release.version }}/installation.html">installation guide</a> lists exact
+        versions, per-platform package names, and troubleshooting steps. Want the bleeding edge?
+        Clone <code>master</code> or pull <code>wrenchproject/wrench:unstable</code>.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ PUBLICATIONS -->
+<section class="section section--panel" id="publications">
+  <div class="shell">
+    <div class="section-head section-head--split" data-reveal>
+      <div>
+        <p class="eyebrow">Research</p>
+        <h2>Cite WRENCH</h2>
+      </div>
+      <p class="lede">When you use WRENCH, please cite the paper below — and do read it, it is the
+        most complete overview of the framework.</p>
+    </div>
+
+    <div class="grid grid--2" style="align-items:start">
+      <div class="cite-box" data-reveal>
+        <div class="cite-box__head">
+          {% include icon.html name="quote" %}
+          <h3>BibTeX</h3>
+          <button class="copy-btn" type="button" data-copy="#bibtexMain">
+            {% include icon.html name="copy" %}<span data-copy-label>Copy</span>
+          </button>
+        </div>
+<pre id="bibtexMain"><code>@article{wrench,
+  title    = {Developing Accurate and Scalable Simulators of
+              Production Workflow Management Systems with WRENCH},
+  author   = {Casanova, Henri and Ferreira da Silva, Rafael and
+              Tanaka, Ryan and Pandey, Suraj and Jethwani, Gautam and
+              Koch, William and Albrecht, Spencer and Oeth, James and
+              Suter, Fr\'{e}d\'{e}ric},
+  journal  = {Future Generation Computer Systems},
+  volume   = {112},
+  pages    = {162--175},
+  year     = {2020},
+  doi      = {10.1016/j.future.2020.05.030}
+}</code></pre>
+      </div>
+
+      <article class="card" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="doc" %}</span>
+        <h3>Plain-text reference</h3>
+<pre class="wrap" style="margin-top:1rem" id="plainCite"><code>H. Casanova, R. Ferreira da Silva, R. Tanaka, S. Pandey, G. Jethwani,
+W. Koch, S. Albrecht, J. Oeth, and F. Suter, "Developing Accurate and
+Scalable Simulators of Production Workflow Management Systems with
+WRENCH", Future Generation Computer Systems, vol. 112, p. 162-175, 2020.</code></pre>
+        <div style="margin-top:.9rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <button class="copy-btn" type="button" data-copy="#plainCite">{% include icon.html name="copy" %}<span data-copy-label>Copy</span></button>
+          <a class="link-arrow" href="https://doi.org/10.1016/j.future.2020.05.030" target="_blank" rel="noopener">
+            10.1016/j.future.2020.05.030 {% include icon.html name="arrow-up-right" %}</a>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ IMPACT -->
+{%- assign simulator_count = site.data.citations | where: "usage", true | size -%}
+{%- assign external_count = site.data.citations | where: "self", false | size -%}
+{%- assign venue_types = "Journal,Conference,Workshop,PhD Thesis,Report" | split: "," -%}
+{%- assign venue_colors = "#c2410c,#2563eb,#15803d,#a21caf,#0891b2" | split: "," -%}
+<section class="section" id="impact">
+  <div class="shell">
+    <div class="section-head section-head--split" data-reveal>
+      <div>
+        <p class="eyebrow">They use WRENCH</p>
+        <h2>{{ citation_count }} published results, and <span class="serif">counting</span></h2>
+      </div>
+      <p class="lede">
+        Since {{ first_year }}, WRENCH has underpinned journal articles, conference and workshop
+        papers, and doctoral theses across the workflows, HPC, and distributed computing
+        communities — by our team and, increasingly, by groups we've never met.
+      </p>
+    </div>
+
+    <div class="grid grid--2" style="align-items:start">
+      <div class="chart-card" data-reveal>
+        <div class="chart-card__head">
+          <div>
+            <h3>Publications citing WRENCH</h3>
+            <p>By year and venue type, {{ first_year }}&ndash;{{ last_year }}</p>
+          </div>
+          <span class="pill pill--brand">{% include icon.html name="doc" %} {{ citation_count }} total</span>
+        </div>
+        <div class="chart-wrap"><canvas id="impactChart" role="img"
+          aria-label="Stacked bar chart of {{ citation_count }} publications citing WRENCH per year from {{ first_year }} to {{ last_year }}, broken down by venue type. The complete list follows below."></canvas></div>
+        <div class="chart-legend">
+          {%- for t in venue_types -%}
+          <span><i style="background: {{ venue_colors[forloop.index0] }}"></i>{{ t }}</span>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="grid grid--2" data-reveal data-delay="1">
+        <article class="card">
+          <span class="card__icon">{% include icon.html name="doc" %}</span>
+          <div class="stat__value" style="font-size:2.1rem"><span data-count="{{ citation_count }}">{{ citation_count }}</span></div>
+          <p class="stat__label">papers &amp; theses citing WRENCH</p>
+        </article>
+        <article class="card card--teal">
+          <span class="card__icon">{% include icon.html name="flask" %}</span>
+          <div class="stat__value" style="font-size:2.1rem"><span data-count="{{ simulator_count }}">{{ simulator_count }}</span></div>
+          <p class="stat__label">of them built a WRENCH-based simulator</p>
+        </article>
+        <article class="card card--azure">
+          <span class="card__icon">{% include icon.html name="users" %}</span>
+          <div class="stat__value" style="font-size:2.1rem"><span data-count="{{ external_count }}">{{ external_count }}</span></div>
+          <p class="stat__label">came from groups outside the project</p>
+        </article>
+        <article class="card card--amber">
+          <span class="card__icon">{% include icon.html name="calendar" %}</span>
+          <div class="stat__value" style="font-size:2.1rem">{{ first_year }}</div>
+          <p class="stat__label">first published result, still growing every year</p>
+        </article>
+      </div>
+    </div>
+
+    <div data-filterable data-expand data-expand-initial="6" data-reveal style="margin-top:2.5rem">
+      <div class="toolbar">
+        <label class="search">
+          {% include icon.html name="search" %}
+          <input type="search" data-filter-search placeholder="Search titles and authors…" aria-label="Search publications citing WRENCH" />
+        </label>
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button class="chip is-active" type="button" data-filter-chip="">All <b>{{ citation_count }}</b></button>
+          {%- for t in venue_types -%}
+          {%- assign tn = site.data.citations | where: "type", t | size -%}
+          {%- if tn > 0 -%}
+          <button class="chip" type="button" data-filter-chip="{{ t | slugify }}">{{ t }} <b>{{ tn }}</b></button>
+          {%- endif -%}
+          {%- endfor -%}
+          <button class="chip" type="button" data-filter-chip="external">External <b>{{ external_count }}</b></button>
+          <button class="chip" type="button" data-filter-chip="simulator">Simulator <b>{{ simulator_count }}</b></button>
+        </div>
+      </div>
+      <p class="count-note" style="margin-bottom:1rem"><span data-filter-count>{{ citation_count }}</span> results</p>
+
+      <div class="ref-list">
+        {%- assign sorted = site.data.citations | sort: "year" | reverse -%}
+        {%- for n in sorted -%}
+        <article class="ref" data-item data-expand-item
+                 data-tags="|{{ n.type | slugify }}|{% unless n.self %}external|{% endunless %}{% if n.usage %}simulator|{% endif %}{{ n.year }}|"
+                 data-search="{{ n.title | escape }} {{ n.authors | escape }} {{ n.year }} {{ n.type | escape }}">
+          <div class="ref__year">{{ n.year }}<span>{{ n.type }}</span></div>
+          <div>
+            <h4 class="ref__title"><a href="{{ n.url }}" target="_blank" rel="noopener">{{ n.title }}</a></h4>
+            <p class="ref__authors">{{ n.authors }}</p>
+            <div class="ref__meta">
+              {%- if n.usage %}<span class="pill pill--brand">{% include icon.html name="flask" %} WRENCH-based simulator</span>{% endif -%}
+              {%- unless n.self %}<span class="pill pill--muted">External group</span>{% endunless -%}
+            </div>
+          </div>
+        </article>
+        {%- endfor -%}
+      </div>
+      <p class="empty-state" data-filter-empty hidden>Nothing matches those filters.</p>
+      <button class="btn btn--ghost expand-btn" type="button" data-expand-toggle
+              data-label-more="Show all {{ citation_count }} results"
+              data-label-less="Show fewer">Show all {{ citation_count }} results</button>
+    </div>
+
+    <p class="count-note" style="margin-top:1.5rem">
+      Published something with WRENCH? Send the paper to
+      <a href="mailto:{{ site.support_email }}?subject=WRENCH%20usage%20submission">{{ site.support_email }}</a>
+      and we'll add it to the list.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ ECOSYSTEM -->
+<section class="section section--panel">
+  <div class="shell">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow">Ecosystem</p>
+      <h2>WRENCH doesn't work alone</h2>
+      <p class="lede">A small constellation of open projects that plug straight into your simulator.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <a class="card card--glow" href="https://simgrid.org" target="_blank" rel="noopener" data-reveal>
+        <span class="card__icon">{% include icon.html name="layers" %}</span>
+        <h3>SimGrid</h3>
+        <p>The simulation kernel underneath: two decades of validated models for computation,
+          communication, and I/O.</p>
+        <span class="link-arrow">simgrid.org {% include icon.html name="arrow-up-right" %}</span>
+      </a>
+
+      <a class="card card--glow card--amber" href="https://wfcommons.org/" target="_blank" rel="noopener" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="puzzle" %}</span>
+        <h3>WfCommons</h3>
+        <p>Real workflow traces and generators for synthetic-but-realistic instances, consumable
+          directly by WRENCH simulators.</p>
+        <span class="link-arrow">wfcommons.org {% include icon.html name="arrow-up-right" %}</span>
+      </a>
+
+      <a class="card card--glow card--teal" href="https://eduwrench.org" target="_blank" rel="noopener" data-reveal data-delay="2">
+        <span class="card__icon">{% include icon.html name="graduation" %}</span>
+        <h3>eduWRENCH</h3>
+        <p>{{ numbers.modules }} pedagogic modules and {{ numbers.pedagogic_simulators }} interactive
+          simulators that teach parallel and distributed computing in the browser.</p>
+        <span class="link-arrow">eduwrench.org {% include icon.html name="arrow-up-right" %}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ ABOUT -->
+<section class="section" id="about">
+  <div class="shell">
+    <div class="section-head section-head--split" data-reveal>
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>The people behind WRENCH</h2>
+      </div>
+      <p class="lede">A collaboration spanning the
+        <a href="https://www.ics.hawaii.edu" target="_blank" rel="noopener">University of Hawaiʻi at Mānoa</a>,
+        <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank" rel="noopener">Oak Ridge National Laboratory</a>,
+        the <a href="https://isi.edu" target="_blank" rel="noopener">University of Southern California</a>, and the French
+        <a href="https://cnrs.fr" target="_blank" rel="noopener">National Center for Scientific Research</a>.</p>
+    </div>
+
+    <div class="grid grid--2" style="margin-bottom:2rem;align-items:stretch">
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="sparkle" %}</span>
+        <h3>Why WRENCH exists</h3>
+        <p style="margin-top:.6rem">Real experiments on real cyberinfrastructure are expensive,
+          slow, and rarely repeatable. Simulation solves that — but only if the models are
+          trustworthy and the tooling doesn't cost a year of engineering. WRENCH exists so a
+          researcher can ask a hard question about a distributed system and get a defensible answer
+          in days.</p>
+        <p style="margin-top:.8rem">It is open source under the
+          <a href="https://www.gnu.org/licenses/lgpl-3.0.html" target="_blank" rel="noopener">LGPLv3</a>
+          license, developed in the open, and shaped by the community that uses it.</p>
+      </article>
+      <article class="card card--azure" data-reveal data-delay="1">
+        <span class="card__icon">{% include icon.html name="users" %}</span>
+        <h3>Nine years, four institutions</h3>
+        <p style="margin-top:.6rem">Built and maintained in the open since 2017 by researchers,
+          educators, and students across UHM, ORNL, USC, and CNRS.</p>
+        <ul class="figure-stats" style="margin-top:auto;padding-top:1.5rem">
+          <li><strong>{{ contributor_count }}</strong><span>contributors to date</span></li>
+          <li><strong>{{ release_count }}</strong><span>releases since 2017</span></li>
+          <li><strong>{{ citation_count }}</strong><span>published results</span></li>
+          <li><strong>LGPLv3</strong><span>free and open source</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="section-head" style="margin:0 0 1.25rem;max-width:none" data-reveal>
+      <h3>Current contributors</h3>
+    </div>
+    <div class="team-grid">
+      {%- for n in site.data.team_current -%}
+      <article class="person" data-reveal data-delay="{{ forloop.index0 | modulo: 4 }}">
+        <img class="person__avatar" src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" loading="lazy" width="72" height="72" />
+        <h4>{{ n.name }}</h4>
+        <p>{{ n.description }}</p>
+        <div class="person__links">
+          {%- if n.email and n.email != "" -%}
+          <a href="mailto:{{ n.email }}" aria-label="Email {{ n.name }}" title="Email">{% include icon.html name="mail" %}</a>
+          {%- endif -%}
+          {%- if n.linkedin and n.linkedin != "" -%}
+          <a href="{{ n.linkedin }}" target="_blank" rel="noopener" aria-label="{{ n.name }} on LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a>
+          {%- endif -%}
+          {%- if n.website and n.website != "" -%}
+          <a href="{{ n.website }}" target="_blank" rel="noopener" aria-label="{{ n.name }}'s website" title="Website">{% include icon.html name="link" %}</a>
+          {%- endif -%}
+        </div>
+      </article>
+      {%- endfor -%}
+    </div>
+
+    <div class="section-head" style="margin:2.5rem 0 1.25rem;max-width:none" data-reveal>
+      <h3>Previous contributors</h3>
+      <p class="section-subtitle">{{ previous_count }} students and researchers who shaped WRENCH along the way.</p>
+    </div>
+    <div class="alumni-grid" data-reveal>
+      {%- for n in site.data.team_previous -%}
+      {%- if n.linkedin and n.linkedin != "" -%}
+      <a class="alum" href="{{ n.linkedin }}" target="_blank" rel="noopener">
+      {%- else -%}
+      <div class="alum">
+      {%- endif -%}
+        <img src="/images/aboutus/{{ n.photo }}" alt="{{ n.name }}" loading="lazy" width="40" height="40" />
+        <div>
+          <b>{{ n.name }}</b>
+          <span>{{ n.description }}</span>
+        </div>
+      {%- if n.linkedin and n.linkedin != "" -%}</a>{%- else -%}</div>{%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="section-head" style="margin:2.75rem 0 1.25rem;max-width:none" data-reveal>
+      <h3>Funding</h3>
+      <p class="section-subtitle">Since its inception in 2017, WRENCH has received continued support
+        from the U.S. National Science Foundation and the French National Center for Scientific Research.</p>
+    </div>
+    <div class="grid grid--auto" data-reveal>
+      <article class="card">
+        <h4>2021&ndash;2024 · NSF CSSI</h4>
+        <p style="margin-top:.4rem">Awards
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank" rel="noopener">#2103489</a>,
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank" rel="noopener">#2103508</a></p>
+      </article>
+      <article class="card">
+        <h4>2021&ndash;2024 · NSF OAC Core</h4>
+        <p style="margin-top:.4rem">Awards
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106059" target="_blank" rel="noopener">#2106059</a>,
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106147" target="_blank" rel="noopener">#2106147</a></p>
+      </article>
+      <article class="card">
+        <h4>2019&ndash;2022 · NSF CyberTraining</h4>
+        <p style="margin-top:.4rem">Awards
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923539" target="_blank" rel="noopener">#1923539</a>,
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923621" target="_blank" rel="noopener">#1923621</a>
+          — behind eduWRENCH.</p>
+      </article>
+      <article class="card">
+        <h4>2017&ndash;2019 · NSF SI2-SSE</h4>
+        <p style="margin-top:.4rem">Awards
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642335" target="_blank" rel="noopener">#1642335</a>,
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642369" target="_blank" rel="noopener">#1642369</a>
+          — the grants that started the project.</p>
+      </article>
+      <article class="card">
+        <h4>2016&ndash;2018 · CNRS PICS</h4>
+        <p style="margin-top:.4rem">Award #07239</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ CTA -->
+<section class="section" id="community">
+  <div class="shell">
+    <div class="cta" data-reveal>
+      <p class="eyebrow" style="justify-content:center">Start simulating</p>
+      <h2>Your next experiment doesn't need a cluster</h2>
+      <p class="lede">Install WRENCH-{{ release.version }}, work through WRENCH 101, and have a running
+        simulator this afternoon. It's free, it's LGPLv3, and the team answers questions.</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" href="#install">{% include icon.html name="download" %} Download WRENCH-{{ release.version }}</a>
+        <a class="btn btn--ghost btn--lg" href="/wrench/{{ release.version }}/wrench_101.html">{% include icon.html name="book" %} WRENCH 101</a>
+        <a class="btn btn--ghost btn--lg" href="{{ site.slack_url }}" target="_blank" rel="noopener">{% include icon.html name="slack" %} Join Slack</a>
+      </div>
+      <p class="cta__note">
+        Questions? <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a> ·
+        Bugs and feature requests go to the
+        <a href="https://github.com/wrench-project/wrench/issues" target="_blank" rel="noopener">issue tracker</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Chart data (server-rendered) -->
+<script type="application/json" id="impactData">
+{
+  "labels": [{% for y in years %}"{{ y }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "series": [
+    {%- for t in venue_types -%}
+    {%- assign of_type = site.data.citations | where: "type", t -%}
+    {"label": {{ t | jsonify }}, "color": "{{ venue_colors[forloop.index0] }}", "data": [
+      {%- for y in years -%}
+      {%- assign n = of_type | where: "year", y | size -%}
+      {{ n }}{% unless forloop.last %}, {% endunless %}
+      {%- endfor -%}
+    ]}{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ],
+  "yTitle": "Publications",
+  "xTitle": "Year"
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+<script defer>
+  window.addEventListener('load', function () { window.wrenchChart('impactChart', 'impactData'); });
+</script>

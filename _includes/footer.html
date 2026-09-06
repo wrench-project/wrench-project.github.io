@@ -1,73 +1,70 @@
-<!--Footer-->
-<footer id="landing-footer" class="clearfix">
-    <div class="row clearfix footer-top">
-        <div class="footer-brand">
-            <img src="/images/logo-horizontal.png" alt="WRENCH logo" />
-            <p>Open-source simulation workbench for scalable cyberinfrastructure research.</p>
-            <div class="footer-actions">
-                <a href="mailto:support@wrench-project.org"><i class="fa fa-envelope"></i> support@wrench-project.org</a>
-                <a href="https://github.com/wrench-project/wrench" target="_blank"><i class="fa fa-github"></i>
-                    GitHub</a>
-                <a href="https://join.slack.com/t/wrench-project/shared_invite/zt-g88hfxj7-pcuxOBMS7jSBkq1EhAn2~Q"
-                    target="_blank"><i class="fa fa-slack"></i> Slack</a>
-            </div>
+{%- assign release = site.data.releases[0] -%}
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo-horizontal.png" alt="WRENCH" width="168" height="31" />
+        <p>An open-source workbench for building accurate, scalable, and reproducible simulators of parallel and distributed computing systems.</p>
+        <div class="footer-social">
+          <a class="icon-btn" href="https://github.com/wrench-project/wrench" target="_blank" rel="noopener" aria-label="GitHub">{% include icon.html name="github" %}</a>
+          <a class="icon-btn" href="{{ site.slack_url }}" target="_blank" rel="noopener" aria-label="Slack">{% include icon.html name="slack" %}</a>
+          <a class="icon-btn" href="mailto:{{ site.support_email }}" aria-label="Email the team">{% include icon.html name="mail" %}</a>
         </div>
-        <div class="footer-links">
-            <h4>Explore</h4>
-            <a href="#framework">Framework</a>
-            <a href="#publications">Publications</a>
-            <a href="#usage">Research outcomes</a>
-            <a href="#about">About</a>
-            <a href="#dev-corner">Dev's Corner</a>
+        <p class="footer-license">Released under the <a href="https://www.gnu.org/licenses/lgpl-3.0.html" target="_blank" rel="noopener">LGPLv3</a> license.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="#framework">Framework</a>
+        <a href="#install">Download &amp; install</a>
+        <a href="https://github.com/wrench-project/wrench/releases" target="_blank" rel="noopener">Release history</a>
+        <a href="/wrench/{{ release.version }}/index.html">Documentation</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Research</h4>
+        <a href="#publications">Cite WRENCH</a>
+        <a href="#impact">They use WRENCH</a>
+        <a href="#about">Team &amp; funding</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <a href="https://github.com/wrench-project/wrench/issues" target="_blank" rel="noopener">Issue tracker</a>
+        <a href="{{ site.slack_url }}" target="_blank" rel="noopener">Slack workspace</a>
+        <a href="https://simgrid.org/" target="_blank" rel="noopener">SimGrid</a>
+        <a href="https://wfcommons.org/" target="_blank" rel="noopener">WfCommons</a>
+        <a href="https://eduwrench.org" target="_blank" rel="noopener">eduWRENCH</a>
+      </div>
+
+      <div class="footer-col footer-col--wide">
+        <h4>Developed by</h4>
+        <div class="footer-logos">
+          <a href="https://www.ics.hawaii.edu" target="_blank" rel="noopener" title="University of Hawai&#699;i at Mānoa"><img src="/images/logo-uhm.png" alt="University of Hawai&#699;i at Mānoa" loading="lazy" /></a>
+          <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank" rel="noopener" title="Oak Ridge National Laboratory"><img src="/images/logo-ornl.png" alt="Oak Ridge National Laboratory" loading="lazy" /></a>
         </div>
-        <div class="footer-links">
-            <h4>Community</h4>
-            <a href="https://github.com/wrench-project/wrench/issues" target="_blank">Issue tracker</a>
-            <a href="https://simgrid.org/" target="_blank">SimGrid</a>
-            <a href="https://eduwrench.org" target="_blank">eduWRENCH</a>
-            <a href="https://wfcommons.org/" target="_blank">WfCommons</a>
-        </div>
-        <div class="footer-institutions">
-            <span>Mainly developed by</span>
-            <div class="footer-logos">
-                <a href="https://www.ics.hawaii.edu" target="_blank">
-                    <img src="/images/logo-uhm.png" alt="UHM" />
-                </a>
-                <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank">
-                    <img src="/images/logo-ornl.png" alt="ORNL" />
-                </a>
-            </div>
-        </div>
+        <p class="footer-note">Powered by <a href="https://simgrid.org" target="_blank" rel="noopener">SimGrid</a>.</p>
+      </div>
     </div>
 
-    <div class="row clearfix footer-bottom">
-        <div class="footer-funding">
-            WRENCH is funded by the National Science Foundation (NSF) under grants
-            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106059" target="_blank">2106059</a>,
-            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106147" target="_blank">2106147</a>,
-            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank">2103489</a>, and
-            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank">2103508</a>;
-            and the National Center for Scientific Research (CNRS) under grant PICS07239. Any opinions, findings, and
-            conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily
-            reflect the views of NSF or CNRS.
-        </div>
-        <div class="footer-meta">
-            &copy;2017&ndash;{{ site.time | date: '%Y' }} WRENCH Team
-        </div>
+    <div class="footer-funding">
+      <p>
+        <strong>Funding.</strong> WRENCH is funded by the U.S. National Science Foundation (NSF) under grants
+        <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106059" target="_blank" rel="noopener">2106059</a>,
+        <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106147" target="_blank" rel="noopener">2106147</a>,
+        <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank" rel="noopener">2103489</a>, and
+        <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank" rel="noopener">2103508</a>;
+        and by the French National Center for Scientific Research (CNRS) under grant PICS07239.
+        Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors
+        and do not necessarily reflect the views of the NSF or CNRS.
+      </p>
     </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2017&ndash;{{ site.time | date: '%Y' }} The WRENCH Team</span>
+      <span class="footer-bottom__sep" aria-hidden="true">·</span>
+      <span>WRENCH-{{ release.version }} · released {{ release.date }}</span>
+      <a class="to-top" href="#top" aria-label="Back to top">{% include icon.html name="chevron-up" %} Top</a>
+    </div>
+  </div>
 </footer>
-<!--End of Footer-->
-
-<!-- Include JavaScript resources -->
-<script src="/assets/js/jquery.1.8.3.min.js"></script>
-<script src="/assets/js/wow.min.js"></script>
-<script src="/assets/js/featherlight.min.js"></script>
-<script src="/assets/js/featherlight.gallery.min.js"></script>
-<script src="/assets/js/jquery.enllax.min.js"></script>
-<script src="/assets/js/jquery.scrollUp.min.js"></script>
-<script src="/assets/js/jquery.easing.min.js"></script>
-<script src="/assets/js/jquery.stickyNavbar.min.js"></script>
-<script src="/assets/js/jquery.waypoints.min.js"></script>
-<script src="/assets/js/images-loaded.min.js"></script>
-<script src="/assets/js/lightbox.min.js"></script>
-<script src="/assets/js/site.js"></script>

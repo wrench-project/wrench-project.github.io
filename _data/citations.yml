@@ -96,7 +96,7 @@
 
 - year: 2024
   type: Conference
-  title: "Automated Calibration of Parallel and  Distributed Computing Simulators: A Case Study"
+  title: "Automated Calibration of Parallel and Distributed Computing Simulators: A Case Study"
   authors: J. McDonald, M. Horzela, F. Suter, H. Casanova
   url: https://arxiv.org/abs/2403.13918
   self: True
@@ -177,7 +177,7 @@
 - year: 2022
   type: Report
   title: "BottleMod: Modeling Data Flows and Tasks for Fast Bottleneck Analysis"
-  authors: A. Losser, J. Witzke, F. Schintke, B. Scheuermann
+  authors: "A. Loßer, J. Witzke, F. Schintke, B. Scheuermann"
   url: https://arxiv.org/pdf/2209.05358.pdf
   self: False
   usage: True
@@ -329,7 +329,7 @@
 - year: 2021
   type: Journal
   title: Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH
-  authors: H. Casanova, R. Tanaka, Koch, William, R. Ferreira da Silva
+  authors: H. Casanova, R. Tanaka, W. Koch, R. Ferreira da Silva
   url: http://dx.doi.org/10.1016/j.jpdc.2021.05.009
   self: True
   usage: True

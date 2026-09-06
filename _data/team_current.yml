@@ -1,30 +1,23 @@
 - name: Henri Casanova
-  description: Professor of Computer Science at the University of Hawai'i at Manoa, and member of the SimGrid team
+  description: Professor of Computer Science at the University of Hawaiʻi at Mānoa, and member of the SimGrid team
   email: henric@hawaii.edu
   linkedin: https://www.linkedin.com/in/henricasanova/
   website: http://henricasanova.github.io/
   photo: casanova.jpg
 
 - name: Rafael Ferreira da Silva
-  description: Senior Research Scientist at the Oak Ridge National Laboratory
-  email: rafsilva@isi.edu
+  description: Distinguished Research Scientist at the Oak Ridge National Laboratory
+  email: silvarf@ornl.gov
   linkedin: https://www.linkedin.com/in/rafaelfsilva
   website: http://www.rafaelsilva.com/
   photo: ferreiradasilva.jpg
 
 - name: Frédéric Suter
   description: Senior Research Scientist at the Oak Ridge National Laboratory, and member of the SimGrid team
-  email: frederic.suter@cc.in2p3.fr
+  email: suterf@ornl.gov
   linkedin: https://www.linkedin.com/in/frederic-suter-1656455/
   website: http://graal.ens-lyon.fr/~fsuter/
   photo: suter.jpg
-
-- name: Jesse McDonald
-  description: Computer Science PhD student at the University of Hawaii at Manoa
-  email: jamcdonald@hawaii.edu
-  linkedin: https://www.linkedin.com/in/jesse-mcdonald-6b080111a
-  website: 
-  photo: jesseemcdonald.jpg
 
 - name: Loïc Pottier
   description: Research Scientist at the Lawrence Livermore National Laboratory
