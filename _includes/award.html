@@ -1,0 +1,15 @@
+{%- comment -%}
+  Renders one funding award number.
+  NSF awards link to nsf.gov; every other agency renders as plain text
+  (or uses `url` if the entry supplies one).
+  Params: id (required), agency, hash (prefix NSF numbers with "#")
+{%- endcomment -%}
+{%- assign label = include.id -%}
+{%- if include.hash and include.agency == "NSF" -%}
+  {%- assign label = "#" | append: include.id -%}
+{%- endif -%}
+{%- if include.agency == "NSF" -%}
+<a href="https://nsf.gov/awardsearch/showAward?AWD_ID={{ include.id }}" target="_blank" rel="noopener">{{ label }}</a>
+{%- else -%}
+{{ label }}
+{%- endif -%}

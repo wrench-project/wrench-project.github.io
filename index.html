@@ -813,37 +813,16 @@ WRENCH", Future Generation Computer Systems, vol. 112, p. 162-175, 2020.</code><
         from the U.S. National Science Foundation and the French National Center for Scientific Research.</p>
     </div>
     <div class="grid grid--auto" data-reveal>
+      {%- for f in site.data.funding -%}
       <article class="card">
-        <h4>2021&ndash;2024 · NSF CSSI</h4>
-        <p style="margin-top:.4rem">Awards
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank" rel="noopener">#2103489</a>,
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank" rel="noopener">#2103508</a></p>
+        <h4>{{ f.start }}&ndash;{{ f.end }} · {{ f.program }}</h4>
+        <p style="margin-top:.4rem">Award{% if f.awards.size > 1 %}s{% endif %}
+          {%- for a in f.awards %} {% include award.html id=a agency=f.agency hash=true %}{% unless forloop.last %},{% endunless %}{% endfor %}
+          {%- if f.note %} — {{ f.note }}.{% endif %}</p>
       </article>
-      <article class="card">
-        <h4>2021&ndash;2024 · NSF OAC Core</h4>
-        <p style="margin-top:.4rem">Awards
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106059" target="_blank" rel="noopener">#2106059</a>,
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2106147" target="_blank" rel="noopener">#2106147</a></p>
-      </article>
-      <article class="card">
-        <h4>2019&ndash;2022 · NSF CyberTraining</h4>
-        <p style="margin-top:.4rem">Awards
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923539" target="_blank" rel="noopener">#1923539</a>,
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923621" target="_blank" rel="noopener">#1923621</a>
-          — behind eduWRENCH.</p>
-      </article>
-      <article class="card">
-        <h4>2017&ndash;2019 · NSF SI2-SSE</h4>
-        <p style="margin-top:.4rem">Awards
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642335" target="_blank" rel="noopener">#1642335</a>,
-          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642369" target="_blank" rel="noopener">#1642369</a>
-          — the grants that started the project.</p>
-      </article>
-      <article class="card">
-        <h4>2016&ndash;2018 · CNRS PICS</h4>
-        <p style="margin-top:.4rem">Award #07239</p>
-      </article>
+      {%- endfor -%}
     </div>
+
   </div>
 </section>
 

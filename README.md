@@ -20,7 +20,7 @@ jekyll serve      # → http://localhost:4000
 | `_includes/` | `head`, `nav`, `footer`, and `icon.html` (inline SVG icon set) |
 | `assets/css/wrench.css` | The whole design system — one file, no framework |
 | `assets/js/site.js` | All behaviour — vanilla JS, no dependencies |
-| `_data/` | Content: releases, citations, team |
+| `_data/` | Content: releases, citations, team, funding |
 
 ## Editing content
 
@@ -33,6 +33,9 @@ Everything that changes regularly lives in `_data/`:
   `self: False` marks an external group; `usage: True` marks work that built a
   WRENCH-based simulator.
 - **Team change** → `team_current.yml` / `team_previous.yml`.
+- **New grant** → `funding.yml`. NSF award numbers are linked to nsf.gov
+  automatically; set `acknowledge: true` to also list the award in the footer's
+  funding statement.
 
 Counts on the page (releases, citations, contributors) are computed from these
 files. `numbers.yml` holds only the figures that cannot be derived: lines of

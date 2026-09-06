@@ -1,0 +1,53 @@
+# Funding history for WRENCH, newest first.
+#
+# Rendered in two places:
+#   * index.html — the "Funding" cards in the About section (every entry)
+#   * _includes/footer.html — the acknowledgement statement (entries with
+#     `acknowledge: true`, which are the grants currently supporting the project)
+#
+# Award numbers for agency `NSF` are linked to nsf.gov automatically. For any
+# other agency the award is rendered as plain text unless you give it a `url`.
+
+- program: NSF CSSI
+  agency: NSF
+  start: 2021
+  end: 2025
+  acknowledge: true
+  awards:
+    - "2103489"
+    - "2103508"
+
+- program: NSF OAC Core
+  agency: NSF
+  start: 2021
+  end: 2025
+  acknowledge: true
+  awards:
+    - "2106059"
+    - "2106147"
+
+- program: NSF CyberTraining
+  agency: NSF
+  start: 2019
+  end: 2022
+  note: the grants behind eduWRENCH
+  awards:
+    - "1923539"
+    - "1923621"
+
+- program: NSF SI2-SSE
+  agency: NSF
+  start: 2017
+  end: 2019
+  note: the grants that started the project
+  awards:
+    - "1642335"
+    - "1642369"
+
+- program: CNRS PICS
+  agency: CNRS
+  start: 2016
+  end: 2018
+  acknowledge: true
+  awards:
+    - "PICS07239"
