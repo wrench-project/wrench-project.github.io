@@ -1,4 +1,12 @@
 - year: 2026
+  type: Workshop
+  title: "How far can Network Congestion Awareness Improve Scientific Workflow Scheduling?"
+  authors: L.A. Momm Duarte, G.P. Koslovski
+  url: https://doi.ieeecomputersociety.org/10.1109/SCW72768.2026.00098
+  self: False
+  usage: True
+
+- year: 2026
   type: PhD Thesis
   title: "Simulation Studies on the Integration of NHR@Göttingen into the WLCG"
   authors: A. Leone
